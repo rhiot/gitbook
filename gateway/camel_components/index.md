@@ -10,14 +10,14 @@ Rhiot project brings some extra components for the Apache Camel intended to make
 
 [Camel GPSD component](camel_gpsd_component.md)
 
-[Camel Kura router]
+[Camel Kura router](camel_kura_router.md)
 
-[Camel Kura Wifi component]
+[Camel Kura Wifi component]()
 
-[Camel TinkerForge component]
+[Camel TinkerForge component]()
 
-[Camel Pi4j component]
+[Camel Pi4j component]()
 
-[Camel Framebuffer component]
+[Camel Framebuffer component]()
 
-[Camel Webcam component]
+[Camel Webcam component]()
