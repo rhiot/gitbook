@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Rhiot field gateway](rhiot_field_gateway.md)
-* Rhiot IoT components
+* [Rhiot IoT components](rhiot_iot_components.md)
 
