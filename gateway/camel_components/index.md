@@ -4,7 +4,7 @@ Rhiot project brings some extra components for the Apache Camel intended to make
 
 
 
-[Camel Bluetooth component]
+[Camel Bluetooth component](./camel_bluetooth_component.html)
 
 [Camel GPS BU353 component]
 
