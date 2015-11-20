@@ -119,17 +119,17 @@ collected from the GPS receiver will be serialized to the JSON format. Each GPS 
 
 The JSON schema of the collected coordinates is similar to teh following example:
 
-    {"timestamp": 1445356703704,
-      "lat": 20.0, "lng": 30.0}
+    { 
+      "timestamp": 1445356703704,
+      "lat": 20.0, 
+      "lng": 30.0
+    }
 
 #### Enriching GPS data
 
-Sometimes you would like to collect not only the GPS coordinates, but some other sensor data associated with the given
-location. For example to track the temperature or WiFi networks available in various locations. If you would like to
-enrich collected GPS data with value read from some other endpoint, set the `gps_enrich` property to the Camel endpoint
+Sometimes you would like to collect not only the GPS coordinates, but some other sensor data associated with the given location. For example to track the temperature or WiFi networks available in various locations. If you would like to enrich collected GPS data with value read from some other endpoint, set the `gps_enrich` property to the Camel endpoint
 URI value. For example setting `gps_enrich=kura-wifi:*/*` can be used to poll for available WiFi networks using
-[Camel Kura WiFi component](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-kura-wifi-component) and adding
-the results to collected GPS payloads.
+[Camel Kura WiFi component](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-kura-wifi-component) and adding the results to collected GPS payloads.
 
 The enriched JSON schema of the collected coordinates is similar to teh following example:
 
@@ -142,14 +142,10 @@ The enriched JSON schema of the collected coordinates is similar to teh followin
 
 #### Sending collected GPS data with a data center
 
-If you would like to synchronize the collected GPS data with a data center, consider using the out-of-the-box
-functionality that Rhiot gateway offers. In order to enable an automatic synchronization of the GPS coordinates, set the
+If you would like to synchronize the collected GPS data with a data center, consider using the out-of-the-box functionality that Rhiot gateway offers. In order to enable an automatic synchronization of the GPS coordinates, set the
 `gps_cloudlet_sync` configuration property to `true`.
 
-The gateway synchronization route reads GPS messages saved in the
-gateway store (see the section above) and sends those to the destination endpoint. The target Camel endpoint can be specified using
-the `gps_cloudlet_endpoint` configuration property. For example the following property tells a gateway to send
-the GPS data to a MQTT broker:
+The gateway synchronization route reads GPS messages saved in the gateway store (see the section above) and sends those to the destination endpoint. The target Camel endpoint can be specified using the `gps_cloudlet_endpoint` configuration property. For example the following property tells a gateway to send the GPS data to a MQTT broker:
 
     gps_cloudlet_endpoint=paho:topic?brokerUrl=tcp://broker.com:1234
 
@@ -159,7 +155,8 @@ The default data center endpoint is Netty REST call (using POST method) - `netty
 
 The default data format used by the gateway is JSON, where the message schema is similar to the folowwing example:
 
-     {"client": "my-device",
+    { 
+      "client": "my-device",
        "clientId": "local-id-generated-on-client",
        "timestamp": 1445356703704,
        "latitude": 20.0,
