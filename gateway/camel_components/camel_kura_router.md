@@ -35,3 +35,13 @@ The principle of using `RhiotKuraRouter` is the same as using `KuraRouter` i.e. 
 	  }
 
 	}
+	
+## Camel Kura PojoSR test facility
+
+This facility is intended to be used to test Camel routes to be deployed on a Kura server. Just instantiate a new `io.rhiot.component.kura.PojosrKuraServer` and call its `start` method passing your Camel route.
+
+	PojosrKuraServer pojosrKuraServer = new PojosrKuraServer();
+    MyKuraRouter startedKuraRouter = kura.start(MyKuraRouter.class);
+
+This will instantiate an OSGi registry, add your Camel route and its dependencies to the classpath and execute your route.
+
