@@ -6,4 +6,5 @@
 * [Backend](backend/backend.md)
    * [Camel Components](backend/camel_components/camel_components.md)
 * Tooling
+* Building
 
