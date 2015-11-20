@@ -14,6 +14,6 @@
 * [Backend](backend/index.md)
    * [Camel Components](backend/camel_components/index.md)
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
-* Tooling
+* [Tooling](tooling/index.md)
 * [Building](building/index.md)
 
