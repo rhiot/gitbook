@@ -1,6 +1,6 @@
 # Rhiot IoT components
 
-Rhiot project brings some extra components for the Apache Camel intended to make both device-side and server-side IoT
+Rhiot project brings some extra components for the [Apache Camel](http://camel.apache.org) intended to make both device-side and server-side IoT
 development easier.
 
 ## Camel Bluetooth component
