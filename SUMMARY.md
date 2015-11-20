@@ -5,7 +5,7 @@
 * [Rhiot IoT components](rhiot_iot_components.md)
 * [Rhiot Cloud](rhiot_cloud.md)
 * [Tooling](tooling.md)
-* Performance Testing Framework
+* [Performance Testing Framework](performance_testing_framework.md)
 * Steroids configuration framework
 * Quickstarts
 
