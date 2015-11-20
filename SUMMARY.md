@@ -6,6 +6,6 @@
 * [Rhiot Cloud](rhiot_cloud.md)
 * [Tooling](tooling.md)
 * [Performance Testing Framework](performance_testing_framework.md)
-* Steroids configuration framework
+* [Steroids configuration framework](steroids_configuration_framework.md)
 * Quickstarts
 
