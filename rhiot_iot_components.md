@@ -41,7 +41,7 @@ Or using the producer template directly:
 
     BluetoothDevices[] devices = template.requestBody("bluetooth:scan", BluetoothDevices[].class);
 
-#### Options
+### Options
 
 | Option                   | Default value                                                                 | Description   |
 |:-------------------------|:-----------------------------------------------------------------------       |:------------- |
@@ -51,11 +51,9 @@ Or using the producer template directly:
 | `bluetoothDevicesProvider`   | `new BluecoveBluetoothDeviceProvider()`                                               | reference to the`io.rhiot.component.bluetooth.BluetoothDevicesProvider` instance used to scan bluetooth devices. |
 
 
-#### Installer
+### Installer
 
-The Bluetooth component installs it's own dependencies for Debian-based systems using apt-get, these include blueman and libbluetooth-dev,
-as well as their dependencies.
-You can configure the installer or set an alternate one on the component:
+The Bluetooth component installs it's own dependencies for Debian-based systems using apt-get, these include blueman and libbluetooth-dev, as well as their dependencies. You can configure the installer or set an alternate one on the component:
 
     BluetoothComponent bluetooth = new BluetoothComponent();
     bluetooth.setInstaller(new CustomInstaller());
@@ -75,7 +73,7 @@ If an Installer is not set on the component, Camel will try to find an instance 
         new CustomInstaller();
     }
 
-### Camel GPS BU353 component
+## Camel GPS BU353 component
 
 **Deprecated:** BU353 component is deprecated and will be removed soon on the behalf of the
 [GPSD component](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-gpsd-component).
@@ -90,7 +88,7 @@ switched to the [NMEA mode](http://www.gpsinformation.org/dale/nmea.htm). The co
 NMEA data read from the serial port, so you can enjoy the `io.rhiot.component.gps.bu353.ClientGpsCoordinates`
 instances received by your Camel routes.
 
-#### Maven dependency
+### Maven dependency
 
 Maven users should add the following dependency to their POM file:
 
@@ -103,7 +101,7 @@ Maven users should add the following dependency to their POM file:
 Avaliable for rhiot.version >= 0.1.2
 
 
-#### URI format
+### URI format
 
 BU353 component supports only consumer endpoints. The BU353 consumer is the polling one, i.e. it periodically asks the GPS device for the
 current coordinates. The Camel endpoint URI format for the BU353 consumer is as follows:
@@ -123,7 +121,7 @@ BU353 consumer receives the `io.rhiot.component.gps.bu353.ClientGpsCoordinates` 
 `ClientGpsCoordinates` class name is prefixed with the `Client` to indicate that these coordinates have been created on the device,
 not on the server side of the IoT solution.
 
-#### Options
+### Options
 
 | Option                   | Default value                                                                 | Description   |
 |:-------------------------|:-----------------------------------------------------------------------       |:------------- |
@@ -132,7 +130,7 @@ not on the server side of the IoT solution.
 | `consumer.useFixedDelay` | false | Set to true to use a fixed delay between polls, otherwise fixed rate is used. See ScheduledExecutorService in JDK for details. |
 | `coordinatesSource`   | `new SerialGpsCoordinatesSource()`                                               | reference to the`io.rhiot.component.gps.bu353.GpsCoordinatesSource` instance used to read the current GPS coordinates. |
 
-#### Process manager
+### Process manager
 
 Process manager is used by the BU353 component to execute Linux commands responsible for starting GPSD daemon or
 configuring the GPS receive to provide GPS coordinates in the NMEA mode. If for some reason you would like to change
@@ -155,13 +153,13 @@ the manager as the bean:
 Custom process manager may be useful if your Linux distribution requires executing some unusual commands
 in order to make the GPSD up and running.
 
-#### BU353 type converters
+### BU353 type converters
 
 BU353 component comes with the two type converters:
 - `String` => `io.rhiot.component.gps.bu353.ClientGpsCoordinates`
 - `io.rhiot.component.gps.bu353.ClientGpsCoordinates` => `String`
 
-### Camel GPSD component
+## Camel GPSD component
 
 Camel [GPSD](http://www.catb.org/gpsd) component can be used to read current GPS information from GPS devices. With Camel GPSD you can
 just connect a GPS receiver to your computer's USB port and read the GPS data - the component
@@ -174,7 +172,7 @@ The GPSD component has been particularly tested against the BU353 GPS unit.
 [BU353](http://usglobalsat.com/p-688-bu-353-s4.aspx#images/product/large/688_2.jpg) is one of the most popular and cheapest GPS units on the market.
 It is connected to the device via the USB port. If you are looking for good and cheap GPS receiver for your IoT solution, definitely consider purchasing this unit.
 
-#### Maven dependency
+### Maven dependency
 
 Maven users should add the following dependency to their POM file:
 
@@ -184,9 +182,9 @@ Maven users should add the following dependency to their POM file:
       <version>${rhiot.version}</version>
     </dependency>
 
-#### URI format
+### URI format
 
-The default GPSD consumer is event driven, subscribing to *Time-Position-Velocity* reports and converting them to ClientGpsCoordinates for immediate consumption.
+The default GPSD consumer is event driven, subscribing to `Time-Position-Velocity` reports and converting them to ClientGpsCoordinates for immediate consumption.
 This option offers up to date information, but requires more resources than the scheduled consumer or the producer.
 
 The Camel endpoint URI format for the GPSD consumer is as follows:
@@ -216,9 +214,9 @@ To subscribe to events or poll a device on another host you have to do two thing
 * start GPSD on that host with the param -G to listen on all addresses (eg `gpsd -G /dev/ttyUSB0`)
 * pass the host and optionally port to the GPSD endpoint, just as demonstrated on the snippet below:
 
-    from("gpsd:current-position?host=localhost?port=2947").
-      convertBodyTo(String.class).
-      to("file:///var/gps-coordinates");
+      from("gpsd:current-position?host=localhost?port=2947")
+      .convertBodyTo(String.class)
+      .to("file:///var/gps-coordinates");
 
 The message body is a `io.rhiot.component.gpsd.ClientGpsCoordinates` instance:
 
@@ -902,7 +900,7 @@ If an Installer is not set on the component, Camel will try to find an instance 
     }
 
 By default an installer ignores problems with the webcam packages installation and only logs the warning using a
-logger WARN message. If you would like the component to thrown an exception instead of logging a message, set
+logger `WARN` message. If you would like the component to thrown an exception instead of logging a message, set
 `ignoreInstallerProblems` property of the `WebcamComponent` to `true`:
 
     WebcamComponent webcam = new WebcamComponent();
