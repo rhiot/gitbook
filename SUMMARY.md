@@ -6,4 +6,5 @@
 * [Rhiot Cloud](rhiot_cloud.md)
 * [Tooling](tooling.md)
 * Performance Testing Framework
+* Steroids configuration framework
 
