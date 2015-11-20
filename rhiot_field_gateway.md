@@ -209,7 +209,7 @@ following jar:
       </dependency>
     </dependencies>
 
- Avaliable for rhiot.version >= 0.1.1
+ Available for rhiot.version >= 0.1.1
 
 In order to create Vert.x verticle that can access single `CamelContex` instance shared between all the verticles
 within the given JVM, extend the `io.rhiot.vertx.camel.GroovyCamelVerticle` class:
