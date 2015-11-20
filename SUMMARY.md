@@ -8,7 +8,7 @@
        * [Camel GPSD component](gateway/camel_components/camel_gpsd_component.md)
        * [Camel Kura router](gateway/camel_components/camel_kura_router.md)
        * [Camel Kura Wifi component](gateway/camel_components/camel_kura_wifi_component.md)
-* [Backend](backend/backend.md)
+* [Backend](backend/index.md)
    * [Camel Components](backend/camel_components/camel_components.md)
 * Tooling
 * Building
