@@ -234,7 +234,7 @@ useful to enrich the payload or do content based routing, eg
         log.info("Camel broke the sound barrier");
     }
 
-#### Options
+### Options
 
 | Option                   | Default value                                                                 | Description   |
 |:-------------------------|:-----------------------------------------------------------------------       |:------------- |
@@ -249,7 +249,7 @@ useful to enrich the payload or do content based routing, eg
 | `gpsd4javaEndpoint`         | `new GPSdEndpoint(host, port, new ResultParser())`                        | Registry reference to the `de.taimos.gpsd4java.backend.GPSdEndpoint` instance to be used by the endpoint.  |
 
 
-#### Process manager
+### Process manager
 
 Process manager is used by the GPSD component to execute Linux commands responsible for starting GPSD daemon or
 configuring the GPS receive to provide GPS coordinates in the NMEA mode. If for some reason you would like to change
@@ -273,7 +273,7 @@ Custom process manager may be useful if your Linux distribution requires executi
 in order to make the GPSD up and running.
 
 
-#### Installer
+### Installer
 
 The GPSD component installs it's own dependencies for Debian-based systems using apt-get, these include psmisc, gpsd and gpsd-clients,
 as well as their dependencies.
@@ -297,7 +297,7 @@ If an Installer is not set on the component, Camel will try to find an instance 
         new CustomInstaller();
     }
 
-### Camel Kura router
+## Camel Kura router
 
 **Avaliable since Rhiot 0.1.3**: Rhiot provides `io.rhiot.component.kura.router.RhiotKuraRouter` class, which
 extends `org.apache.camel.component.kura.KuraRouter` class from the Apache Camel 
@@ -305,7 +305,7 @@ extends `org.apache.camel.component.kura.KuraRouter` class from the Apache Camel
 rely on the Kura-specific jars, because of limitations of the Apache Camel policy regarding adding 3rd parties repositories
 to the Camel (like Eclipse Kura repository). `RhiotKuraRouter` extends `KuraRouter` and enhances it with Kura-specific API.
 
-#### Maven dependency
+### Maven dependency
 
 Maven users should add the following dependency to their POM file:
 
@@ -319,7 +319,7 @@ Adding Rhiot camel-kura module to your project, imports transitive Kura dependen
 Camel camel-kura module, which doesn't rely on Kura API and therefore doesn't import Kura jars.
 
 
-#### Usage
+### Usage
 
 The principle of using `RhiotKuraRouter` is the same as using `KuraRouter` i.e. just extend `RhiotKuraRouter` class:
 
@@ -336,7 +336,7 @@ The principle of using `RhiotKuraRouter` is the same as using `KuraRouter` i.e. 
 	}
 
  
-### Camel Kura Wifi component
+## Camel Kura Wifi component
 
 The common scenario for the mobile IoT Gateways, for example those mounted on the trucks or other vehicles, is to cache
 collected data locally on the device storage and synchronizing the data with the data center only when trusted WiFi
@@ -352,7 +352,7 @@ Camel Kura WiFi component can be used to retrieve the information about the WiFi
 range. Under the hood Kura Wifi component uses Kura `org.eclipse.kura.net.NetworkService`. Kura WiFi component
 supports both the consumer and producer endpoints.
 
-#### Maven dependency
+### Maven dependency
 
 Maven users should add the following dependency to their POM file:
 
@@ -364,7 +364,7 @@ Maven users should add the following dependency to their POM file:
 
  Avaliable for rhiot.version >= 0.1.1
 
-#### URI format
+### URI format
 
     kura-wifi:networkInterface/ssid
 
