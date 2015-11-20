@@ -12,7 +12,7 @@ If you are looking for such centralized event hub, Rhiot project provides such c
 
 The high-level architecture diagram of the Rhiot Cloud is presented on the image below:
 
- <img src="./images/rhiot-cloud-arch.png" align="center" height="600">
+ <img src="/gitbook/content/images/rhiot-cloud-arch.png" align="center" height="600">
  
  
 
