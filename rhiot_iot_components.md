@@ -9,7 +9,7 @@ Camel Bluetooth component can be used to retrieve the information about the blue
 range. Under the hood Bluetooth component uses bluecove library (http://www.bluecove.org/). Bluetooth component supports
 both the consumer and producer endpoints.
 
-#### Maven dependency
+### Maven dependency
 
 Maven users should add the following dependency to their POM file:
 
@@ -21,7 +21,7 @@ Maven users should add the following dependency to their POM file:
 
  Avaliable for rhiot.version >= 0.1.3
 
-#### URI format
+### URI format
 
     bluetooth:label
 
