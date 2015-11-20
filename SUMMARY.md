@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Gateway](gateway/gateway.md)
-   * Camel Components
+   * [Camel Components](gateway/camel_components/camel_components.md)
 * Backend
 * Tooling
 
