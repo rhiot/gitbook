@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * Gateway
 * [Rhiot IoT components](rhiot_iot_components.md)
    * [Gateway](rhiot-iot-components/gateway.md)
        * [Camel GPS BU353 component](rhiot-iot-components/camel_gps_bu353_component.md)
