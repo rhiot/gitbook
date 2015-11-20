@@ -8,7 +8,7 @@ Rhiot project brings some extra components for the Apache Camel intended to make
 
 [Camel GPS BU353 component](gateway/camel_components/camel_gps_bu353_component.md)
 
-[Camel GPSD component]
+[Camel GPSD component](gateway/camel_components/camel_gpsd_component.md)
 
 [Camel Kura router]
 
