@@ -3,7 +3,7 @@
 Rhiot project brings some extra components for the Apache Camel intended to make both device-side and server-side IoT
 development easier.
 
-### Camel Bluetooth component
+## Camel Bluetooth component
 
 Camel Bluetooth component can be used to retrieve the information about the bluetooth devices available within the device
 range. Under the hood Bluetooth component uses bluecove library (http://www.bluecove.org/). Bluetooth component supports
