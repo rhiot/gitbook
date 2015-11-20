@@ -12,7 +12,7 @@ In order to install Rhiot gateway on one of
 (like Raspberry Pi with Raspbian) use Rhiot cmd tool
 ([`rhiot cmd` section describes how to install Rhiot cmd](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#rhiot-command-line-tool-cmd)).
 After Rhiot cmd tool is installed, connect your device to your local network
-(using WiFi or the ethernet cable) and execute the following command on a laptop connected to the same network as your
+(using WiFi or the Ethernet cable) and execute the following command on a laptop connected to the same network as your
 target device:
 
     rhiot deploy-gateway
