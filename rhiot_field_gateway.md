@@ -224,8 +224,7 @@ within the given JVM, extend the `io.rhiot.vertx.camel.GroovyCamelVerticle` clas
 
     }
 
-Rhiot gateway scans the classpath for the verticle classes marked with the `io.rhiot.gateway.GatewayVerticle`
-annotation. All those verticles are automatically loaded into the Vert.x backbone.
+Rhiot gateway scans the classpath for the verticle classes marked with the `io.rhiot.gateway.GatewayVerticle` annotation. All those verticles are automatically loaded into the Vert.x backbone.
 
 As you can see in the example above you can read the messages from the event bus and forward these to your Camel
 route using the `fromEventBus(channel, closure(route))` method. You can also access the Camel context directly:
