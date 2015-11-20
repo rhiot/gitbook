@@ -7,6 +7,6 @@
        * [Camel Bluetooth component](rhiot-iot-components/camel_bluetooth_component.md)
        * Camel GPSD component
 * Gateway
-* Tooling
 * Backend
+* Tooling
 
