@@ -6,5 +6,5 @@
    * [Camel GPS BU353 component](camel_gps_bu353_component.md)
    * [Gateway](rhiot-iot-components/gateway.md)
        * Camel GPS BU353 component
-       * Camel Bluetooth component
+       * [Camel Bluetooth component](rhiot-iot-components/camel_bluetooth_component.md)
 
