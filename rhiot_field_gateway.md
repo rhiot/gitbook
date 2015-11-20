@@ -36,10 +36,10 @@ The gateway configuration file is `/etc/default/rhiot-gateway`. This file is loa
 ### Gateway logger configuration
 
 By default gateway keeps the last 100 MB of the logging history. Logs are grouped by the days and split into the
-10 MB files. The default logging level is **INFO**. You can change it by setting the **camellabs_iot_gateway_log_root_level**
+10 MB files. The default logging level is `INFO`. You can change it by setting the `camellabs_iot_gateway_log_root_level`
 environment variable:
 
-    ```export camellabs_iot_gateway_log_root_level=DEBUG```
+    export camellabs_iot_gateway_log_root_level=DEBUG
 
 ### Device heartbeats
 
