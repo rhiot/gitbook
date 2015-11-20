@@ -48,7 +48,7 @@ Operations can be used on the producer endpoint, or as a header:
 | `GET_HISTORY`             | Gets the message history for the endpoint channel. |
 
 
-### Consuming:
+## Consuming:
 
 Route that consumes messages from mychannel:
 
@@ -60,7 +60,7 @@ Route that listens for presence (eg. join, leave, state change) events on a chan
     from("pubnub://presence:mychannel?subscriberKey=mysubkey").routeId("presence-route")
     .to("log:default?showHeaders=true");
 
-### Producing
+## Producing
 
 Route the collect data and sendt it to pubnub channel mychannel:
 
