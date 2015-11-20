@@ -19,7 +19,7 @@ Maven users should add the following dependency to their POM file:
 
 Avaliable for rhiot.version >= 0.1.2
 
-#### URI format
+## URI format
 
 
 The Camel endpoint URI format for the Webcam consumer is as follows:
@@ -48,7 +48,7 @@ Specify the resolution with custom width and height, or the resolution name;
     from("webcam:spycam?resolution=HD720").
       to("seda:cam")
 
-#### Options
+## Options
 
 | Option                   | Default value                                                                 | Description   |
 |:-------------------------|:-----------------------------------------------------------------------       |:------------- |
@@ -67,7 +67,7 @@ Specify the resolution with custom width and height, or the resolution name;
 | `consumer.useFixedDelay` | false | Set to true to use a fixed delay between polls, otherwise fixed rate is used. See ScheduledExecutorService in JDK for details. |
 
 
-#### Process manager
+## Process manager
 
 Process manager is also used by the Webcam component to execute Linux commands responsible for starting the webcam driver and  
 configuring the image format and resolution. If for some reason you would like to change
@@ -91,7 +91,7 @@ Custom process manager may be useful if your Linux distribution or camera requir
 in order to load the v4l2 (Video for Linux) module.
 
 
-#### Installer
+## Installer
 
 For some Linux+webcam combinations, the webcam component requires `v4l-utils` and its dependencies to be installed on an
 operating system. By default the Webcam component installs `v4l-utils` using apt-get, you can configure the installer or
