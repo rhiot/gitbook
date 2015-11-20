@@ -2,4 +2,4 @@
 
 Rhiot project brings some extra components for the Apache Camel intended to make server-side IoT development easier.
 
-[]
+[Camel OpenIMAJ component](Camel OpenIMAJ component)
