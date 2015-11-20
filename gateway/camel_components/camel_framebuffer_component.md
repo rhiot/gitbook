@@ -1,0 +1,2 @@
+# Camel Framebuffer component
+
