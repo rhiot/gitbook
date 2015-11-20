@@ -16,7 +16,7 @@ Maven users should add the following dependency to their POM file:
  Avaliable for rhiot.version >= 0.1.1
 
 
-### URI format for GPIO
+## URI format for GPIO
 
     pi4j-gpio://gpioId[?options]
 
@@ -25,7 +25,7 @@ By default, pi4j-gpio uses *RaspiPin* Class, change it via *gpioClass* property
 You can use static field name "*GPIO_XX*", pin name "*GPIO [0-9]*" or pin address "*[0-9]*"
 
 
-#### Optional URI Parameters
+### Optional URI Parameters
 
 | Parameter            | Default value             | Description                                               |
 |----------------------|---------------------------|-----------------------------------------------------------|
@@ -41,12 +41,12 @@ You can use static field name "*GPIO_XX*", pin name "*GPIO [0-9]*" or pin addres
 | `gpioClass`            | `com.pi4j.io.gpio.RaspiPin` | `class<com.pi4j.io.gpio.Pin>` pin implementation                  |
 | `controller`           | `com.pi4j.io.gpio.impl.GpioControllerImpl`            | `instance of <com.pi4j.io.gpio.GpioController>` GPIO controller instance, check gpioClass pin implementation to use the same  |
 
-##### Consuming:
+## Consuming:
 
     from("pi4j-gpio://13?mode=DIGITAL_INPUT&state=LOW")
     .to("log:default?showHeaders=true");
 
-##### Producing
+## Producing
 
     from("timer:default?period=2000")
     .to("pi4j-gpio://GPIO_04?mode=DIGITAL_OUTPUT&state=LOW&action=TOGGLE");
