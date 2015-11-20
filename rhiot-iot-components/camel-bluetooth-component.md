@@ -1,2 +1,0 @@
-# Camel Bluetooth component
-
