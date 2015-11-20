@@ -2,4 +2,5 @@
 
 * [Introduction](README.md)
 * [Rhiot IoT components](rhiot_iot_components.md)
+* Camel Bluetooth component
 
