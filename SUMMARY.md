@@ -10,6 +10,7 @@
        * [Camel Kura Wifi component](gateway/camel_components/camel_kura_wifi_component.md)
 * [Backend](backend/index.md)
    * [Camel Components](backend/camel_components/index.md)
+       * Camel OpenIMAJ component
 * Tooling
 * Building
 
