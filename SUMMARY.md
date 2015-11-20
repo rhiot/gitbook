@@ -6,5 +6,4 @@
 * [Performance Testing Framework](performance_testing_framework.md)
 * [Steroids configuration framework](steroids_configuration_framework.md)
 * [Quickstarts](quickstarts.md)
-* [Articles, presentations & videos](articles,_presentations_&_videos.md)
 
