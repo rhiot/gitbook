@@ -8,6 +8,7 @@
        * [Camel GPSD component](gateway/camel_components/camel_gpsd_component.md)
        * [Camel Kura router](gateway/camel_components/camel_kura_router.md)
        * [Camel Kura Wifi component](gateway/camel_components/camel_kura_wifi_component.md)
+       * Camel TinkerForge component
 * [Backend](backend/index.md)
    * [Camel Components](backend/camel_components/index.md)
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
