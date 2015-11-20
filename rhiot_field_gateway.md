@@ -48,7 +48,7 @@ center.
 
 The default heartbeat rate is 5 seconds, which means that heartbeat events will be generated every 5 second. You
 can change the heartbeat rate by setting the **camellabs_iot_gateway_heartbeat_rate** environment variable to the desired
-number of the rate miliseconds. The snippet below demonstrates how to change the heartbeat rate to 10 seconds:
+number of the rate milliseconds. The snippet below demonstrates how to change the heartbeat rate to 10 seconds:
 
 ```
   export camellabs_iot_gateway_heartbeat_rate=10000
