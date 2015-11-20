@@ -1,0 +1,2 @@
+# Camel GPSD component
+
