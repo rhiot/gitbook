@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* Gateway
+* [Gateway](gateway/gateway.md)
 * Backend
 * Tooling
 
