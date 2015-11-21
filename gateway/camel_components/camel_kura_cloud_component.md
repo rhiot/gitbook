@@ -32,7 +32,7 @@ both *topicId* *appId* must match MQTT topic  pattern.
 | `qos`            |0                          |                             |
 | `retain`         |false                      |                             |
 | `priority`       |5                          |                             |
-| `includeDeviceId`|                           | will pick up [deviceId](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/system/SystemService.html#getSerialNumber%28%29) from Kura API |
+| `includeDeviceId`|                           | will pick up [deviceId](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/system/SystemService.html#getSerialNumber%28%29) from Kura API, only works w/ `control=true` |
 | `control`        | false                          |  if true, push a control message, else common message                  |
 
 
