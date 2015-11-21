@@ -29,7 +29,7 @@ both *topicId* *appId* must match MQTT topic  pattern.
 |------------------|---------------------------|-----------------------------|
 | `appId`          |                           | Kura AppId                  |
 | `topicId`        |                           | MQTT topicId                |
-| `gpioId`         |                           |                             |
+| `qos`            |                           |                             |
 | `gpioId`         |                           |                             |
 | `gpioId`         |                           |                             |
 
