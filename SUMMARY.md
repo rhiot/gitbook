@@ -12,6 +12,7 @@
        * [Camel Pi4j component](gateway/camel_components/camel_pi4j_component.md)
        * [Camel Framebuffer component](gateway/camel_components/camel_framebuffer_component.md)
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
+       * Camel Kura Cloud component
 * [Backend](backend/index.md)
    * [Camel Components](backend/camel_components/index.md)
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
