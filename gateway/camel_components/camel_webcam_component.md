@@ -3,7 +3,7 @@
 Camel [Webcam](http://webcam-capture.sarxos.pl/) component can be used to capture still images and detect motion.
 With Camel Webcam you can connect a camera to your device's USB port, or install the camera mod on the Raspberry Pi board for example,
 and poll for an image periodically and respond to motion events.
-The body of the message is the current image as a BufferedInputStream, while motion events are stored in the header 'io.rhiot.webcam.webcamMotionEvent'.
+The body of the message is the current image as a BufferedInputStream, while motion events are stored in the header `io.rhiot.webcam.webcamMotionEvent`.
 This event may be useful for getting the image captured prior to the motion event, as well the Points where the motion occurred and the center of motion gravity.
 
 
@@ -19,8 +19,8 @@ Maven users should add the following dependency to their POM file:
 
 Avaliable for rhiot.version >= 0.1.2
 
-## URI format
 
+## URI format
 
 The Camel endpoint URI format for the Webcam consumer is as follows:
 
