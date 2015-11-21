@@ -40,11 +40,13 @@ both *topicId* *appId* must match MQTT topic  pattern.
 
 Several URI parameter can me overwrite by the "in Message" headers
 
-| URI Parameter    | Header                   | 
-|------------------|--------------------------|
-| `topicId`        |CamelKuraCloud            |
-| `qos`            |CamelKuraCloud            |
-| `retain`         |CamelKuraCloud            |
-| `priority`       |CamelKuraCloud            |
-| `priority`       |CamelKuraCloud            |
-| `priority`       |CamelKuraCloud            |
+| URI Parameter    | Header                         | 
+|------------------|--------------------------------|
+| `topicId`        |`CamelKuraCloud.topicId`        |
+| `qos`            |`CamelKuraCloud.qos`            |
+| `retain`         |`CamelKuraCloud.retain`         |
+| `priority`       |`CamelKuraCloud.priority`       |
+| `includeDeviceId`|`CamelKuraCloud.includeDeviceId`|
+| `control`        |`CamelKuraCloud.control`        |
+
+
