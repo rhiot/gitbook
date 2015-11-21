@@ -20,4 +20,4 @@ Maven users should add the following dependency to their POM file:
 
     kura-cloud:appId/topicId[?options]
 
-both *topicId* *appId* must match MQTT pattern.
+both *topicId* *appId* must match MQTT topic  pattern.
