@@ -38,7 +38,7 @@ both *topicId* *appId* must match MQTT topic  pattern.
 
 ### Optional Headers
 
-Several URI parameter can me overwrite by the "in Message" headers
+Several URI parameters can me overwrite by the "in Message" headers
 
 | URI Parameter    | Message Header                 | 
 |------------------|--------------------------------|
