@@ -18,17 +18,17 @@ Maven users should add the following dependency to their POM file:
 
 ## URI format for GPIO
 
-    kura-cloud:appId/topicId[?options]
+    kura-cloud:applicationId/topicId[?options]
 
-both *topicId* *appId* must match MQTT topic  pattern.
+both *topicId* *applicationId* must match MQTT topic  pattern.
 
 
 ### Optional URI Parameters
 
 | Parameter        | Default value             | Description                 |
 |------------------|---------------------------|-----------------------------|
-| `appId`          |                           | Kura AppId                  |
-| `topicId`        |                           | MQTT topicId                |
+| `applicationId`          |                           | Kura AppId                  |
+| `topic`        |                           | MQTT topicId                |
 | `qos`            |0                          | MQTT semantic               |
 | `retain`         |false                      |                             |
 | `priority`       |5                          | Kura Semantic                           |
