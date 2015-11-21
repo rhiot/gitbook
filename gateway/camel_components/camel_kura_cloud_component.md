@@ -1,0 +1,2 @@
+# Camel Kura Cloud component
+
