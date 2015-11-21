@@ -14,6 +14,8 @@ Rhiot project brings some extra components for the Apache Camel intended to make
 
 [Camel Kura Wifi component](camel_kura_wifi_component.md)
 
+[Camel Kura Cloud component](camel_kura_cloud_component.md)
+
 [Camel TinkerForge component](camel_tinkerforge_component.md)
 
 [Camel Pi4j component](camel_pi4j_component.md)
