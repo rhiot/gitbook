@@ -43,7 +43,7 @@ The confidence in the face detection is set to the low default of 1, you can set
     from("webcam:spycam").to("openimaj:face-detection?confidence=50");
 
 
-## Options
+### URI Options Parameters
 
 | Option                    | Default value                                                                 | Description   |
 |:------------------------- |:-----------------------------------------------------------------------       |:------------- |
