@@ -49,4 +49,11 @@ Several URI parameters can me overwrite by the "in Message" headers.
 | `includeDeviceId`|`CamelKuraCloud.includeDeviceId`|
 | `control`        |`CamelKuraCloud.control`        |
 
+## Consuming:
 
+    from("kura-cloud:app/topic").to("log:result");
+
+
+## Producing
+
+    from("direct:start").to("kura-cloud:app/topic?qos=0&retain=true");
