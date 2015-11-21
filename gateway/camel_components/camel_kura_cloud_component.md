@@ -29,7 +29,7 @@ both *topicId* *appId* must match MQTT topic  pattern.
 |------------------|---------------------------|-----------------------------|
 | `appId`          |                           | Kura AppId                  |
 | `topicId`        |                           | MQTT topicId                |
-| `qos`            |0                          |                             |
+| `qos`            |0                          | MQTT semantic               |
 | `retain`         |false                      |                             |
 | `priority`       |5                          |                             |
 | `includeDeviceId`|                           | will pick up [deviceId](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/system/SystemService.html#getSerialNumber%28%29) from Kura API, only works w/ `control=true` |
@@ -38,4 +38,12 @@ both *topicId* *appId* must match MQTT topic  pattern.
 
 ### Optional Headers
 
+Several URI parameter can me overwrite by the "in Message" headers
+
+| URI Parameter    | Header             | Description                 |
+|------------------|---------------------------|-----------------------------|
+| `topicId`        |                           | MQTT topicId                |
+| `qos`            |0                          |                             |
+| `retain`         |false                      |                             |
+| `priority`       |5                          |                             |
 
