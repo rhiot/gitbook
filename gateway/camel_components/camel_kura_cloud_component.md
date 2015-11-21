@@ -23,3 +23,13 @@ Maven users should add the following dependency to their POM file:
 both *topicId* *appId* must match MQTT topic  pattern.
 
 
+### Optional URI Parameters
+
+| Parameter        | Default value             | Description                 |
+|------------------|---------------------------|-----------------------------|
+| `appId`          |                           | Kura AppId                  |
+| `topicId`        |                           | MQTT topicId                |
+| `gpioId`         |                           |                             |
+| `gpioId`         |                           |                             |
+| `gpioId`         |                           |                             |
+
