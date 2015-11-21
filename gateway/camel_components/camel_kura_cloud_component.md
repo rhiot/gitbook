@@ -34,6 +34,7 @@ both *topicId* *appId* must match MQTT topic  pattern.
 | `priority`       |5                          |                             |
 | `includeDeviceId`|                           |                             |
 
+
 ### Optional Headers
 
 
