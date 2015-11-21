@@ -24,9 +24,9 @@ Maven users should add the following dependency to their POM file:
 
 ## Optional URI Parameters
 
-| Parameter            | Default value             | Description                                               |
-|----------------------|---------------------------|-----------------------------------------------------------|
-| `name`               |                           |                                                           |
+| Parameter            | Default value        | Description   |
+|----------------------|----------------------|---------------|
+| `name`               |                      |               |
 
 ### Producing:
 
