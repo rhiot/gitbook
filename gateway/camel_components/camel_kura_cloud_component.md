@@ -33,6 +33,7 @@ both *topicId* *appId* must match MQTT topic  pattern.
 | `retain`         |false                      |                             |
 | `priority`       |5                          |                             |
 | `includeDeviceId`|                           |                             |
+| `control`        | false                          |  if true, push a control message, else common message                  |
 
 
 ### Optional Headers
