@@ -28,7 +28,7 @@ Maven users should add the following dependency to their POM file:
 |----------------------|---------------------------|-----------------------------------------------------------|
 | `name`               |                           |                                                           |
 
-### Consuming:
+### Producing:
 
 Route that consumes messages from mychannel:
 
