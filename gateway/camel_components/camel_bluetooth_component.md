@@ -44,6 +44,7 @@ Or using the producer template directly:
 | `consumer.delay`         | 5000 | Delay between each bluetooth device scan. |
 | `consumer.useFixedDelay` | false | Set to true to use a fixed delay between polls, otherwise fixed rate is used. See ScheduledExecutorService in JDK for details. |
 | `bluetoothDevicesProvider`   | `new BluecoveBluetoothDeviceProvider()`                                               | reference to the`io.rhiot.component.bluetooth.BluetoothDevicesProvider` instance used to scan bluetooth devices. |
+| `serviceDiscovery` | false | Search for services on bluetooth device.   
 
 
 ## Installer
@@ -69,4 +70,3 @@ If an Installer is not set on the component, Camel will try to find an instance 
     Installer myInstaller() {
         new CustomInstaller();
     }
-
