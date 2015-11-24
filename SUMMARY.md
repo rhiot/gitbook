@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Gateway](gateway/index.md)
    * [Installing](gateway/installing.md)
-   * GPS
+   * [GPS](gateway/gps.md)
    * Monitoring
    * Extending
    * [Camel Components](gateway/camel_components/index.md)
