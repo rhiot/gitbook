@@ -4,7 +4,7 @@
 * [Gateway](gateway/index.md)
    * [Installing](gateway/installing.md)
    * [GPS](gateway/gps.md)
-   * Monitoring
+   * [Monitoring](gateway/monitoring.md)
    * Extending
    * [Camel Components](gateway/camel_components/index.md)
        * [Camel Bluetooth component](gateway/camel_components/camel_bluetooth_component.md)
