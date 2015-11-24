@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Gateway](gateway/index.md)
+   * Installing
    * [Camel Components](gateway/camel_components/index.md)
        * [Camel Bluetooth component](gateway/camel_components/camel_bluetooth_component.md)
        * [Camel GPS BU353 component](gateway/camel_components/camel_gps_bu353_component.md)
@@ -13,7 +14,6 @@
        * [Camel Pi4j component](gateway/camel_components/camel_pi4j_component.md)
        * [Camel Framebuffer component](gateway/camel_components/camel_framebuffer_component.md)
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
-   * Installing
 * [Backend](backend/index.md)
    * [Camel Components](backend/camel_components/index.md)
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
