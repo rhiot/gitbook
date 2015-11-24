@@ -16,6 +16,7 @@
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
    * GPS
    * Monitoring
+   * Extending
 * [Backend](backend/index.md)
    * [Camel Components](backend/camel_components/index.md)
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
