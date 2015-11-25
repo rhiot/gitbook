@@ -28,4 +28,5 @@
 * [Steroids](steroids/index.md)
 * [Building](building/index.md)
 * [Quickstarts](quickstarts/index.md)
+   * Kura Camel quickstart
 
