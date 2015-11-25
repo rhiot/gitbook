@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * Performances
 * [Gateway](gateway/index.md)
    * [Installing](gateway/installing.md)
    * [GPS](gateway/gps.md)
@@ -25,5 +24,6 @@
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
        * [Camel PubNub component](backend/camel_components/camel_pubnub_component.md)
 * [Tooling](tooling/index.md)
+* Performances
 * [Building](building/index.md)
 
