@@ -1,0 +1,2 @@
+# AMQP Cloudlet quickstarts
+
