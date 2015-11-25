@@ -1,5 +1,7 @@
 # Camel Kura router
 
+**This component can be used only in the Kura server.**
+
 **Avaliable since Rhiot 0.1.3**: Rhiot provides `io.rhiot.component.kura.router.RhiotKuraRouter` class, which extends 
 `org.apache.camel.component.kura.KuraRouter` class from the Apache Camel 
 [camel-kura](http://camel.apache.org/kura) module. While `KuraRouter` provides a generic base for Kura routes, it 
