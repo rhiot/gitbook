@@ -32,4 +32,5 @@
    * [AMQP Cloudlet quickstarts](quickstarts/amqp_cloudlet_quickstarts.md)
    * [MQTT Cloudlet quickstart](quickstarts/mqtt_cloudlet_quickstart.md)
 * [Articles, presentations & videos](articles/index.md)
+* Releases notes
 
