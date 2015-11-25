@@ -24,6 +24,6 @@
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
        * [Camel PubNub component](backend/camel_components/camel_pubnub_component.md)
 * [Tooling](tooling/index.md)
-* Performances
+* [Performances](performances/index.md)
 * [Building](building/index.md)
 
