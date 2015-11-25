@@ -4,5 +4,5 @@
 between the sensors and the data center. Under the hood, Rhiot gateway is the fat jar running
 [Vert.x](http://vertx.io) and Apache Camel.
 
-Rhiot also supports [Eclipse Kura](https://www.eclipse.org/kura) based gateways. In particular Rhiot gateway can
-communicate with Kura gateway (and reversely) deployed on the same device.
+Regardless of providing its own gateway, Rhiot also provides some additional utilities to make working with 
+[Eclipse Kura](https://www.eclipse.org/kura) based gateways easier. See [Eclipse Kura support](kura/index.md).
