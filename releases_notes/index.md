@@ -32,7 +32,7 @@
 - [Gateway should start Jolokia REST API on port 8778, not 8080](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#monitoring-gateway-with-jolokia) [#143](https://github.com/rhiot/rhiot/issues/143).
 - Releasing [Gateway](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-iot-gateway) core and application artifacts separately [#126](https://github.com/rhiot/rhiot/issues/126).
 - Renamed `camellabs.iot.gateway.heartbeat.rate property` to `camellabs_iot_gateway_heartbeat_rate` [#124](https://github.com/rhiot/rhiot/issues/124).
-- Gateway [deletes logs after N megabytes limit is exceeded](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#gateway-logger-configuration) [#104](https://github.com/rhiot/rhiot/issues/104) [#95](https://github.com/rhiot/rhiot/issues/95).
+- Gateway [deletes logs after N megabytes limit is exceeded](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#gateway-logger-configuration) [#104](https://github.com/rhiot/rhiot/issues/104)  [#95](https://github.com/rhiot/rhiot/issues/95).
 - Gateway [reads properties from the `/etc/default/camel-labs-iot-gateway`](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#configuration-of-the-gateway) [#98](https://github.com/rhiot/rhiot/issues/98).
 
 ## 0.1.0  (2015-06-02)
