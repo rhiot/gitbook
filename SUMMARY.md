@@ -27,5 +27,5 @@
 * [Performances](performances/index.md)
 * [Steroids](steroids/index.md)
 * [Building](building/index.md)
-* Quickstarts
+* [Quickstarts](quickstarts/index.md)
 
