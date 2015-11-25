@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * Performances
 * [Gateway](gateway/index.md)
    * [Installing](gateway/installing.md)
    * [GPS](gateway/gps.md)
@@ -16,9 +17,9 @@
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
    * [Eclipse Kura support](gateway/kura/index.md)
        * [Camel components for Eclipse Kura](gateway/kura/camel_components/index.md)
-         * [Camel Kura router](gateway/kura/camel_components/camel_kura_router.md)
-         * [Camel Kura Wifi component](gateway/kura/camel_components/camel_kura_wifi_component.md)
-         * [Camel Kura Cloud component](gateway/kura/camel_components/camel_kura_cloud_component.md)
+           * [Camel Kura router](gateway/kura/camel_components/camel_kura_router.md)
+           * [Camel Kura Wifi component](gateway/kura/camel_components/camel_kura_wifi_component.md)
+           * [Camel Kura Cloud component](gateway/kura/camel_components/camel_kura_cloud_component.md)
 * [Backend](backend/index.md)
    * [Camel Components](backend/camel_components/index.md)
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
