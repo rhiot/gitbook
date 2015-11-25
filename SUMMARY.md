@@ -26,11 +26,11 @@
 * [Tooling](tooling/index.md)
 * [Performances](performances/index.md)
 * [Steroids](steroids/index.md)
-* [Building](building/index.md)
 * [Quickstarts](quickstarts/index.md)
    * [Kura Camel quickstart](quickstarts/kura_camel_quickstart.md)
    * [AMQP Cloudlet quickstarts](quickstarts/amqp_cloudlet_quickstarts.md)
    * [MQTT Cloudlet quickstart](quickstarts/mqtt_cloudlet_quickstart.md)
 * [Articles, presentations & videos](articles/index.md)
+* [Building](building/index.md)
 * [Releases notes](releases_notes/index.md)
 
