@@ -28,7 +28,7 @@
 - Added web UI (aka [Cloudlet Console](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#device-management-web-ui) [#129](https://github.com/rhiot/rhiot/issues/129).
 - Created [Rhiot Cloud demo site](http://rhiot.net) [#155](https://github.com/rhiot/rhiot/issues/155).
 - Added [camel-gps-bu353](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-gps-bu353-component) component [#93](https://github.com/rhiot/rhiot/issues/93).
-- Migrated [Gateway](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-iot-gateway) core from Spring Boot to Vert.x [#141](https://github.com/rhiot/rhiot/issues/141) [#120](https://github.com/rhiot/rhiot/issues/120).
+- Migrated [Gateway](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-iot-gateway) core from Spring Boot to Vert.x [#141](https://github.com/rhiot/rhiot/issues/141)  [#120](https://github.com/rhiot/rhiot/issues/120).
 - [Gateway should start Jolokia REST API on port 8778, not 8080](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#monitoring-gateway-with-jolokia) [#143](https://github.com/rhiot/rhiot/issues/143).
 - Releasing [Gateway](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-iot-gateway) core and application artifacts separately [#126](https://github.com/rhiot/rhiot/issues/126).
 - Renamed `camellabs.iot.gateway.heartbeat.rate property` to `camellabs_iot_gateway_heartbeat_rate` [#124](https://github.com/rhiot/rhiot/issues/124).
