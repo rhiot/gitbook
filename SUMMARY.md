@@ -25,6 +25,6 @@
        * [Camel PubNub component](backend/camel_components/camel_pubnub_component.md)
 * [Tooling](tooling/index.md)
 * [Performances](performances/index.md)
-* [Building](building/index.md)
 * Steroids
+* [Building](building/index.md)
 
