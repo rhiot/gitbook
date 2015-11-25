@@ -1,6 +1,6 @@
 # Quickstarts
 
-Rhiot project provides severals quickstarts.
+Rhiot project provides several quickstarts.
 
 
 [Kura Camel quickstart](quickstarts/kura_camel_quickstart.md)
