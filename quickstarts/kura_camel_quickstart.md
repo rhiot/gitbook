@@ -1,0 +1,2 @@
+# Kura Camel quickstart
+
