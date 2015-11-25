@@ -29,5 +29,5 @@
 * [Building](building/index.md)
 * [Quickstarts](quickstarts/index.md)
    * [Kura Camel quickstart](quickstarts/kura_camel_quickstart.md)
-   * AMQP Cloudlet quickstarts
+   * [AMQP Cloudlet quickstarts](quickstarts/amqp_cloudlet_quickstarts.md)
 
