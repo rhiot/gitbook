@@ -6,7 +6,7 @@ IoT solutions. Rhiot supports Kura gateway deployments as a first class citizen 
 used as a blueprint for the Camel deployments for Kura. It uses [Camel Kura component](http://camel.apache.org/kura.html)
 under the hood.
 
-#### Creating a Kura Camel project
+## Creating a Kura Camel project
 
 In order to create the Kura Camel project execute the following commands:
 
@@ -15,7 +15,7 @@ In order to create the Kura Camel project execute the following commands:
     cd kura-camel
     mvn install
 
-#### Prerequisites
+## Prerequisites
 
 We presume that you have Eclipse Kura already installed on your target device. And that you know the IP address of that device.
 If you happen to deploy to a Raspbian-based device, and you would like to find the IP of that Raspberry Pi device connected
@@ -39,7 +39,7 @@ enabled for packages `sun.*,com.sun.*`. Your `/opt/eclipse/kura/kura/config.ini`
 
 A boot delegation of `sun` packages is required to make Camel work smoothly in an Equinox.
 
-#### Deployment
+## Deployment
 
 In order to deploy Camel application to a Kura server, you have to copy necessary Camel jars and a bundle containing your
  application. Your bundle can be deployed into the target device by executing an `scp` command. For example:
@@ -72,7 +72,7 @@ Keep in mind that bundles you deployed using the recipe above are not installed 
 after the server restart. Please read Kura documentation for more details regarding
 [permanent deployments](http://eclipse.github.io/kura/doc/deploying-bundles.html#making-deployment-permanent).
 
-#### What the quickstart is actually doing?
+## What the quickstart is actually doing?
 
 This quickstart triggers [Camel timer](http://camel.apache.org/timer.html) event every second and sends it to the
 system logger using [Camel Log](http://camel.apache.org/log) component. This is fairy simple functionality, but enough
