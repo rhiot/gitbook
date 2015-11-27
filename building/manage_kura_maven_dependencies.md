@@ -1,0 +1,2 @@
+# Manage Kura Maven dependencies
+
