@@ -59,7 +59,9 @@ For example if the `camel.route.xml` property will be set to the following value
 ### Managing XML Camel routes using web UI
 
 All `RhiotKuraRouter` instances implements Kura's `ConfigurableComponent` interface. It means that those can be
-configured using Kura web UI. We highly recommend to use our [Kura Camel quickstart](../../../quickstarts/kura_camel_quickstart.md) 
+configured using Kura web UI.
+
+We highly recommend to use our [Kura Camel quickstart](../../../quickstarts/kura_camel_quickstart.md) 
 as a template for creating Kura Camel routers. Our quickstart is configured as SCR component, so you can just deploy
 it to the Kura server and see your gateway route module deployed as a configurable service. To specify the route XML
 that should be loaded by a Camel context running in a deployed module, edit the `camel.route.xml` service property and
