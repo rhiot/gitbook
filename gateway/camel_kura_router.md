@@ -9,7 +9,7 @@ This component can be used only in the Kura server - it doesn't work with a mini
 
 ## Maven dependency
 
-Maven users should add the following dependency to their POM file:
+In order to start using `RhiotKuraRouter`, Maven users should add the following dependency to their POM file:
 
     <dependency>
       <groupId>io.rhiot</groupId>
