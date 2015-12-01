@@ -39,9 +39,9 @@ The principle of using `RhiotKuraRouter` is the same as using `KuraRouter` i.e. 
 ## Loading XML routes using SCR property
 
 `RhiotKuraRouter` comes with a `RhiotKuraRouter#updated(Map<String, Object>)` method. The primary purpose of this callback 
-is to allow a router to be a SCR component configured using the EuroTech 
+is to allow a router to be a SCR component configured using the Kura Web UI and EuroTech 
 [Everyware Cloud](http://www.eurotech.com/en/products/software+services/everyware+cloud+m2m+platform/m2m+what+it+is),
-however you can use this callback outside the Everyware Cloud as well.
+however you can use this callback outside the web UI and Everyware Cloud context.
 
 Whenever `RhiotKuraRouter#updated(Map<String, Object>)` callback is executed, `RhiotKuraRouter` tries to read `camel.route.xml`
 property value (`RhiotKuraRouter.XML_ROUTE_PROPERTY` key constant), to parse its value and load it as an XML Camel routes. 
