@@ -67,14 +67,14 @@ it to the Kura server and see your gateway route module deployed as a configurab
 that should be loaded by a Camel context running in a deployed module, edit the `camel.route.xml` service property and
 click `Apply` button. As soon as `Apply` button is clicked, the route will be parsed and loaded.
 
-<a href="kura_camel_routes_webui.png">
+<a href="kura_camel_routes_webui.png" target="_blank">
   <img src="kura_camel_routes_webui.png" align="center" height="500" hspace="30">
 </a>
 
 Our Kura Camel quickstart can be also used from the 
 [EuroTech Everyware Cloud (EC)](http://www.eurotech.com/en/products/software+services/everyware+cloud+m2m+platform/m2m+what+it+is).
 
-<a href="kura_camel_routes_webui.png">
+<a href="kura_camel_routes_webui.png" target="_blank">
   <img src="kura_camel_routes_ec.png" align="center" height="500" hspace="30">
 </a>
 	
