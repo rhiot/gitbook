@@ -52,6 +52,7 @@ Use similar `scp` command to deploy Camel jars required to run your project:
     scp ~/.m2/repository/org/apache/camel/camel-core/2.16.0/camel-core-2.16.0.jar pi@192.168.1.100:/tmp
     scp ~/.m2/repository/org/apache/camel/camel-core-osgi/2.16.0/camel-core-osgi-2.16.0.jar pi@192.168.1.100:/tmp
     scp ~/.m2/repository/org/apache/camel/camel-kura/2.16.0/camel-kura-2.16.0.jar pi@192.168.1.100:/tmp
+    scp ~/.m2/repository/io/rhiot/camel-kura/0.1.3/camel-kura-0.1.3.jar pi@192.168.1.100:/tmp
 
 Now log into your target device Kura shell using telnet:
 
