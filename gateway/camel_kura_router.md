@@ -1,6 +1,6 @@
 # Camel Kura router
 
-**This component can be used only in the Kura server.**
+**This component can be used only in the Kura server - it doesn't work with a mini gateway.**
 
 **Avaliable since Rhiot 0.1.3**: Rhiot provides `io.rhiot.component.kura.router.RhiotKuraRouter` class, which extends 
 `org.apache.camel.component.kura.KuraRouter` class from the Apache Camel 
