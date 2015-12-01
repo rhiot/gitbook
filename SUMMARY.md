@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Gateway](gateway/index.md)
+   * [Camel Kura router](gateway/camel_kura_router.md)
    * [GPS](gateway/gps.md)
    * [Monitoring](gateway/monitoring.md)
    * [Customising](gateway/customising.md)
@@ -15,7 +16,6 @@
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
    * [Eclipse Kura support](gateway/kura/index.md)
        * [Camel components for Eclipse Kura](gateway/kura/camel_components/index.md)
-           * [Camel Kura router](gateway/kura/camel_components/camel_kura_router.md)
            * [Camel Kura Wifi component](gateway/kura/camel_components/camel_kura_wifi_component.md)
            * [Camel Kura Cloud component](gateway/kura/camel_components/camel_kura_cloud_component.md)
    * [Mini gateway](gateway/mini/index.md)
