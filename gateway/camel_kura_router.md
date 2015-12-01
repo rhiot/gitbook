@@ -17,7 +17,7 @@ In order to start using `RhiotKuraRouter`, Maven users should add the following 
       <version>${rhiot.version}</version>
     </dependency>
 
-Adding Rhiot camel-kura module to your project, imports transitive Kura dependencies. This is big advantage over Apache
+Adding Rhiot `camel-kura` module to your project, imports transitive Kura dependencies. This is big advantage over Apache
 Camel camel-kura module, which doesn't rely on Kura API and therefore doesn't import Kura jars.
 
 ## Usage
