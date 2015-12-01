@@ -1,6 +1,6 @@
-# Installing Gateway
+# Installing mini gateway
 
-In order to install Rhiot gateway on one of
+In order to install Rhiot mini gateway on one of
 [supported gateway platforms](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#supported-gateway-platforms)
 (like Raspberry Pi with Raspbian) use Rhiot cmd tool
 ([`rhiot cmd` section describes how to install Rhiot cmd](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#rhiot-command-line-tool-cmd)).

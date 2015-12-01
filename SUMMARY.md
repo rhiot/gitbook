@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Gateway](gateway/index.md)
-   * [Installing](gateway/installing.md)
    * [GPS](gateway/gps.md)
    * [Monitoring](gateway/monitoring.md)
    * [Customising](gateway/customising.md)
@@ -19,6 +18,8 @@
            * [Camel Kura router](gateway/kura/camel_components/camel_kura_router.md)
            * [Camel Kura Wifi component](gateway/kura/camel_components/camel_kura_wifi_component.md)
            * [Camel Kura Cloud component](gateway/kura/camel_components/camel_kura_cloud_component.md)
+   * [Mini gateway](mini/gateway/index.md)
+     * [Installing](mini/gateway/installing.md)
 * [Backend](backend/index.md)
    * [Camel Components](backend/camel_components/index.md)
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
