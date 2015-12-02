@@ -1,6 +1,6 @@
 # Camel Kura Wifi component
 
-**This component can be used both in the Kura server and in a regular gateway.**
+**This component can be used both in the Kura server and in a mini gateway.**
 
 The common scenario for the mobile IoT Gateways, for example those mounted on the trucks or other vehicles, is to cache collected data locally on the device storage and synchronizing the data with the data center only when trusted WiFi access point is available near the gateway. Such trusted WiFi network could be localized near the truck fleet parking.
 Using this approach, less urgent data (like GPS coordinates stored for the further offline analysis) can be delivered to the data center without the additional cost related to the GPS transmission fees.
