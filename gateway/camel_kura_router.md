@@ -44,7 +44,7 @@ is to allow a router to be a SCR component configured using the Kura Web UI and 
 however you can use this callback outside the web UI and Everyware Cloud context.
 
 Whenever `RhiotKuraRouter#updated(Map<String, Object>)` callback is executed, `RhiotKuraRouter` tries to read `camel.route.xml`
-property value (`RhiotKuraRouter.XML_ROUTE_PROPERTY` key constant), to parse its value and load it as an XML Camel routes. 
+property value (`RhiotKuraConstants.XML_ROUTE_PROPERTY` key constant), to parse its value and load it as an XML Camel routes. 
 For example if the `camel.route.xml` property will be set to the following value...
 
     <routes xmlns="http://camel.apache.org/schema/spring">
