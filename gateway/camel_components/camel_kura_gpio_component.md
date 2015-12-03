@@ -1,7 +1,7 @@
 # Camel Kura GPIO component
 
 Camel Kura GPIO component can be used to manage GPIO feature into Kura Platform.
-When it runs into RaspberryPi, this component uses [Device I/O](http://openjdk.java.net/projects/dio/)
+When it runs into RaspberryPi, this component uses [Device I/O](http://openjdk.java.net/projects/dio/) lib.
 
 ## Maven dependency
 
@@ -18,10 +18,10 @@ Maven users should add the following dependency to their POM file:
 
 ## URI format for GPIO
 
-    pi4j-gpio://gpioId[?options]
+    kura-gpio://gpioId[?options]
 
-*gpioId* must match [A-Z_0-9]+ pattern.
-By default, pi4j-gpio uses *RaspiPin* Class, change it via *gpioClass* property
+*gpioId* must match [0-9]+ pattern.
+
 You can use static field name "*GPIO_XX*", pin name "*GPIO [0-9]*" or pin address "*[0-9]*"
 
 
@@ -43,23 +43,23 @@ You can use static field name "*GPIO_XX*", pin name "*GPIO [0-9]*" or pin addres
 
 ## Consuming:
 
-    from("pi4j-gpio://13?mode=DIGITAL_INPUT&state=LOW")
+    from("kura-gpio://13?mode=DIGITAL_INPUT&state=LOW")
     .to("log:default?showHeaders=true");
 
 ## Producing
 
     from("timer:default?period=2000")
-    .to("pi4j-gpio://GPIO_04?mode=DIGITAL_OUTPUT&state=LOW&action=TOGGLE");
+    .to("kura-gpio://4?mode=DIGITAL_OUTPUT&state=LOW&action=TOGGLE");
 
-When using producer you can also set or override action using message header with a key of `Pi4jConstants.CAMEL_RBPI_PIN_ACTION`
+When using producer you can also set or override action using message header with a key of `KuraConstants.CAMEL_RBPI_PIN_ACTION`
 
     from("timer:default?period=2000")
     .process(exchange -> exchange.getIn().setHeader(Pi4jConstants.CAMEL_RBPI_PIN_ACTION, "LOW"))
-    .to("pi4j-gpio://GPIO_04?mode=DIGITAL_OUTPUT&state=LOW&action=TOGGLE");
+    .to("kura-gpio://4?mode=DIGITAL_OUTPUT&state=LOW&action=TOGGLE");
 
 ##### Simple button w/ LED mode
 
 Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route like this
 
-    from("pi4j-gpio://1?mode=DIGITAL_INPUT&state=HIGH").id("switch-led")
-    .to("pi4j-gpio://2?&action=TOGGLE");
+    from("kura-gpio://1?mode=DIGITAL_INPUT&state=HIGH").id("switch-led")
+    .to("kura-gpio://2?&action=TOGGLE");
