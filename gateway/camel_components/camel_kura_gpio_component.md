@@ -1,4 +1,4 @@
-# Camel Kura GPIO component
+# Camel Kura GPIO component (not update to date yet)
 
 Camel Kura GPIO component can be used to manage GPIO feature into Kura Platform.
 When it runs into RaspberryPi, this component uses [Device I/O](http://openjdk.java.net/projects/dio/) lib.
