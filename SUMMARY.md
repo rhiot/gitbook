@@ -12,7 +12,7 @@
        * [Camel Framebuffer component](gateway/camel_components/camel_framebuffer_component.md)
        * [Camel Kura Cloud component](gateway/camel_components/camel_kura_cloud_component.md)
        * [Camel Kura Wifi component](gateway/camel_components/camel_kura_wifi_component.md)
-       * Camel Kura GPIO component
+       * [Camel Kura GPIO component](gateway/camel_components/camel_kura_gpio_component.md)
        * [Camel TinkerForge component](gateway/camel_components/camel_tinkerforge_component.md)
        * [Camel Pi4j component](gateway/camel_components/camel_pi4j_component.md)
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
