@@ -15,6 +15,7 @@
        * [Camel TinkerForge component](gateway/camel_components/camel_tinkerforge_component.md)
        * [Camel Pi4j component](gateway/camel_components/camel_pi4j_component.md)
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
+       * Camel Kura GPIO component
    * [Mini gateway](gateway/mini/index.md)
        * [Installing](gateway/mini/installing.md)
        * [GPS](gateway/mini/gps.md)
