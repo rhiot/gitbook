@@ -22,8 +22,6 @@ Maven users should add the following dependency to their POM file:
 
 *gpioId* must match [0-9]+ pattern.
 
-You can use static field name "*GPIO_XX*", pin name "*GPIO [0-9]*" or pin address "*[0-9]*"
-
 
 ### Optional URI Parameters
 
