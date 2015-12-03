@@ -33,24 +33,25 @@ You can use static field name "*GPIO_XX*", pin name "*GPIO [0-9]*" or pin addres
 | `state`        |    `false`    | start state                       |
 | `direction`    | `DIGITAL_OUTPUT`            | To configure GPIO pin mode, Check Pi4j library for more details                     |
 | `action`       |               | Default : use Body if Action for output Pin (TOGGLE, BUZZ, HIGH, LOW for digital only)|
+|`trigger`|`BOTH_EDGES`||
 | `shutdownState`        | `false`                       | To configure the pin state value before camel context shutdown        |
 
 
 ## Consuming:
 
-    from("kura-gpio://13?mode=DIGITAL_INPUT&state=LOW")
+    from("kura-gpio://13?mode=DIGITAL_INPUT&state=false")
     .to("log:default?showHeaders=true");
 
 ## Producing
 
     from("timer:default?period=2000")
-    .to("kura-gpio://4?mode=DIGITAL_OUTPUT&state=LOW&action=TOGGLE");
+    .to("kura-gpio://4?mode=DIGITAL_OUTPUT&state=false&action=TOGGLE");
 
 When using producer you can also set or override action using message header with a key of `KuraConstants.CAMEL_RBPI_PIN_ACTION`
 
     from("timer:default?period=2000")
-    .process(exchange -> exchange.getIn().setHeader(Pi4jConstants.CAMEL_RBPI_PIN_ACTION, "LOW"))
-    .to("kura-gpio://4?mode=DIGITAL_OUTPUT&state=LOW&action=TOGGLE");
+    .process(exchange -> exchange.getIn().setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION, "false"))
+    .to("kura-gpio://4?mode=DIGITAL_OUTPUT&state=false&action=TOGGLE");
 
 ##### Simple button w/ LED mode
 
