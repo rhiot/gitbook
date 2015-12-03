@@ -55,5 +55,5 @@ When using producer you can also set or override action using message header wit
 
 Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route like this
 
-    from("kura-gpio://1?mode=DIGITAL_INPUT&state=HIGH").id("switch-led")
+    from("kura-gpio://1?mode=DIGITAL_INPUT&state=false").id("switch-led")
     .to("kura-gpio://2?&action=TOGGLE");
