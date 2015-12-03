@@ -31,8 +31,8 @@ You can use static field name "*GPIO_XX*", pin name "*GPIO [0-9]*" or pin addres
 |----------------------|---------------------------|-----------------------------------------------------------|
 | `gpioId`               |                           |                                                           |
 | `state`                |                           | Digital Only: if input mode then state trigger event, if output then started value                       |
-| `mode`                 | `DIGITAL_OUTPUT`            | To configure GPIO pin mode, Check Pi4j library for more details                     |
-| `action`               |                           | Default : use Body if Action for output Pin (TOGGLE, BUZZ, HIGH, LOW for digital only) (HEADER digital and analog) |
+| `direction`                 | `DIGITAL_OUTPUT`            | To configure GPIO pin mode, Check Pi4j library for more details                     |
+| `action`               |                           | Default : use Body if Action for output Pin (TOGGLE, BUZZ, HIGH, LOW for digital only)|
 | `value`                | `0`                         | Analog or PWN Only                       |
 | `shutdownExport`       | `true`                      | To configure the pin shutdown export                      |
 | `shutdownResistance`   | `OFF`                       | To configure the pin resistance before exit program                      |
