@@ -40,7 +40,7 @@ Maven users should add the following dependency to their POM file:
 
 ## Consuming:
 
-    from("kura-gpio://13?mode=DIGITAL_INPUT&state=false")
+    from("kura-gpio://13?mode=INPUT&state=false")
     .to("log:default?showHeaders=true");
 
 ## Producing
