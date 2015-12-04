@@ -34,6 +34,8 @@ Maven users should add the following dependency to their POM file:
 |`trigger`|`BOTH_EDGES`|To configure GPIO pin trigger, check Kura GPIO library for more details  [KuraGPIOTrigger](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIOTrigger.html)|
 |`mode`|`OUTPUT_PUSH_PULL`|To configure GPIO pin mode, check Kura GPIO library for more details  [KuraGPIOMode](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIOMode.html)|
 | `shutdownState`        | `false`                       | To configure the pin state value before camel context shutdown        |
+| `delay`        | `0`                       | To configure BLINK delay        |
+| `duration`        | `50`                       | To configure BLINK duration        |
 
 
 ## Consuming:
