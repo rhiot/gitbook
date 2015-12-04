@@ -25,9 +25,9 @@ Maven users should add the following dependency to their POM file:
 
 ### Optional URI Parameters
 
-| Parameter            | Default value             | Description                         |
-|----------------------|---------------------------|-------------------------------------|
-| `gpioId`       |        |                       |
+| Parameter      | Default value             | Description                         |
+|----------------|---------------------------|-------------------------------------|
+| `gpioId`       |                           |                                     |
 | `state`        |    `false`    | start state      |
 | `direction`    | `OUTPUT`            | To configure GPIO pin direction, check Kura GPIO library for more details  [KuraGPIODirection](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIODirection.html)                   |
 |`trigger`|`BOTH_EDGES`|To configure GPIO pin trigger, check Kura GPIO library for more details  [KuraGPIOTrigger](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIOTrigger.html)|
