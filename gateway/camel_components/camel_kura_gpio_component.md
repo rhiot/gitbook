@@ -35,7 +35,7 @@ Maven users should add the following dependency to their POM file:
 | `action`       |               | Default : use Body if Action for output Pin (TOGGLE, BUZZ, HIGH, LOW for digital only)|
 | `shutdownState`        | `false`                       | To configure the pin state value before camel context shutdown        |
 | `delay`        | `0`                       | To configure BLINK delay        |
-| `duration`        | `50`                       | To configure BLINK duration        |
+| `duration`     | `50`                      | To configure BLINK duration        |
 
 
 ## Consuming:
