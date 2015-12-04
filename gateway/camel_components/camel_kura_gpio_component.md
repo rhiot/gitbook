@@ -51,7 +51,7 @@ Maven users should add the following dependency to their POM file:
 When using producer you can also set or override action using message header with a key of `KuraConstants.CAMEL_RBPI_PIN_ACTION`
 
     from("timer:default?period=2000")
-    .process(exchange -> exchange.getIn().setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION, "false"))
+    .process(exchange -> exchange.getIn().setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION, "LOW"))
     .to("kura-gpio://4?mode=DIGITAL_OUTPUT&state=false&action=TOGGLE");
 
 ##### Simple button w/ LED mode
