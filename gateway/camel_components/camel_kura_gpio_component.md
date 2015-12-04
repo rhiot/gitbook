@@ -46,17 +46,17 @@ Maven users should add the following dependency to their POM file:
 ## Producing
 
     from("timer:default?period=2000")
-    .to("kura-gpio://4?mode=DIGITAL_OUTPUT&state=false&action=TOGGLE");
+    .to("kura-gpio://4?mode=OUTPUT&state=false&action=TOGGLE");
 
 When using producer you can also set or override action using message header with a key of `KuraConstants.CAMEL_RBPI_PIN_ACTION`
 
     from("timer:default?period=2000")
     .process(exchange -> exchange.getIn().setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION, "LOW"))
-    .to("kura-gpio://4?mode=DIGITAL_OUTPUT&state=false&action=TOGGLE");
+    .to("kura-gpio://4?mode=OUTPUT&state=false&action=TOGGLE");
 
 ##### Simple button w/ LED mode
 
 Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route like this
 
-    from("kura-gpio://1?mode=DIGITAL_INPUT&state=false").id("switch-led")
+    from("kura-gpio://1?mode=INPUT&state=false").id("switch-led")
     .to("kura-gpio://2?&action=TOGGLE");
