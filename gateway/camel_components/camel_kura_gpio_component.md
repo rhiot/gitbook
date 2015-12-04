@@ -31,7 +31,7 @@ Maven users should add the following dependency to their POM file:
 | `state`        |    `false`    | start state                       |
 | `direction`    | `OUTPUT`            | To configure GPIO pin direction, check Kura GPIO library for more details  [KuraGPIODirection](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIODirection.html)                   |
 | `action`       |               | Default : use Body if Action for output Pin (TOGGLE, BUZZ, HIGH, LOW for digital only)|
-|`trigger`|`BOTH_EDGES`||To configure GPIO pin trigger, check Kura GPIO library for more details  [KuraGPIOTrigger](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIOTrigger.html|
+|`trigger`|`BOTH_EDGES`|To configure GPIO pin trigger, check Kura GPIO library for more details  [KuraGPIOTrigger](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIOTrigger.html)|
 | `shutdownState`        | `false`                       | To configure the pin state value before camel context shutdown        |
 
 
