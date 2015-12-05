@@ -2,6 +2,8 @@
 
 ## 0.1.3 (currently in progress)
 
+
+
 ## 0.1.2  (2015-10-22)
 
 - Deprecated BU353 component on the behalf of the GPSD component [#232](https://github.com/rhiot/rhiot/issues/232)
