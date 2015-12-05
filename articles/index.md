@@ -17,4 +17,4 @@ Here is the bunch of useful resources regarding Rhiot IoT project:
 - [RHIOT 0.1.2 Webcam component on MacOS X in Groovy](http://gautric.github.io/blog/2015/10/22/rhiot-0.1.2-camel-webcam-macos-x.html) - Greg's blog post (video included) (oct 2015)
 - [RHIOT Webcam and websocket components on MacbookPro in Groovy](http://gautric.github.io/blog/2015/10/23/rhiot-camel-webcam-websocket-macbookpro.html) - Greg's blog post (video included) (oct 2015)
 - [RHIOT RaspberryPi Sense-Hat display](http://gautric.github.io/blog/2015/11/24/rhiot-framebuffer-raspberrypi-sense-hat.html) - Greg's blog post (video included) (nov 2015)
-- [Rhiot Kura Gateway Sample (Emulator & RaspberryPi) ](http://gautric.github.io/blog/2015/11/24/rhiot-framebuffer-raspberrypi-sense-hat.html) - Greg's blog post (video included) (nov 2015)
+- [Rhiot Kura Gateway Sample (Emulator & RaspberryPi) ](http://gautric.github.io/blog/2015/12/03/rhiot-kura-OSGi-full-sample.html) - Greg's blog post (video included) (nov 2015)
