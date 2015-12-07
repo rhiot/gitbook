@@ -39,7 +39,7 @@ enabled for packages `sun.*,com.sun.*`. Your `/opt/eclipse/kura/kura/config.ini`
 
 A boot delegation of `sun` packages is required to make Camel work smoothly in an Equinox.
 
-You can export your RPBI IP address
+**Export your RPBI IP address**
 
 ```
 export RBPI_IP=192.168.1.100
