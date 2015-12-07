@@ -58,23 +58,12 @@ In order to deploy Camel application to a Kura server, you have to copy necessar
  application. Your bundle can be deployed into the target device by executing an `scp` command. For example:
 
 ```
-scp target/rhiot-kura-camel-1.0.0-SNAPSHOT.jar pi@192.168.1.100:/tmp
-```
-
-or with RBPI_IP env
-```
 scp target/rhiot-kura-camel-1.0.0-SNAPSHOT.jar pi@${RBPI_IP}:/tmp
 ```
 
 The command above will copy your bundle to the `/tmp/rhiot-kura-camel-1.0.0-SNAPSHOT.jar` location on a target device.
 Use similar `scp` command to deploy Camel jars required to run your project:
 
-    scp ~/.m2/repository/org/apache/camel/camel-core/2.16.1/camel-core-2.16.1.jar pi@192.168.1.100:/tmp
-    scp ~/.m2/repository/org/apache/camel/camel-core-osgi/2.16.1/camel-core-osgi-2.16.1.jar pi@192.168.1.100:/tmp
-    scp ~/.m2/repository/org/apache/camel/camel-kura/2.16.1/camel-kura-2.16.1.jar pi@192.168.1.100:/tmp
-    scp ~/.m2/repository/io/rhiot/camel-kura/0.1.3-SNAPSHOT/camel-kura-0.1.3-SNAPSHOT.jar pi@192.168.1.100:/tmp
-    
-or with RBPI_IP env
 
     scp ~/.m2/repository/org/apache/camel/camel-core/2.16.1/camel-core-2.16.1.jar pi@${RBPI_IP}:/tmp
     scp ~/.m2/repository/org/apache/camel/camel-core-osgi/2.16.1/camel-core-osgi-2.16.1.jar pi@${RBPI_IP}:/tmp
@@ -83,12 +72,7 @@ or with RBPI_IP env
 
 Now log into your target device Kura shell using telnet:
 
-    telnet localhost 5002
-
-or with RBPI_IP env
-
     telnet ${RBPI_IP} 5002
-
 
 And install the bundles you previously scp-ed:
 
