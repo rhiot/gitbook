@@ -49,10 +49,10 @@ In order to deploy Camel application to a Kura server, you have to copy necessar
 The command above will copy your bundle to the `/tmp/rhiot-kura-camel-1.0.0-SNAPSHOT.jar` location on a target device.
 Use similar `scp` command to deploy Camel jars required to run your project:
 
-    scp ~/.m2/repository/org/apache/camel/camel-core/2.16.0/camel-core-2.16.0.jar pi@192.168.1.100:/tmp
-    scp ~/.m2/repository/org/apache/camel/camel-core-osgi/2.16.0/camel-core-osgi-2.16.0.jar pi@192.168.1.100:/tmp
-    scp ~/.m2/repository/org/apache/camel/camel-kura/2.16.0/camel-kura-2.16.0.jar pi@192.168.1.100:/tmp
-    scp ~/.m2/repository/io/rhiot/camel-kura/0.1.3/camel-kura-0.1.3.jar pi@192.168.1.100:/tmp
+    scp ~/.m2/repository/org/apache/camel/camel-core/2.16.1/camel-core-2.16.1.jar pi@192.168.1.100:/tmp
+    scp ~/.m2/repository/org/apache/camel/camel-core-osgi/2.16.1/camel-core-osgi-2.16.1.jar pi@192.168.1.100:/tmp
+    scp ~/.m2/repository/org/apache/camel/camel-kura/2.16.1/camel-kura-2.16.1.jar pi@192.168.1.100:/tmp
+    scp ~/.m2/repository/io/rhiot/camel-kura/0.1.3-SNAPSHOT/camel-kura-0.1.3-SNAPSHOT.jar pi@192.168.1.100:/tmp
 
 Now log into your target device Kura shell using telnet:
 
@@ -60,9 +60,10 @@ Now log into your target device Kura shell using telnet:
 
 And install the bundles you previously scp-ed:
 
-    install file:///tmp/camel-core-2.16.0.jar
-    install file:///tmp/camel-core-osgi-2.16.0.jar
-    install file:///tmp/camel-kura-2.16.0.jar
+    install file:///tmp/camel-core-2.16.1.jar
+    install file:///tmp/camel-core-osgi-2.16.1.jar
+    install file:///tmp/camel-kura-2.16.1.jar
+    install file:///tmp/camel-kura-0.1.3-SNAPSHOT.jar
     install file:///tmp/rhiot-kura-camel-1.0.0-SNAPSHOT.jar
 
 Finally start your application using the following command:
