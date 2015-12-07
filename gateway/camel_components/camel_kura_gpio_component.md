@@ -27,8 +27,8 @@ Available since Rhiot 0.1.3
 
 | Parameter      | Default value      | Description          |
 |----------------|--------------------|----------------------|
-| `gpioId`       |                    |                      |
-| `state`        |    `false`    | start state      |
+| `gpioId`       |                    |                               |
+| `state`        |    `false`         | Initial state of the PIN.     |
 | `direction`    | `OUTPUT`            | To configure GPIO pin direction, check Kura GPIO library for more details  [KuraGPIODirection](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIODirection.html)                   |
 |`trigger`|`BOTH_EDGES`|To configure GPIO pin trigger, check Kura GPIO library for more details  [KuraGPIOTrigger](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIOTrigger.html)|
 |`mode`|`OUTPUT_PUSH_PULL`|To configure GPIO pin mode, check Kura GPIO library for more details  [KuraGPIOMode](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIOMode.html)|
