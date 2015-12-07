@@ -54,8 +54,7 @@ A boot delegation of `sun` packages is required to make Camel work smoothly in a
 
 ## Deployment
 
-In order to deploy Camel application to a Kura server, you have to copy necessary Camel jars and a bundle containing your
- application. Your bundle can be deployed into the target device by executing an `scp` command. For example:
+In order to deploy Camel application to a Kura server, you have to copy necessary Camel jars and a bundle containing your application. Your bundle can be deployed into the target device by executing an `scp` command. For example:
 
 
     scp target/rhiot-kura-camel-1.0.0-SNAPSHOT.jar pi@${RBPI_IP}:/tmp
