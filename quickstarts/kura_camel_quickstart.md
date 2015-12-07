@@ -17,7 +17,7 @@ In order to create the Kura Camel project execute the following commands:
 
 ## Prerequisites
 
-#### Find your RaspberryPi
+#### Find your device
 
 We presume that you have Eclipse Kura already installed on your target device. And that you know the IP address of that device.
 If you happen to deploy to a Raspbian-based device, and you would like to find the IP of that Raspberry Pi device connected
