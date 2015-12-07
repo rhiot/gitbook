@@ -41,7 +41,7 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 | `duration`     | `50`                      | To configure BLINK duration        |
 
 
-## Consuming:
+## Consuming
 
     from("kura-gpio://13?mode=INPUT&state=false")
     .to("log:default?showHeaders=true");
