@@ -57,9 +57,9 @@ When using producer you can also set or override action using message header wit
     .process(exchange -> exchange.getIn().setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION, "LOW"))
     .to("kura-gpio://4?mode=OUTPUT&state=false&action=TOGGLE");
 
-## Simple button w/ LED mode
+## Example: Simple button with LED mode
 
 Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route like this
 
-    from("kura-gpio://1?mode=INPUT&state=false").id("switch-led")
-    .to("kura-gpio://2?&action=TOGGLE");
+    from("kura-gpio:1?direction=INPUT&state=false").id("switch-led")
+      .to("kura-gpio:2?&action=TOGGLE");
