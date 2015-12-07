@@ -43,19 +43,19 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 
 ## Consuming
 
-    from("kura-gpio://13?mode=INPUT&state=false")
+    from("kura-gpio://13?mode=INPUT_PULL_DOWN &state=false")
     .to("log:default?showHeaders=true");
 
 ## Producing
 
     from("timer:default?period=2000")
-    .to("kura-gpio://4?mode=OUTPUT&state=false&action=TOGGLE");
+    .to("kura-gpio://4?state=false&action=TOGGLE");
 
 When using producer you can also set or override action using message header with a key of `KuraConstants.CAMEL_KURA_GPIO_ACTION`
 
     from("timer:default?period=2000")
       .setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION).constant("LOW")
-      .to("kura-gpio:4?mode=OUTPUT&state=false&action=TOGGLE");
+      .to("kura-gpio:4?mode=OUTPUT_PUSH_PULL &state=false&action=TOGGLE");
 
 ## Example: Simple button with LED mode
 
