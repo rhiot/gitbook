@@ -54,8 +54,8 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 When using producer you can also set or override action using message header with a key of `KuraConstants.CAMEL_KURA_GPIO_ACTION`
 
     from("timer:default?period=2000")
-    .process(exchange -> exchange.getIn().setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION, "LOW"))
-    .to("kura-gpio://4?mode=OUTPUT&state=false&action=TOGGLE");
+      .setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION).constant("LOW")
+      .to("kura-gpio:4?mode=OUTPUT&state=false&action=TOGGLE");
 
 ## Example: Simple button with LED mode
 
