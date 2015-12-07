@@ -1,11 +1,11 @@
 # Camel Kura GPIO component
 
-Camel Kura GPIO component can be used to manage GPIO feature into Kura Platform.
-When it runs into RaspberryPi, this component uses [Device I/O](http://openjdk.java.net/projects/dio/) lib.
+Camel Kura GPIO component provides a wrapper around a GPIO service feature into Kura Platform.
+Under the hood, the component uses [Device I/O](http://openjdk.java.net/projects/dio/) library.
 
 ## Maven dependency
 
-Maven users should add the following dependency to their POM file:
+In order to take advantage of this component, Maven users should add the following dependency to their POM file:
 
     <dependency>
       <groupId>io.rhiot</groupId>
@@ -13,7 +13,7 @@ Maven users should add the following dependency to their POM file:
       <version>${rhiot.version}</version>
     </dependency>
 
- Avaliable for rhiot.version >= 0.1.3
+Available since Rhiot 0.1.3
 
 
 ## URI format for GPIO
