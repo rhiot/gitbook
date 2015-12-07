@@ -17,6 +17,8 @@ In order to create the Kura Camel project execute the following commands:
 
 ## Prerequisites
 
+#### Find your RaspberryPi
+
 We presume that you have Eclipse Kura already installed on your target device. And that you know the IP address of that device.
 If you happen to deploy to a Raspbian-based device, and you would like to find the IP of that Raspberry Pi device connected
 to your local network, you can use the Rhiot device scanner, as demonstrated on the snippet below:
@@ -32,6 +34,15 @@ The command above will return an output similar to the one presented below:
     --------------------------------------
     RaspberryPi2		/192.168.1.100
 
+
+**Export your RPBI IP address**
+
+```
+export RBPI_IP=192.168.1.100
+```
+
+#### Configure Kura 
+
 Keep in mind that `/opt/eclipse/kura/kura/config.ini` file on your target device should have OSGi boot delegation
 enabled for packages `sun.*,com.sun.*`. Your `/opt/eclipse/kura/kura/config.ini` should contain the following line then:
 
@@ -39,11 +50,7 @@ enabled for packages `sun.*,com.sun.*`. Your `/opt/eclipse/kura/kura/config.ini`
 
 A boot delegation of `sun` packages is required to make Camel work smoothly in an Equinox.
 
-**Export your RPBI IP address**
 
-```
-export RBPI_IP=192.168.1.100
-```
 
 ## Deployment
 
