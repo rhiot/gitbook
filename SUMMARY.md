@@ -24,6 +24,8 @@
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
        * [Camel PubNub component](backend/camel_components/camel_pubnub_component.md)
 * [Tooling](tooling/index.md)
+  * [CMD](tooling/cmd.md)
+  * [Shell](tooling/shell.md)
 * [Performances](performances/index.md)
 * [Steroids](steroids/index.md)
 * [Quickstarts](quickstarts/index.md)

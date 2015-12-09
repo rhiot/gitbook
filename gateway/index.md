@@ -8,3 +8,9 @@ solution in many production installations. Rhiot supports Kura 1.3.0.
 
 *Rhiot mini gateway* is a small fat jar application wrapping a subset of Kura functionalities. Its primary
 target is to provide a rapid gateway software for makers and developers community.
+
+## Supported gateway platforms
+
+Rhiot supports following gateway platforms:
+
+- Raspberry Pi 2 B+ with Raspbian Jessie
