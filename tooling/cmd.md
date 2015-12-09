@@ -23,7 +23,7 @@ Rhiot will download a Raspbian image for you (if needed), extract it and install
 
 ## rhiot scan
 
-To perform port scanning in your local network and display detected devices, execute a `rhiot scan` command:
+**Available since Rhiot 0.1.3.**  To perform port scanning in your local network and display detected devices, execute a `rhiot scan` command:
 
     $ rhiot scan
     Scanning local networks for devices...
