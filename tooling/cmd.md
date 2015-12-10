@@ -2,7 +2,7 @@
 
 The basic tool for Rhiot is the `rhiot` Bash command. In order to install Rhiot command, execute the following command:
 
-    sudo wget https://raw.githubusercontent.com/rhiot/rhiot/master/tooling/bash/rhiot.sh -O /usr/bin/rhiot && sudo chmod +x /usr/bin/rhiot
+    bash <(curl -sL https://goo.gl/z7RPEv)
 
 In order to display all avilable commands with their options, execute the `rhiot` command with `--help` or `-h` option:
 
