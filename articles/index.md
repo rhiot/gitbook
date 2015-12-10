@@ -18,3 +18,4 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 - [Rhiot Webcam and websocket components on MacbookPro in Groovy](http://gautric.github.io/blog/2015/10/23/rhiot-camel-webcam-websocket-macbookpro.html) - Greg's blog post (video included) (oct 2015)
 - [Rhiot RaspberryPi Sense-Hat display](http://gautric.github.io/blog/2015/11/24/rhiot-framebuffer-raspberrypi-sense-hat.html) - Greg's blog post (video included) (nov 2015)
 - [Rhiot Kura Gateway Sample (Emulator & RaspberryPi) ](http://gautric.github.io/blog/2015/12/03/rhiot-kura-OSGi-full-sample.html) - Greg's blog post (video included) (dec 2015)
+- [Managing Camel Routes With Kura Web UI](https://dzone.com/articles/managing-camel-routes-with-kura-web-ui) - DZone article by Henryk Konsek (2015)
