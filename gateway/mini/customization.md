@@ -1,6 +1,6 @@
-# Customising
+# Customization
 
-# Adding the custom code to the gateway
+## Adding the custom code to the gateway
 
 Rhiot.io gateway comes with the set of predefined components and features that can be used out of the box. It is
 however very likely that your gateway will execute some custom logic related to your business domain. This section of
