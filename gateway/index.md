@@ -12,11 +12,15 @@ extended to make development of Camel Kura modules easier. Rhiot comes with a se
 Apache Camel. We also support a bunch of pretty useful tools, like [Rhiot command line tool](../tooling/cmd.md) or 
 [interactive shell](../tooling/shell.md).
 
+<img src="rhiot_docs_gateway_arch_kura.png" height="800" hspace="30">
+
 ## Rhiot mini gateway
 
 *Rhiot mini gateway* is a small fat jar application wrapping a subset of Kura functionalities. Its primary
 target is to provide a rapid gateway software for makers and developers community. More details regarding Rhiot mini
 gateway can be found [here](mini/index.md).
+
+<img src="rhiot_docs_gateway_arch_mini.png" height="800" hspace="30">
 
 ## Supported gateway platforms
 
