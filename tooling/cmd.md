@@ -12,6 +12,14 @@ Rhiot command line assumes that there is Docker server running on your local mac
 delegated by Docker client to the Rhiot Docker image. If Docker is not installed (or is installed in a version lower than
 a minimal version supported), Rhiot cmd will automatically install or upgrade Docker.
 
+## shell-start
+
+Starts background shell process (if one is not started already). You can connect to a [shell](shell.md) process using SSH and
+default credentials:
+
+    ssh rhiot@localhost -p 2000
+    password: rhiot
+
 ## rhiot raspbian-install
 
 Installs Raspbian Jessie to a given SD card. For example to install Raspbian to SD card device `/dev/sdd1`, execute the
