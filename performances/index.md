@@ -76,8 +76,7 @@ external MQTT broker. We test and compare various MQTT QOS levels. The MQTT clie
 
 The very first question that comes to the mind when you look at these benchmarks is why there is so huge difference between
 the MQTT QOS level 0 and the other QOS levels? The reason is that currently Eclipse Paho client doesn't work well with
-QOS greater than 0 and the high messages load. The reason for that is that Paho client enforces inflight messages limit to 10. This
-is pretty restrictive treshold considering that MQTT client should have more time for receiving the acknowledgement from the
+QOS greater than 0 and the high messages load. The reason for that is that Paho client enforces inflight messages limit to 10. This is pretty restrictive treshold considering that MQTT client should have more time for receiving the acknowledgement from the
 MQTT server. Such acknowledgement is required for the MQTT QOS levels greater than 0. Waiting for the acknowledge reply from the server increases the number of the inflight messages hold by the Paho client. As a result Paho client throughput for QOS 1 and 2 is limited for the extremely large number of messages.
 
 Regardless of the current Paho limits (that are very likely to be changed in the future), the overall performance of the
