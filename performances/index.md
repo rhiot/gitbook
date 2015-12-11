@@ -83,8 +83,7 @@ from the server increases the number of the inflight messages hold by the Paho c
 throughput for QOS 1 and 2 is limited for the extremely large number of messages.
 
 Regardless of the current Paho limits (that are very likely to be changed in the future), the overall performance of the
-MQTT client is really great. As the majority of the gateway solutions can safely uses the QOS 0 for forwarding the data
-from the field to the data center (as losing the single message from the stream of the sensors data, is definitely acceptable).
+MQTT client is really great. As the majority of the gateway solutions can safely uses the QOS 0 for forwarding the data from the field to the data center (as losing the single message from the stream of the sensors data, is definitely acceptable).
 Almost 1800 messages per second for QOS 0 and around 500 messages per second for the highest QOS 2 is really good result
 considering the class of the Raspberry Pi 2 hardware.
 
