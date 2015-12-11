@@ -47,8 +47,7 @@ following command:
 
     docker run -v=/tmp/gateway-performance:/tmp/gateway-performance --net=host rhiot/performance-of RPI2
 
-Keep in mind that `RPI2` can be replaced with the other supported hardware profile (like `RPI2_BU353`). The performance
-tester detects the tests that can be executed for the given hardware profile, deploy the gateway software to the target
+Keep in mind that `RPI2` can be replaced with the other supported hardware profile (like `RPI2_BU353`). The performance tester detects the tests that can be executed for the given hardware profile, deploy the gateway software to the target
 device, executes the tests and collects the results.
 
 When the execution
