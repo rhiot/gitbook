@@ -5,7 +5,7 @@ the common IoT-related challenges.
 
 IoT is a cross-domain discipline, so the scope of the topics covered by Rhiot is also significant. Feel free to jump
 to an arbitrary section of this documentation depending on what you are interested in - 
-[production grade field gateway](gateway/index.md), [mini field gateway](gateway/mini/index.md), 
+[production-grade field gateway](gateway/index.md), [mini field gateway](gateway/mini/index.md), 
 [backend data streams](backend/index.md) or our [tooling](tooling/index.md) (
 including [command line tool](tooling/cmd.md), [interactive shell](tooling/shell.md) and 
 [IoT performance meter](https://rhiot.gitbooks.io/rhiotdocumentation/content/performances/index.html)).
