@@ -6,8 +6,7 @@
 The key part of the process of tailoring the perfect IoT solution is choosing the proper hardware for the gateway device.
 In general the more expensive gateway hardware is, the more messages per second you can process. However the more expensive the gateway device is, the less affordable your IoT solution becomes for the end client. That is the main reason why would you like to have a proper tool for measuring the given IoT messages flow scenario in the unified way, on many devices.
 
-Rhiot project comes with the *Performance testing framework* that can be used to define the hardware profile and test scenarios. Performance framework takes care of detecting the devices connected to your local network, deploying the
-test application into these, executing the actual tests and generating the results as the human-readable chart.
+Rhiot project comes with the *Performance testing framework* that can be used to define the hardware profile and test scenarios. Performance framework takes care of detecting the devices connected to your local network, deploying the test application into these, executing the actual tests and generating the results as the human-readable chart.
 For example the sample output for the MQTT QOS testing could generate the following diagram:
 
 <img src="images/sample_perf_chart.png" align="center" height="400" hspace="30">
