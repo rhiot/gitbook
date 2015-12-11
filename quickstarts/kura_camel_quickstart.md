@@ -49,7 +49,6 @@ enabled for packages `sun.*,com.sun.*`. Your `/opt/eclipse/kura/kura/config.ini`
 A boot delegation of `sun` packages is required to make Camel work smoothly in an Equinox.
 
 
-
 ## Deployment
 
 In order to deploy Camel application to a Kura server, you have to copy necessary Camel jars and a bundle containing your application. Your bundle can be deployed into the target device by executing an `scp` command. For example:
