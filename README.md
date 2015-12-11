@@ -3,7 +3,7 @@ Rhiot is a messaging platform for the Internet Of Things. We are focused on an a
 [Red Hat JBoss middleware portfolio](http://www.redhat.com/en/technologies/jboss-middleware) to provide solutions to
 the common IoT-related challenges.
 
-IoT is a cross-discipline domain, so the scope of the topics covered by Rhiot is also significant. Feel free to jump
+IoT is a cross-domain discipline, so the scope of the topics covered by Rhiot is also significant. Feel free to jump
 to an arbitrary section of this documentation depending on what you are interested in - 
 [production grade field gateway](gateway/index.md), [mini field gateway](gateway/mini/index.md), 
 [backend data streams](backend/index.md) or our [tooling](tooling/index.md) (
