@@ -19,8 +19,7 @@ To start a shell background process, execute the following Rhiot [CMD](cmd.md) c
     Your password is 'rhiot.
 
     
-You can execute all [CMD](cmd.md) commands in a Rhiot shell as well. For example to install Raspbian to `/dev/sdd1` SD 
-card, execute the following command after logging-in via SSH:
+You can execute all [CMD](cmd.md) commands in a Rhiot shell as well. For example to install Raspbian to `/dev/sdd1` SD card, execute the following command after logging-in via SSH:
 
     $ raspbian-install ssd1
     
