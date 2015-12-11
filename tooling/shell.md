@@ -1,6 +1,8 @@
 # Rhiot shell
 
-**Available since Rhiot 0.1.3.** Rhiot shell is a background process exposed via SSH protocol. You can connect to it using the following credentials:
+**Available since Rhiot 0.1.3.** 
+
+Rhiot shell is a background process exposed via SSH protocol. You can connect to it using the following credentials:
 
     ssh rhiot@localhost -p 200
     password: rhiot
