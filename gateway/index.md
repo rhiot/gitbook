@@ -4,7 +4,7 @@ IoT field gateway is a small computer device deployed into a field and acting as
 
 Rhiot gateway support is primarily focused on providing some additional utilities to make working with 
 [Eclipse Kura](https://www.eclipse.org/kura) based gateways easier. Kura has been proven to be a rock solid gateway
-solution in many production installations. Rhiot supports Kura 1.3.0.
+solution in many production installations. Rhiot supports [Kura 1.3.0](https://projects.eclipse.org/projects/iot.kura/releases/1.3.0).
 
 The Rhiot's support for Kura is main focused on providing base [Camel Kura router](camel_kura_router.md) which can be 
 extended to make development of Camel Kura modules easier. Rhiot comes with a set of additional IoT-focused 
