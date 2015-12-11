@@ -50,8 +50,7 @@ following command:
 Keep in mind that `RPI2` can be replaced with the other supported hardware profile (like `RPI2_BU353`). The performance tester detects the tests that can be executed for the given hardware profile, deploy the gateway software to the target
 device, executes the tests and collects the results.
 
-When the execution
-of the benchmark ends, the result diagrams will be located in the `/tmp/gateway-performance` directory (or any other
+When the execution of the benchmark ends, the result diagrams will be located in the `/tmp/gateway-performance` directory (or any other
 directory you specified when executing the command above). The sample diagram may look as follows:
 
 <a href="https://github.com/camel-labs/camel-labs/iot"><img src="images/sample_perf_chart.png" align="center" height="400" hspace="30"></a>
