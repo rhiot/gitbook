@@ -4,13 +4,11 @@ The basic tool for Rhiot is the `rhiot` Bash command. In order to install Rhiot 
 
     bash <(curl -sL https://goo.gl/z7RPEv)
 
-In order to display all avilable commands with their options, execute the `rhiot` command with `--help` or `-h` option:
+In order to display all available commands with their options, execute the `rhiot` command with `--help` or `-h` option:
 
     rhiot --help
 
-Rhiot command line assumes that there is Docker server running on your local machine. An actual commands execution is
-delegated by Docker client to the Rhiot Docker image. If Docker is not installed (or is installed in a version lower than
-a minimal version supported), Rhiot cmd will automatically install or upgrade Docker.
+Rhiot command line assumes that there is Docker server running on your local machine. An actual commands execution is delegated by Docker client to the Rhiot Docker image. If Docker is not installed (or is installed in a version lower than a minimal version supported), Rhiot cmd will automatically install or upgrade Docker.
 
 ## shell-start
 
@@ -31,7 +29,9 @@ Rhiot will download a Raspbian image for you (if needed), extract it and install
 
 ## rhiot scan
 
-**Available since Rhiot 0.1.3.**  To perform port scanning in your local network and display detected devices, execute a `rhiot scan` command:
+**Available since Rhiot 0.1.3.**  
+
+To perform port scanning in your local network and display detected devices, execute a `rhiot scan` command:
 
     $ rhiot scan
     Scanning local networks for devices...
