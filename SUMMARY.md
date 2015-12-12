@@ -14,6 +14,7 @@
        * [Camel TinkerForge component](gateway/camel_components/camel_tinkerforge_component.md)
        * [Camel Pi4j component](gateway/camel_components/camel_pi4j_component.md)
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
+       * Camel Device I/O component
    * [Mini gateway](gateway/mini/index.md)
        * [Installing](gateway/mini/installing.md)
        * [GPS](gateway/mini/gps.md)
@@ -24,8 +25,8 @@
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
        * [Camel PubNub component](backend/camel_components/camel_pubnub_component.md)
 * [Tooling](tooling/index.md)
-  * [CMD](tooling/cmd.md)
-  * [Shell](tooling/shell.md)
+   * [CMD](tooling/cmd.md)
+   * [Shell](tooling/shell.md)
 * [Performances](performances/index.md)
 * [Steroids](steroids/index.md)
 * [Quickstarts](quickstarts/index.md)
