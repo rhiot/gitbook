@@ -36,23 +36,23 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 
 ## Consuming
 
-    from("kura-gpio://13?mode=INPUT_PULL_DOWN &state=false")
+    from("deviceio-gpio://13?mode=INPUT_PULL_DOWN &state=false")
     .to("log:default?showHeaders=true");
 
 ## Producing
 
     from("timer:default?period=2000")
-    .to("kura-gpio://4?state=false&action=TOGGLE");
+    .to("deviceio-gpio://4?state=false&action=TOGGLE");
 
 When using producer you can also set or override action using message header with a key of `KuraConstants.CAMEL_KURA_GPIO_ACTION`
 
     from("timer:default?period=2000")
       .setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION).constant("LOW")
-      .to("kura-gpio://4?action=TOGGLE");
+      .to("deviceio-gpio://4?action=TOGGLE");
 
 ## Example: Simple button with LED mode
 
 Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route like this
 
-    from("kura-gpio://1?direction=INPUT&state=false").id("switch-led")
-      .to("kura-gpio://2?&action=TOGGLE");
+    from("deviceio-gpio://1?direction=INPUT&state=false").id("switch-led")
+      .to("deviceio-gpio://2?&action=TOGGLE");
