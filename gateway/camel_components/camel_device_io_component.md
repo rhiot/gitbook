@@ -44,10 +44,10 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
     from("timer:default?period=2000")
     .to("deviceio-gpio://4?state=false&action=TOGGLE");
 
-When using producer you can also set or override action using message header with a key of `KuraConstants.CAMEL_KURA_GPIO_ACTION`
+When using producer you can also set or override action using message header with a key of `DeviceIOConstants.CAMEL_DEVICE_IO_ACTION`
 
     from("timer:default?period=2000")
-      .setHeader(KuraGPIOConstants.CAMEL_KURA_GPIO_ACTION).constant("LOW")
+      .setHeader(DeviceIOConstants.CAMEL_DEVICE_IO_ACTION).constant("LOW")
       .to("deviceio-gpio://4?action=TOGGLE");
 
 ## Example: Simple button with LED mode
