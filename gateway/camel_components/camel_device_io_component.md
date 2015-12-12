@@ -30,13 +30,8 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 |----------------|--------------------|----------------------|
 | `gpioId`       |                    |                               |
 | `state`        |    `false`         | Initial state of the PIN.     |
-| `direction`    | `OUTPUT`            | To configure GPIO pin direction, check Kura GPIO library for more details  [KuraGPIODirection](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIODirection.html)                   |
-|`trigger`|`BOTH_EDGES`|To configure GPIO pin trigger, check Kura GPIO library for more details  [KuraGPIOTrigger](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIOTrigger.html)|
-|`mode`|`OUTPUT_PUSH_PULL`|To configure GPIO pin mode, check Kura GPIO library for more details  [KuraGPIOMode](http://download.eclipse.org/kura/releases/1.3.0/docs/apidocs/org/eclipse/kura/gpio/KuraGPIOMode.html)|
-| `action`       |               | Default : use Body if Action for output Pin (TOGGLE, BUZZ, HIGH, LOW for digital only)|
-| `shutdownState`        | `false`                       | To configure the pin state value before camel context shutdown        |
-| `delay`        | `0`                       | To configure BLINK delay        |
-| `duration`     | `50`                      | To configure BLINK duration        |
+
+
 
 
 ## Consuming
