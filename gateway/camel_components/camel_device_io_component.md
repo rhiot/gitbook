@@ -49,7 +49,7 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 ## Producing
 
     from("timer:default?period=2000")
-    .to("deviceio-gpio://4?state=false&action=TOGGLE");
+    .to("deviceio-gpio://4");
 
 When using producer you can also set or override action using message header with a key of `DeviceIOConstants.CAMEL_DEVICE_IO_ACTION`
 
