@@ -30,6 +30,7 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 |----------------|--------------------|----------------------|
 | `gpioId`       |                    |                               |
 | `state`        |    `false`         | Initial state of the PIN.     |
+| `shutdownState`        |    `false`         | State of the PIN when shutdown    |
 
 
 
