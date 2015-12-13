@@ -30,7 +30,7 @@ Where *gpioId* is the Id of the pin. For example to work with the PIN number 9, 
 |----------------|--------------------|----------------------|
 | `gpioId`       |                    |                               |
 | `state`        |    `false`         | Initial state of the PIN.     |
-| `action`       |               | Default : use Body if Action for output Pin (TOGGLE, BLINK, HIGH, LOW)|
+| `action`       |   `TOGGLE`            | Default : use Body if Action for output Pin (TOGGLE, BLINK, HIGH, LOW)|
 | `direction`        |    `DIR_OUTPUT_ONLY` for Producer    `DIR_INPUT_ONLY` for Consumer      | Direction of the PIN.     |
 | `mode`        |    `MODE_OUTPUT_PUSH_PULL` for Producer    `MODE_INPUT_PULL_UP` for Consumer      | Mode of the PIN.     |
 | `trigger`        |    `TRIGGER_NONE` for Producer,   `TRIGGER_BOTH_EDGES` for Consumer      | Trigger of the PIN.   |
