@@ -12,7 +12,7 @@ In order to take advantage of this component, Maven users should add the followi
       <version>${rhiot.version}</version>
     </dependency>
 
-**Available since Rhiot 0.1.3**
+**Available since `rhiot.version` >= 0.1.3**
 
 
 ## URI format for GPIO
