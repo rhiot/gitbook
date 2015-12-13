@@ -33,7 +33,7 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 | `action`       |               | Default : use Body if Action for output Pin (TOGGLE, BLINK, HIGH, LOW)|
 | `direction`        |    `DIR_OUTPUT_ONLY` for Producer    `DIR_INPUT_ONLY` for Consumer      | Direction of the PIN.     |
 | `mode`        |    `MODE_OUTPUT_PUSH_PULL` for Producer    `MODE_INPUT_PULL_UP` for Consumer      | Mode of the PIN.     |
-| `trigger`        |    `TRIGGER_NONE` for Producer,   `TRIGGER_RISING_EDGE` or `TRIGGER_FALLING_EDGE` for Consumer      | Trigger of the PIN.  (1) [OR Bitwise](https://en.wikipedia.org/wiki/Bitwise_operation#OR)  |
+| `trigger`        |    `TRIGGER_NONE` for Producer,   `TRIGGER_RISING_EDGE` or(1) `TRIGGER_FALLING_EDGE` for Consumer      | Trigger of the PIN.  (1) [OR Bitwise](https://en.wikipedia.org/wiki/Bitwise_operation#OR)  |
 | `shutdownState`        | `false`                       | To configure the pin state value before camel context shutdown        |
 | `delay`        | `0`                       | To configure BLINK delay        |
 | `duration`     | `50`                      | To configure BLINK duration        |
