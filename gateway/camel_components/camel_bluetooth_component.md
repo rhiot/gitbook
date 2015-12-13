@@ -14,7 +14,7 @@ Maven users should add the following dependency to their POM file:
       <version>${rhiot.version}</version>
     </dependency>
 
- Avaliable for rhiot.version >= 0.1.3
+**Avaliable for `rhiot.version` >= 0.1.3**
 
 ## URI format
 
