@@ -32,6 +32,7 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 | `state`        |    `false`         | Initial state of the PIN.     |
 | `action`       |               | Default : use Body if Action for output Pin (TOGGLE, BLINK, HIGH, LOW)|
 | `direction`        |    `DIR_OUTPUT_ONLY` for Producer    `DIR_INPUT_ONLY` for Consumer      | Direction of the PIN.     |
+| `direction`        |    `DIR_OUTPUT_ONLY` for Producer    `DIR_INPUT_ONLY` for Consumer      | Direction of the PIN.     |
 | `shutdownState`        | `false`                       | To configure the pin state value before camel context shutdown        |
 | `delay`        | `0`                       | To configure BLINK delay        |
 | `duration`     | `50`                      | To configure BLINK duration        |
