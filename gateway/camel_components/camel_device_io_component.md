@@ -61,5 +61,5 @@ When using producer you can also set or override action using message header wit
 
 Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route like this
 
-    from("deviceio-gpio://1?direction=INPUT&state=false").id("switch-led")
+    from("deviceio-gpio://1").id("switch-led")
       .to("deviceio-gpio://2?&action=TOGGLE");
