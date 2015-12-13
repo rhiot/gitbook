@@ -21,7 +21,7 @@ In order to take advantage of this component, Maven users should add the followi
 
 Where *gpioId* is a number of the pin. For example to work with the PIN number 9, use the following URI:
 
-    deviceio-gpio:9
+    deviceio-gpio://9
 
 
 ### Optional URI Parameters
