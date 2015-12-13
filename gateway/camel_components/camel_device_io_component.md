@@ -43,7 +43,7 @@ Where *gpioId* is a number of the pin. For example to work with the PIN number 9
 
 ## Consuming
 
-    from("deviceio-gpio://13?mode=INPUT_PULL_DOWN &state=false")
+    from("deviceio-gpio://13")
     .to("log:default?showHeaders=true");
 
 ## Producing
