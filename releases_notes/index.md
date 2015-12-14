@@ -25,8 +25,8 @@
 ## 0.1.1  (2015-09-15)
 
 - Changed project name from *Camel Labs* to *Rhiot*
-- Added [Dockerized Rhiot Cloud](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#dockerized-rhiot-cloud) [#160](https://github.com/rhiot/rhiot/issues/160).
-- Added [device management cloudlet](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#device-management-cloudlet) [#114](https://github.com/rhiot/rhiot/issues/114).
+- Added Dockerized Rhiot Cloud [#160](https://github.com/rhiot/rhiot/issues/160).
+- Added device management cloudlet [#114](https://github.com/rhiot/rhiot/issues/114).
 - Added web UI (aka [Cloudlet Console](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#device-management-web-ui) [#129](https://github.com/rhiot/rhiot/issues/129).
 - Created [Rhiot Cloud demo site](http://rhiot.net) [#155](https://github.com/rhiot/rhiot/issues/155).
 - Added [camel-gps-bu353](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-gps-bu353-component) component [#93](https://github.com/rhiot/rhiot/issues/93).

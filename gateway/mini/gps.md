@@ -2,7 +2,7 @@
 
 Rhiot gateway comes with a dedicated GPS support. It makes it easier to collect, store and forward the GPS data to a
 data center (to the [Rhiot Cloud](../../backend/index.md) in particular).
-Under the hood gateway GPS support uses the [GPSD component](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-gpsd-component).
+Under the hood gateway GPS support uses the [GPSD component](../camel_components/camel_gpsd_component.md).
 
 #### Enabling GPS receiver
 
