@@ -10,6 +10,26 @@ In order to display all available commands with their options, execute the `rhio
 
 Rhiot command line assumes that there is Docker server running on your local machine. An actual commands execution is delegated by Docker client to the Rhiot Docker image. If Docker is not installed (or is installed in a version lower than a minimal version supported), Rhiot cmd will automatically install or upgrade Docker.
 
+## Before you start
+
+If you are using Raspbian, please be sure that the SSH account you are using to manage your device has root privileges.
+In particular keep in mind that the default `pi` user provided by Raspbian doesn't have root privileges.
+
+The easiest way to use root-enabled SSH user is to enable root login at your device. In order to do it, add the following
+option to the `/etc/ssh/sshd_config` file:
+
+    $ sudo nano /etc/ssh/sshd_config 
+    PermitRootLogin=yes
+    
+Then restart your SSHD server:
+
+    sudo service sshd restart
+    
+If you would like to authenticate yourself as root using password, you have to change it (as a default root password is
+not set):
+
+    sudo passwd root
+
 ## shell-start
 
 Starts background shell process (if one is not started already). You can connect to a [shell](shell.md) process using SSH and
@@ -17,15 +37,6 @@ default credentials:
 
     ssh rhiot@localhost -p 2000
     password: rhiot
-
-## rhiot raspbian-install
-
-Installs Raspbian Jessie to a given SD card. For example to install Raspbian to SD card device `/dev/sdd1`, execute the
-following command:
-
-    rhiot raspbian-install ssd1
-    
-Rhiot will download a Raspbian image for you (if needed), extract it and install to the target SD card.
 
 ## rhiot scan
 
@@ -40,6 +51,34 @@ To perform port scanning in your local network and display detected devices, exe
     Device type		IPv4 address
     --------------------------------------
     RaspberryPi2		/192.168.1.100
+
+## device-config
+
+This command allows to edit a configuration file on a remote device. The syntax of a command looks as follows:
+
+    device-config file property value
+
+For example:
+
+    $ device-config /etc/config.txt delay 1000
+    Updated /etc/config.txt - set property 'delay' to value '1000'.
+
+Configuration file will be created if it doesn't exists.
+
+Options:
+--host (-ho) host    Address of the target device. The device will be automatically detected if this option is not specified.
+--port (-p)          Port of the SSH server on a target device. Defaults to 22.
+--username (-u)      SSH username of the device. Defaults to 'root'.
+--password (-pa)     SSH password of the device. Defaults to 'raspberry'.
+
+## rhiot raspbian-install
+
+Installs Raspbian Jessie to a given SD card. For example to install Raspbian to SD card device `/dev/sdd1`, execute the
+following command:
+
+    rhiot raspbian-install ssd1
+    
+Rhiot will download a Raspbian image for you (if needed), extract it and install to the target SD card.
 
 ## rhiot deploy-gateway
 
