@@ -320,7 +320,7 @@ management cloudlet (or Rhiot Cloud). For example:
 #### Device registry
 
 Device registry is used by Leshan to store the information about the managed devices. By default the device cloudlet uses
-the MongoDB registry. The MongoDB client can be configured using the [Steroids MongoDB module](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#injecting-mongodb-client).
+the MongoDB registry.
 
 ##### Registry cache
 
