@@ -37,4 +37,5 @@
    * [Manage Kura Maven dependencies](building/manage_kura_maven_dependencies.md)
 * [Articles, presentations & videos](articles/index.md)
 * [Releases notes](releases_notes/index.md)
+* Contributing
 
