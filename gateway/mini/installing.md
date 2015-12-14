@@ -16,7 +16,7 @@ and attempts to connect to supported devices using the default SSH credentials.
 
 To learn more about a gateway deployment tool, see
 [`rhiot gateway-deploy` command section](https://rhiot.gitbooks.io/rhiotdocumentation/content/tooling/cmd.html#rhiot-deploygatewa). To learn about
-the other useful Rhiot cmd commands, see [`rhiot cmd` section](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#rhiot-command-line-tool-cmd).
+the other useful Rhiot cmd commands, see [`rhiot cmd` section](https://rhiot.gitbooks.io/rhiotdocumentation/content/tooling/cmd.html).
 
 ## Configuration of the gateway
 
