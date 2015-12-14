@@ -13,7 +13,7 @@ If you don't want to install Java and Maven on your machine, you can use our Doc
 ### 1st step (once)
 
     git clone https://github.com/rhiot/rhiot.git
-    cd rhiot
+    cd rhiot/dockerfiles
     docker build -t rhiot build
 
 
