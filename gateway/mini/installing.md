@@ -1,7 +1,7 @@
 # Installing mini gateway
 
 In order to install Rhiot mini gateway on our  Raspberry Pi with Raspbian use Rhiot cmd tool
-([`rhiot cmd` section describes how to install Rhiot cmd](/rhiotdocumentation/content/tooling/cmd.html)).
+([`rhiot cmd` section describes how to install Rhiot cmd](../../tooling/cmd.html)).
 After Rhiot cmd tool is installed, connect your device to your local network
 (using WiFi or the ethernet cable) and execute the following command on a laptop connected to the same network as your
 target device:
