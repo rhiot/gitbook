@@ -66,10 +66,11 @@ For example:
 Configuration file will be created if it doesn't exists.
 
 Options:
---host (-ho) host    Address of the target device. The device will be automatically detected if this option is not specified.
---port (-p)          Port of the SSH server on a target device. Defaults to 22.
---username (-u)      SSH username of the device. Defaults to 'root'.
---password (-pa)     SSH password of the device. Defaults to 'raspberry'.
+
+* `--host` (`-ho`) host    Address of the target device. The device will be automatically detected if this option is not specified.
+* `--port` (`-p`)          Port of the SSH server on a target device. Defaults to 22.
+* `--username` (`-u`)      SSH username of the device. Defaults to 'root'.
+* `--password` (`-pa`)     SSH password of the device. Defaults to 'raspberry'.
 
 ## rhiot raspbian-install
 
