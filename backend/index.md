@@ -206,7 +206,7 @@ For example to read the version of the software used by your device, execute the
     {"firmwareVersion":"1.0.0"}
 
 Keep in mind that the metric values read by these operations are saved to the metrics database and can be accessed later on
-(see [Devices Data Analytics](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#devices-data-analytics)). Also if
+(see [Devices Data Analytics](devices-data-analytics)). Also if
 the device is disconnected at the moment when the REST API is called, the value will be read from the metrics history database,
 instead of the real device. If there is no historical value available for the given device and metric, the
 `unknown - device disconnected` value will be returned for it. For example:
