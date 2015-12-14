@@ -13,8 +13,8 @@ whenever the device boots up. Under the hood, gateway deployer performs the simp
 and attempts to connect to supported devices using the default SSH credentials.
 
 To learn more about a gateway deployment tool, see
-[`rhiot gateway-deploy` command section](/rhiotdocumentation/content/tooling/cmd.html#rhiot-deploygateway). To learn about
-the other useful Rhiot cmd commands, see [`rhiot cmd` section](/rhiotdocumentation/content/tooling/cmd.html).
+[`rhiot gateway-deploy` command section](../../tooling/cmd.html#rhiot-deploygateway). To learn about
+the other useful Rhiot cmd commands, see [`rhiot cmd` section](../../tooling/cmd.html).
 
 ## Configuration of the gateway
 
