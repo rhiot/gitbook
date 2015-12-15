@@ -12,7 +12,9 @@ You can [list issues here](https://github.com/rhiot/rhiot/issues)
 
 ## Documentation
 
-You can [read]
+You can [read documentation here](https://rhiot.gitbooks.io/rhiotdocumentation/content/)
+
+You can [create issue about documentation ](https://github.com/rhiot/rhiot/issues/new)
 
 ## Code style
 
