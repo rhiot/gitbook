@@ -8,7 +8,7 @@
 
 You can [create an issue](https://github.com/rhiot/rhiot/issues/new)
 
-You can [list issue here](https://github.com/rhiot/rhiot/issues)
+You can [list issues here](https://github.com/rhiot/rhiot/issues)
 
 ## Documentation
 
