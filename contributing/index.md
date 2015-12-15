@@ -10,6 +10,6 @@
 
 ## Code style
 
-We use same code style than ASF and Camel project.
+We use same code style than ASF and Camel projects.
 You can find correct checkstyle file into `$RHIOT/contribution`
 
