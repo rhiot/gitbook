@@ -38,20 +38,6 @@ default credentials:
     ssh rhiot@localhost -p 2000
     password: rhiot
 
-## rhiot scan
-
-**Available since Rhiot 0.1.3.**  
-
-To perform port scanning in your local network and display detected devices, execute a `rhiot scan` command:
-
-    $ rhiot scan
-    Scanning local networks for devices...
-
-    ======================================
-    Device type		IPv4 address
-    --------------------------------------
-    RaspberryPi2		/192.168.1.100
-
 ## device-config
 
 This command allows to edit a configuration file on a remote device. The syntax of a command looks as follows:
@@ -72,7 +58,35 @@ Options:
 * `--username` (`-u`)      SSH username of the device. Defaults to 'root'.
 * `--password` (`-pa`)     SSH password of the device. Defaults to 'raspberry'.
 
-## rhiot raspbian-install
+## device-scan
+
+**Available since Rhiot 0.1.3.**  
+
+To perform port scanning in your local network and display detected devices, execute a `rhiot device-scan` command:
+
+    $ rhiot device-scan
+    Scanning local networks for devices...
+
+    ======================================
+    Device type		IPv4 address
+    --------------------------------------
+    RaspberryPi2		/192.168.1.100
+
+## raspbian-config-boot
+
+Sets property on a `/boot/config.txt` file on a remote device. All the [device-config](#device-config) command options 
+are also available for this command.
+
+Syntax:
+
+    raspbian-config-boot property value
+
+Example:
+    
+    raspbian-config-boot hdmi_drive 2
+
+
+## raspbian-install
 
 Installs Raspbian Jessie to a given SD card. For example to install Raspbian to SD card device `/dev/sdd1`, execute the
 following command:
@@ -81,7 +95,7 @@ following command:
     
 Rhiot will download a Raspbian image for you (if needed), extract it and install to the target SD card.
 
-## rhiot deploy-gateway
+## deploy-gateway
 
 Deploys gateway to a detected device. In order to install Rhiot gateway on a target device connect it to your local
 network (using WiFi or the ethernet cable). Then execute the following command on the laptop connected to the same network as your device
