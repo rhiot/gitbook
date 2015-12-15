@@ -19,9 +19,9 @@ In order to create the Kura Camel project execute the following commands:
 
 We presume that you have Eclipse Kura already installed on your target device. And that you know the IP address of that device.
 If you happen to deploy to a Raspbian-based device, and you would like to find the IP of that Raspberry Pi device connected
-to your local network, you can use the Rhiot device scanner, as demonstrated on the snippet below:
+to your local network, you can use the [Rhiot device scanner](../tooling/cmd.md#devicescan), as demonstrated on the snippet below:
 
-    docker run --net=host -it rhiot/deploy-gateway scan
+    $ rhiot device-scan
 
 The command above will return an output similar to the one presented below:
 
@@ -32,6 +32,7 @@ The command above will return an output similar to the one presented below:
     --------------------------------------
     RaspberryPi2		/192.168.1.100
 
+More details about Rhiot CMD installation can be found [here](../tooling/cmd.md).
 
 **Export your RPBI IP address**
 
@@ -66,9 +67,11 @@ Use similar `scp` command to deploy Camel jars required to run your project:
     scp ~/.m2/repository/org/apache/camel/camel-kura/2.16.1/camel-kura-2.16.1.jar pi@${RBPI_IP}:/tmp
     scp ~/.m2/repository/io/rhiot/camel-kura/0.1.3-SNAPSHOT/camel-kura-0.1.3-SNAPSHOT.jar pi@${RBPI_IP}:/tmp
 
-Now log into your target device Kura shell using telnet:
+Now log into your target device using SSH. Then, from a remote SSH shell, log into Kura shell using telnet:
 
-    telnet ${RBPI_IP} 5002
+    ssh pi@${RBPI_IP}
+    ...
+    telnet localhost 5002
 
 And install the bundles you previously scp-ed into the telnet session :
 
@@ -87,4 +90,12 @@ Keep in mind that bundles you deployed using the recipe above are not installed 
 
 ## What the quickstart is actually doing?
 
-This quickstart triggers [Camel timer](http://camel.apache.org/timer.html) event every second and sends it to the system logger using [Camel Log](http://camel.apache.org/log) component. This is fairy simple functionality, but enough to demonstrate the Camel Kura project is actually working and processing messages.
+This quickstart triggers [Camel timer](http://camel.apache.org/timer.html) event every second and sends it to the system 
+logger using [Camel Log](http://camel.apache.org/log) component. This is fairy simple functionality, but enough to 
+demonstrate the Camel Kura project is actually working and processing messages.
+
+In order to see messages logged by Camel router to Kura log file execute the following command on your remote device:
+
+    tail -f /var/log/kura.log
+
+ 
