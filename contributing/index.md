@@ -12,6 +12,8 @@ You can [list issues here](https://github.com/rhiot/rhiot/issues)
 
 ## Documentation
 
+You can [read]
+
 ## Code style
 
 We use same code style than ASF and Camel projects.
