@@ -84,7 +84,7 @@ And install the bundles you previously scp-ed into the telnet session :
 Finally start your application using the following command:
 
     start < ID_OF_rhiot-kura-camel-1.0.0-SNAPSHOT_BUNDLE >
-You can retrieve bundle id with 
+You can retrieve bundle ids with 
 
     ss | grep camel
 
