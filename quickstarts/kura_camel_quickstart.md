@@ -101,4 +101,3 @@ In order to see messages logged by Camel router to Kura log file execute the fol
 
     tail -f /var/log/kura.log
 
- 
