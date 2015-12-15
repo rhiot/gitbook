@@ -47,7 +47,7 @@ enabled for packages `sun.*,com.sun.*`. Your `/opt/eclipse/kura/kura/config.ini`
 
     org.osgi.framework.bootdelegation=sun.*,com.sun.*
 
-A boot delegation of `sun` packages is required to make Camel work smoothly in an Equinox.
+A boot delegation of `sun` packages is required to make Camel work smoothly in [Eclipse Equinox](http://www.eclipse.org/equinox/).
 
 
 ## Deployment
