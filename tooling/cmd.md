@@ -74,7 +74,7 @@ To perform port scanning in your local network and display detected devices, exe
 
 ## raspbian-config-boot
 
-Sets property on a `/boot/config.txt` file on a remote device. All the [device-config](#device-config) command options 
+Sets property on a `/boot/config.txt` file on a remote device. All the [device-config](#deviceconfig) command options 
 are also available for this command.
 
 Syntax:
