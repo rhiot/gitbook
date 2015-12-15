@@ -84,7 +84,9 @@ And install the bundles you previously scp-ed into the telnet session :
 Finally start your application using the following command:
 
     start < ID_OF_rhiot-kura-camel-1.0.0-SNAPSHOT_BUNDLE >
-You can retrieve bundle id via 
+You can retrieve bundle id with 
+
+    ss | grep camel
 
 Keep in mind that bundles you deployed using the recipe above are not installed permanently and will be reverted after the server restart. Please read Kura documentation for more details regarding
 [permanent deployments](http://eclipse.github.io/kura/doc/deploying-bundles.html#making-deployment-permanent).
