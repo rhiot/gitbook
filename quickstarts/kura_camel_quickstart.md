@@ -17,7 +17,7 @@ In order to create the Kura Camel project execute the following commands:
 
 #### Find your device
 
-We presume that you have Eclipse Kura already installed on your target device. And that you know the IP address of that device.
+We presume that you have [Eclipse Kura](https://wiki.eclipse.org/Kura/Raspberry_Pi) already installed on your target device. And that you know the IP address of that device.
 If you happen to deploy to a Raspbian-based device, and you would like to find the IP of that Raspberry Pi device connected
 to your local network, you can use the [Rhiot device scanner](../tooling/cmd.md#devicescan), as demonstrated on the snippet below:
 
