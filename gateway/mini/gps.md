@@ -22,7 +22,7 @@ Sometimes you would like to collect not only the GPS coordinates, but some other
 location. For example to track the temperature or WiFi networks available in various locations. If you would like to
 enrich collected GPS data with value read from some other endpoint, set the `gps_enrich` property to the Camel endpoint
 URI value. For example setting `gps_enrich=kura-wifi:*/*` can be used to poll for available WiFi networks using
-[Camel Kura WiFi component](https://github.com/rhiot/rhiot/blob/master/docs/readme.md#camel-kura-wifi-component) and adding
+[Camel Kura WiFi component](../camel_components/camel_kura_wifi_component.md) and adding
 the results to collected GPS payloads.
 
 The enriched JSON schema of the collected coordinates is similar to teh following example:
