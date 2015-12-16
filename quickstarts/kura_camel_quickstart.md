@@ -55,17 +55,17 @@ A boot delegation of `sun` packages is required to make Camel work smoothly in [
 In order to deploy Camel application to a Kura server, you have to copy necessary Camel jars and a bundle containing your application. Your bundle can be deployed into the target device by executing an `scp` command. For example:
 
 
-    scp target/rhiot-kura-camel-1.0.0-SNAPSHOT.jar pi@${RBPI_IP}:/tmp
+    scp target/rhiot-kura-camel-1.0.0-SNAPSHOT.jar pi@${RBPI_IP}:
 
 
-The command above will copy your bundle to the `/tmp/rhiot-kura-camel-1.0.0-SNAPSHOT.jar` location on a target device.
+The command above will copy your bundle to the `/home/pi/rhiot-kura-camel-1.0.0-SNAPSHOT.jar` location on a target device.
 Use similar `scp` command to deploy Camel jars required to run your project:
 
 
-    scp ~/.m2/repository/org/apache/camel/camel-core/2.16.1/camel-core-2.16.1.jar pi@${RBPI_IP}:/tmp
-    scp ~/.m2/repository/org/apache/camel/camel-core-osgi/2.16.1/camel-core-osgi-2.16.1.jar pi@${RBPI_IP}:/tmp
-    scp ~/.m2/repository/org/apache/camel/camel-kura/2.16.1/camel-kura-2.16.1.jar pi@${RBPI_IP}:/tmp
-    scp ~/.m2/repository/io/rhiot/camel-kura/0.1.3-SNAPSHOT/camel-kura-0.1.3-SNAPSHOT.jar pi@${RBPI_IP}:/tmp
+    scp ~/.m2/repository/org/apache/camel/camel-core/2.16.1/camel-core-2.16.1.jar pi@${RBPI_IP}:
+    scp ~/.m2/repository/org/apache/camel/camel-core-osgi/2.16.1/camel-core-osgi-2.16.1.jar pi@${RBPI_IP}:
+    scp ~/.m2/repository/org/apache/camel/camel-kura/2.16.1/camel-kura-2.16.1.jar pi@${RBPI_IP}:
+    scp ~/.m2/repository/io/rhiot/camel-kura/0.1.3-SNAPSHOT/camel-kura-0.1.3-SNAPSHOT.jar pi@${RBPI_IP}:
 
 Now log into your target device using SSH. Then, from a remote SSH shell, log into Kura shell using telnet:
 
@@ -75,11 +75,11 @@ Now log into your target device using SSH. Then, from a remote SSH shell, log in
 
 And install the bundles you previously scp-ed into the telnet session :
 
-    install file:///tmp/camel-core-2.16.1.jar
-    install file:///tmp/camel-core-osgi-2.16.1.jar
-    install file:///tmp/camel-kura-2.16.1.jar
-    install file:///tmp/camel-kura-0.1.3-SNAPSHOT.jar
-    install file:///tmp/rhiot-kura-camel-1.0.0-SNAPSHOT.jar
+    install file:///home/pi/camel-core-2.16.1.jar
+    install file:///home/pi/camel-core-osgi-2.16.1.jar
+    install file:///home/pi/camel-kura-2.16.1.jar
+    install file:///home/pi/camel-kura-0.1.3-SNAPSHOT.jar
+    install file:///home/pi/rhiot-kura-camel-1.0.0-SNAPSHOT.jar
 
 Finally start your application using the following command:
 
