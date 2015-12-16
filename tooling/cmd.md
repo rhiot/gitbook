@@ -74,6 +74,8 @@ To perform port scanning in your local network and display detected devices, exe
 
 ## raspbian-config-boot
 
+**Available since Rhiot 0.1.3.**  
+
 Sets property on a `/boot/config.txt` file on a remote device. All the [device-config](#deviceconfig) command options 
 are also available for this command.
 
@@ -86,6 +88,8 @@ Example:
     raspbian-config-boot hdmi_drive 2
 
 ## kura-config-ini
+
+**Available since Rhiot 0.1.3.**  
 
 Sets property on a `/opt/eclipse/kura/kura/config.ini` file on a remote device. All the [device-config](#deviceconfig) command options 
 are also available for this command.
