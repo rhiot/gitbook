@@ -85,6 +85,19 @@ Example:
     
     raspbian-config-boot hdmi_drive 2
 
+## kura-config-ini
+
+Sets property on a `/opt/eclipse/kura/kura/config.ini` file on a remote device. All the [device-config](#deviceconfig) command options 
+are also available for this command.
+
+Syntax:
+
+    kura-config-ini property value
+
+Example:
+    
+    kura-config-ini equinox.ds.debug true
+
 
 ## raspbian-install
 
