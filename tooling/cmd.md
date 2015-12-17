@@ -51,12 +51,15 @@ For example:
 
 Configuration file will be created if it doesn't exists.
 
-Options:
+SSH options:
 
 * `--host` (`-ho`) host    Address of the target device. The device will be automatically detected if this option is not specified.
 * `--port` (`-p`)          Port of the SSH server on a target device. Defaults to 22.
 * `--username` (`-u`)      SSH username of the device. Defaults to 'root'.
 * `--password` (`-pa`)     SSH password of the device. Defaults to 'raspberry'.
+
+Other options:
+
 *  `--append` (`-a`)       Appends to the given property instead of overriding it.
 
 ## device-scan
@@ -72,6 +75,14 @@ To perform port scanning in your local network and display detected devices, exe
     Device type		IPv4 address
     --------------------------------------
     RaspberryPi2		/192.168.1.100
+
+## device-send
+
+Sends file from a local file system to a remote device. For example:
+
+    device-send /etc/localfile /etc/remotefile
+
+All the device-config command SSH options are also available for this command.
 
 ## raspbian-config-boot
 
