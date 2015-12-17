@@ -78,6 +78,8 @@ To perform port scanning in your local network and display detected devices, exe
 
 ## device-send
 
+**Available since Rhiot 0.1.3.**  
+
 Sends file from a local file system to a remote device. For example:
 
     device-send /etc/localfile /etc/remotefile
