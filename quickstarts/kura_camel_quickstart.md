@@ -103,6 +103,6 @@ In order to see messages logged by Camel router to Kura log file execute the fol
 
 ## What else can I do with it?
 
-Go to the [Camel Kura router documentation page](gateway/camel_kura_router.md) to learn more about Camel and Kura
-awesomeness. For example you can [modify your XML routes from the web UI ](gateway/camel_kura_router.md#managing-xml-camel-routes-using-web-ui)
+Go to the [Camel Kura router documentation page](../gateway/camel_kura_router.md) to learn more about Camel and Kura
+awesomeness. For example you can [modify your XML routes from the web UI ](../gateway/camel_kura_router.md#managing-xml-camel-routes-using-web-ui)
 with a need to restart your gateway or redeploy your quickstart bundle.
