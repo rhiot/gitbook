@@ -28,7 +28,7 @@
 * [Tooling](tooling/index.md)
    * [CMD](tooling/cmd.md)
    * [Shell](tooling/shell.md)
-* [Performances](performances/index.md)
+* [Performances](performance/index.md)
 * [Steroids](steroids/index.md)
 * [Quickstarts](quickstarts/index.md)
    * [Kura Camel quickstart](quickstarts/kura_camel_quickstart.md)

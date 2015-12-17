@@ -1,6 +1,4 @@
-# Performances
-
-## Performance Testing Framework
+# Performance Testing Framework
 
 
 The key part of the process of tailoring the perfect IoT solution is choosing the proper hardware for the gateway device.
@@ -15,31 +13,31 @@ Performance Testing Framework excels when you would like to answer the following
 perform against the given task. Just connect your devices to the local network, execute the performance testing application
 and compare the generated diagrams.
 
-### Hardware profiles
+## Hardware profiles
 
 This section covers the *hardware profiles* for the performance tests. Profiles are used to describe the particular
 hardware configuration that can be used as a target device for the performance benchmark. Every performance test
 definition can be executed on the particular hardware profiles.
 
-#### Raspberry PI 2 B+ (aka RPI2)
+### Raspberry PI 2 B+ (aka RPI2)
 
 The `RPI2` hardware profile is just the Raspberry Pi 2 B+ model equipped with the network connector (WiFi adapter or
 the ethernet cable). Currently we assume that the device is running [Raspbian](https://www.raspbian.org/) operating
 system (version 2015-05-05).
 
-<img src="images/rpi2_open.jpg" align="center" height="600" hspace="30">
-<img src="images/rpi2_closed.jpg" align="center" height="600" hspace="30">
+<img src="rpi2_open.jpg" align="center" height="600" hspace="30">
+<img src="rpi2_closed.jpg" align="center" height="600" hspace="30">
 
-#### Raspberry PI 2 B+ with BU353 (aka RPI2_BU353)
+### Raspberry PI 2 B+ with BU353 (aka RPI2_BU353)
 
 The `RPI2_BU353` hardware profile is the same as `RPI2` profile, but additionally equipped with the
 [BU353 GPS receiver](http://usglobalsat.com/p-688-bu-353-s4.aspx#images/product/large/688_2.jpg)
 plugged into the USB port.
 
-<img src="images/rpi2_bu353_open.jpg" align="center" height="500" hspace="30">
-<img src="images/rpi2_bu353_closed.jpg" align="center" height="500" hspace="30">
+<img src="rpi2_bu353_open.jpg" align="center" height="500" hspace="30">
+<img src="rpi2_bu353_closed.jpg" align="center" height="500" hspace="30">
 
-### Running the performance tester
+## Running the performance tester
 
 The easiest way to run the performance benchmark is to connect the target device (for example Rapsberry Pi) into your
 local network (for example via the WiFi or the Ethernet cable) and start the tester as a Docker container, using the
@@ -52,24 +50,24 @@ device, executes the tests and collects the results.
 
 When the execution of the benchmark ends, the result diagrams will be located in the `/tmp/gateway-performance` directory (or any other directory you specified when executing the command above). The sample diagram may look as follows:
 
-<a href="https://github.com/camel-labs/camel-labs/iot"><img src="images/sample_perf_chart.png" align="center" height="400" hspace="30"></a>
+<a href="https://github.com/camel-labs/camel-labs/iot"><img src="sample_perf_chart.png" align="center" height="400" hspace="30"></a>
 
 Keep in mind that currently we assume that your Raspberry Pi has the default Raspbian SSH account available (username: *pi* / password: *raspberry*).
 
-### Analysis of the selected tests results
+## Analysis of the selected tests results
 
 Below you can find some performance benchmarks with the comments regarding the resulted numbers.
 
-#### Mock sensor to the external MQTT broker
+### Mock sensor to the external MQTT broker
 
 In this test we generate mock sensor events in the gateway using the timer trigger. The message is the random UUID encoded
 to the array of bytes. Then we send those messages to the
 external MQTT broker. We test and compare various MQTT QOS levels. The MQTT client used to send the messages is
 [Eclipse Paho](https://www.eclipse.org/paho/).
 
-#### Sample results for the RPI2 hardware kit
+### Sample results for the RPI2 hardware kit
 
-<img src="images/RPI2 Mock sensor to external MQTT broker.png" align="center" height="500" hspace="30">
+<img src="RPI2 Mock sensor to external MQTT broker.png" align="center" height="500" hspace="30">
 
 The very first question that comes to the mind when you look at these benchmarks is why there is so huge difference between the MQTT QOS level 0 and the other QOS levels? The reason is that currently Eclipse Paho client doesn't work well with
 QOS greater than 0 and the high messages load. The reason for that is that Paho client enforces inflight messages limit to 10. This is pretty restrictive treshold considering that MQTT client should have more time for receiving the acknowledgement from the
