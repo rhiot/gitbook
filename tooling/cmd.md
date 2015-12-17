@@ -57,6 +57,7 @@ Options:
 * `--port` (`-p`)          Port of the SSH server on a target device. Defaults to 22.
 * `--username` (`-u`)      SSH username of the device. Defaults to 'root'.
 * `--password` (`-pa`)     SSH password of the device. Defaults to 'raspberry'.
+*  `--append` (`-a`)       Appends to the given property instead of overriding it.
 
 ## device-scan
 
