@@ -7,7 +7,6 @@
 ### IRC
 
 We are also present on the `#rhiot` IRC channel at Freenode 
-
 ### Mailing
 
 You're more than welcome to join our [Rhiot mailing list](https://groups.google.com/forum/#!forum/rhiot). 
