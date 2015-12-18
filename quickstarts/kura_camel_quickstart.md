@@ -15,7 +15,7 @@ In order to create the Kura Camel project execute the following commands:
 
 ## Prerequisites
 
-#### Find your device
+### Find your device
 
 We presume that you have [Eclipse Kura](https://wiki.eclipse.org/Kura/Raspberry_Pi) already installed on your target device. And that you know the IP address of that device.
 If you happen to deploy to a Raspbian-based device, and you would like to find the IP of that Raspberry Pi device connected
@@ -34,21 +34,20 @@ The command above will return an output similar to the one presented below:
 
 More details about Rhiot CMD installation can be found [here](../tooling/cmd.md).
 
-**Export your RPBI IP address**
-
+Then export address of your Raspberry Pi device to RPBI IP environment variable:
 
     export RBPI_IP=192.168.1.100
 
 
-#### Configure Kura 
+### Configure Kura 
 
 Keep in mind that `/opt/eclipse/kura/kura/config.ini` file on your target device should have OSGi boot delegation
-enabled for packages `sun.*,com.sun.*`. Your `/opt/eclipse/kura/kura/config.ini` should contain the following line then:
+enabled for packages `sun`. A boot delegation of `sun` packages is required to make Camel work smoothly in 
+[Eclipse Equinox](http://www.eclipse.org/equinox/).
 
-    org.osgi.framework.bootdelegation=sun.*,com.sun.*
-
-A boot delegation of `sun` packages is required to make Camel work smoothly in [Eclipse Equinox](http://www.eclipse.org/equinox/).
-
+The easiest way to enable boot delegation on your remote device is to execute the following command:
+ 
+    rhiot kura-config-bootdelegation
 
 ## Deployment
 
@@ -65,7 +64,7 @@ Use similar `scp` command to deploy Camel jars required to run your project:
     scp ~/.m2/repository/org/apache/camel/camel-core/2.16.1/camel-core-2.16.1.jar pi@${RBPI_IP}:
     scp ~/.m2/repository/org/apache/camel/camel-core-osgi/2.16.1/camel-core-osgi-2.16.1.jar pi@${RBPI_IP}:
     scp ~/.m2/repository/org/apache/camel/camel-kura/2.16.1/camel-kura-2.16.1.jar pi@${RBPI_IP}:
-    scp ~/.m2/repository/io/rhiot/camel-kura/0.1.3-SNAPSHOT/camel-kura-0.1.3-SNAPSHOT.jar pi@${RBPI_IP}:
+    scp ~/.m2/repository/io/rhiot/camel-kura/0.1.3/camel-kura-0.1.3.jar pi@${RBPI_IP}:
 
 Now log into your target device using SSH. Then, from a remote SSH shell, log into Kura shell using telnet:
 
@@ -78,15 +77,16 @@ And install the bundles you previously scp-ed into the telnet session :
     install file:///home/pi/camel-core-2.16.1.jar
     install file:///home/pi/camel-core-osgi-2.16.1.jar
     install file:///home/pi/camel-kura-2.16.1.jar
-    install file:///home/pi/camel-kura-0.1.3-SNAPSHOT.jar
+    install file:///home/pi/camel-kura-0.1.3.jar
     install file:///home/pi/rhiot-kura-camel-1.0.0-SNAPSHOT.jar
 
 Finally start your application using the following command:
 
     start < ID_OF_rhiot-kura-camel-1.0.0-SNAPSHOT_BUNDLE >
-You can retrieve bundle ids with 
 
-    ss | grep camel
+You can retrieve ID of your bundle using the following command:
+
+    ss | grep rhiot-kura-camel
 
 Keep in mind that bundles you deployed using the recipe above are not installed permanently and will be reverted after the server restart. Please read Kura documentation for more details regarding
 [permanent deployments](http://eclipse.github.io/kura/doc/deploying-bundles.html#making-deployment-permanent).
