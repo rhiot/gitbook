@@ -1,5 +1,9 @@
 # Rhiot release notes
 
+## 0.1.4 (In progress)
+
+...
+
 ## 0.1.3 (2015-12-18)
 
 New features:
