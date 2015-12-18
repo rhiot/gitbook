@@ -44,6 +44,6 @@ Execute the following command in the project main directory:
 
 ### After the release
 
-* update the version on the main page of the project ([website](http://rhiot.github.io/) and [readme.md](https://github.com/rhiot/rhiot/blob/master/readme.md))
-* update release guide [Releases Notes](releases_notes/index.md) using GitHub tickets marked as done in the given version
+* update the version on the main page of the project [readme.md](https://github.com/rhiot/rhiot/blob/master/readme.md))
+* update release guide [Releases Notes](../releases_notes/index.md) using GitHub tickets marked as done in the given version
 * upgrade version in Rhiot command line (`tooling/bash/rhiot.sh`). Look up for a line similar to `RHIOT_VERSION=x.y.z`.
