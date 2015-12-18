@@ -1,8 +1,41 @@
 # Rhiot release notes
 
-## 0.1.3 (currently in progress)
+## 0.1.3 (2015-12-18)
 
+New features:
+- Migrated documentation to GitBook (https://rhiot.gitbooks.io/rhiotdocumentation/content/)
+- Created #rhiot IRC channel for discussions :)
+- Added support for Kura gateways
+- Create RhiotKuraRouter
+- Created Rhiot shell
+- Created device-send command
+- Created kura-config-ini command
+- Provided “rhiot raspbian-install” command
+- Added “append” option to device-config command
+- Created camel-lwm2m component
+- Created GPIO component for camel-kura
+- Created Kura CloudService component
+- Created PojosrKuraServer
+- Created camel-framebuffer component
+- Created camel-bluetooth component
+- Created camel-openimaj component for face detection
+- Created Kura Camel quickstart
+- Add support for reading configuration from a thread local
 
+Improvements:
+- Don’t install docker if MacOSX for rhiot command
+- Rhiot CMD should be using “DevAgent” background process
+- Camel-kura shouldn’t depend of “org.eclipse.kura.linux.net”
+- Made GPIOProducer more dynamic
+- camel-webcam should install v4l-utils if it’s not already installed
+- WebcamComponent should analyze modprobe result to ensure v4l2 module can be loaded
+- GPSD component should make sure that GPSD is installed
+- 
+Bug fixes:
+- Provided state and shutdownState for kura-gpio Endpoint
+- GPIOProducer shouldn’t overwrite the “action” on each message
+- WebcamComponent#installer setter and getters are missing
+- WebCam component should not fail when non-root user is running it
 
 ## 0.1.2  (2015-10-22)
 
