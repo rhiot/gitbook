@@ -6,7 +6,7 @@
 
 ### IRC
 
-We are also present on the #rhiot IRC channel at Freenode 
+We are also present on the `#rhiot` IRC channel at Freenode 
 
 ### Mailing
 
@@ -15,7 +15,7 @@ You're more than welcome to join our Rhiot mailing list.
 
 ### Twitter
 
-and twitter @rhiot_io
+Our twitter : [@rhiot_io](http://twitter.com/rhiot_io)
 
 ## Issue
 
