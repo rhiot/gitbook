@@ -30,7 +30,7 @@ Improvements:
 - camel-webcam should install v4l-utils if it’s not already installed
 - WebcamComponent should analyze modprobe result to ensure v4l2 module can be loaded
 - GPSD component should make sure that GPSD is installed
-- 
+
 Bug fixes:
 - Provided state and shutdownState for kura-gpio Endpoint
 - GPIOProducer shouldn’t overwrite the “action” on each message
