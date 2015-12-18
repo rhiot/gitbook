@@ -2,6 +2,8 @@
 
 ## Gateway logger configuration
 
+**Available starting from Rhiot 0.1.4**
+
 By default gateway keeps the last 100 MB of the logging history. Logs are grouped by the days and split into the
 10 MB files. The default logging level is `INFO`. You can change it by setting the `log_level`configuration
 property:
