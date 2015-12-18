@@ -80,11 +80,15 @@ To perform port scanning in your local network and display detected devices, exe
 
 **Available since Rhiot 0.1.3.**  
 
-Sends file from a local file system to a remote device. For example:
+Sends file to a remote device. For example:
 
     device-send /etc/localfile /etc/remotefile
 
 All the device-config command SSH options are also available for this command.
+
+Using URL as a file source is accepted as well. For example to read file from HTTP and send it to a remot device:
+
+    device-send http://example.com/file /etc/remotefile
 
 ## raspbian-config-boot
 
