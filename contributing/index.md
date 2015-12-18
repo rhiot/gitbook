@@ -4,6 +4,19 @@
 
 ## Getting in touch
 
+### IRC
+
+We are also present on the #rhiot IRC channel at Freenode 
+
+### Mailing
+
+You're more than welcome to join our Rhiot mailing list. 
+
+
+### Twitter
+
+and twitter @rhiot_io
+
 ## Issue
 
 You can [create an issue](https://github.com/rhiot/rhiot/issues/new)
