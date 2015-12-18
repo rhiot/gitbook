@@ -139,6 +139,18 @@ Example:
     
     kura-config-ini equinox.ds.debug true
 
+## kura-install-felix-fileinstall
+
+**Available since Rhiot 0.1.4.**  
+
+Syntax: kura-install-felix-fileinstall
+
+Example: kura-install-felix-fileinstall
+
+Deploys Felix File Install into your Kura server. After Felix File Install is installed into your server, you can drop 
+bundle jars into `/opt/eclipse/kura/deploy` in order to deploy those.
+
+All the device-config command options are also available for this command.
 
 ## raspbian-install
 
