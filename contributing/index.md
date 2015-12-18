@@ -15,7 +15,7 @@ You're more than welcome to join our Rhiot mailing list.
 
 ### Twitter
 
-Our twitter : [@rhiot_io](http://twitter.com/rhiot_io)
+Our twitter account is  [@rhiot_io](http://twitter.com/rhiot_io), don't hesitate to follow us.
 
 ## Issue
 
