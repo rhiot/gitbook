@@ -20,7 +20,7 @@ Our twitter account is  [@rhiot_io](http://twitter.com/rhiot_io), don't hesitate
 
 If you have a question or an issue, feel free to [create an issue](https://github.com/rhiot/rhiot/issues/new)
 
-You can [list issues here](https://github.com/rhiot/rhiot/issues)
+You can [list issues here](https://github.com/rhiot/rhiot/issues) already created. 
 
 ## Documentation
 
