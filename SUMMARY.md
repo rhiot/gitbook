@@ -36,7 +36,7 @@
    * [MQTT Cloudlet quickstart](quickstarts/mqtt_cloudlet_quickstart.md)
 * [Building](building/index.md)
    * [Manage Kura Maven dependencies](building/manage_kura_maven_dependencies.md)
-* [Supported & tested](supported_&_tested.md)
+* [Supported & tested configuration](supported_&_tested.md)
 * [Articles, presentations & videos](articles/index.md)
 * [Contributing](contributing/index.md)
 * [Releases notes](releases_notes/index.md)
