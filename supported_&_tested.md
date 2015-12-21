@@ -24,6 +24,7 @@ Rhiot project tests and supports several configurations.
 | RaspberryPi Pi 2  |   |
 | RaspberryPi Zero  | Soon  |
 | Intel Edison ||
+| Beaglebone ||
 
 
 
