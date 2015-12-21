@@ -4,9 +4,11 @@ Rhiot project tests and supports several configurations.
 
 ## OS 
 
-|OS |   |
+|OS | Tested  |
 |---|---|
-|||
+| Raspbian Jessie  |  X |
+| Raspbian Jessie Light | X  |
+|Fedora | TBD |
 
 
 ## Hardware
