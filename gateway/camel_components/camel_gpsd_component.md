@@ -4,7 +4,7 @@ Camel [GPSD](http://www.catb.org/gpsd) component can be used to read current GPS
 just connect a GPS receiver to your computer's USB port and read the GPS data - the component
 will make sure that GPS daemon is up, running and
 switched to the [NMEA mode](http://www.gpsinformation.org/dale/nmea.htm). The component also takes care of parsing the
-GPSD data read from the server, so you can enjoy the `io.rhiot.component.gps.gpsd.ClientGpsCoordinates`
+GPSD data read from the server, so you can enjoy the `io.rhiot.datastream.schema.GpsCoordinates`
 instances received by your Camel routes.
 
 The GPSD component has been particularly tested against the BU353 GPS unit.
@@ -23,7 +23,7 @@ Maven users should add the following dependency to their POM file:
 
 ## URI format
 
-The default GPSD consumer is event driven, subscribing to *Time-Position-Velocity* reports and converting them to ClientGpsCoordinates for immediate consumption.
+The default GPSD consumer is event driven, subscribing to *Time-Position-Velocity* reports and converting them to `GpsCoordinates` for immediate consumption.
 This option offers up to date information, but requires more resources than the scheduled consumer or the producer.
 
 The Camel endpoint URI format for the GPSD consumer is as follows:
@@ -33,7 +33,7 @@ The Camel endpoint URI format for the GPSD consumer is as follows:
 Where `label` can be replaced with any text label:
 
     from("gpsd:current-position").
-      convertBodyTo(String.class).
+      marshal().json(Jackson).
       to("file:///var/gps-coordinates");
 
 
@@ -41,7 +41,7 @@ A scheduled consumer is also supported. This kind of consumer polls GPS receiver
 use it enable the `scheduled` param on the endpoint, just as demonstarted on the snippet below:
 
     from("gpsd:current-position?scheduled=true").
-      convertBodyTo(String.class).
+      marshal().json(Jackson).
       to("file:///var/gps-coordinates");
 
 Also the GPSD producer can be used to poll a GPS unit "on demand" and return the current location, for example;
@@ -54,14 +54,16 @@ To subscribe to events or poll a device on another host you have to do two thing
 * pass the host and optionally port to the GPSD endpoint, just as demonstrated on the snippet below:
 
     from("gpsd:current-position?host=localhost?port=2947").
-      convertBodyTo(String.class).
+      marshal().json(Jackson).
       to("file:///var/gps-coordinates");
 
-The message body is a `io.rhiot.component.gpsd.ClientGpsCoordinates` instance:
+The message body is a `io.rhiot.datastream.schema.GpsCoordinates` instance:
 
-    ClientGpsCoordinates currentPosition = consumerTemplate.receiveBody("gpsd:current-position", ClientGpsCoordinates.class);     
+    GpsCoordinates currentPosition = consumerTemplate.receiveBody("gpsd:current-position", GpsCoordinates.class);
+    double lat = currentPosition.getLat();
+    double lng = currentPosition.getLng();
 
-`ClientGpsCoordinates` class name is prefixed with the `Client` to indicate that these coordinates have been created on the device,
+`GpsCoordinates` class name is prefixed with the `Client` to indicate that these coordinates have been created on the device,
 not on the server side of the IoT solution.
 
 The TPVObject (Time-Position-Velocity report) instance created by a gpsd4java engine is available in exchange under the header
