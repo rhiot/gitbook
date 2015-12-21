@@ -13,7 +13,7 @@ Rhiot project tests and supports several configurations.
 
 ## Hardware
 
-|hardware | Tested  |
+|Hardware | Tested  |
 |---|---|
 | RaspberryPi A  |   |
 | RaspberryPi A+ |   |
