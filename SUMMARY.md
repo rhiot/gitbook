@@ -39,4 +39,5 @@
 * [Articles, presentations & videos](articles/index.md)
 * [Contributing](contributing/index.md)
 * [Releases notes](releases_notes/index.md)
+* Supported & tested
 
