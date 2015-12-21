@@ -19,3 +19,4 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 - [Rhiot RaspberryPi Sense-Hat display](http://gautric.github.io/blog/2015/11/24/rhiot-framebuffer-raspberrypi-sense-hat.html) - Greg's blog post (video included) (nov 2015)
 - [Rhiot Kura Gateway Sample (Emulator & RaspberryPi) ](http://gautric.github.io/blog/2015/12/03/rhiot-kura-OSGi-full-sample.html) - Greg's blog post (video included) (dec 2015)
 - [Managing Camel Routes With Kura Web UI](https://dzone.com/articles/managing-camel-routes-with-kura-web-ui) - DZone article by Henryk Konsek (2015)
+- [Connecting Apache Camel and Apache Spark](https://dzone.com/articles/connecting-apache-camel-and-apache-spark) - DZone article by Henryk Konsek (2015)
