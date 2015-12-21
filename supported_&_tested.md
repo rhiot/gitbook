@@ -8,7 +8,7 @@ Rhiot project tests and supports several configurations.
 |---|---|
 | Raspbian Jessie  |  X |
 | Raspbian Jessie Light | X  |
-| Fedora | TBD |
+| Pidora | TBD |
 
 
 ## Hardware
