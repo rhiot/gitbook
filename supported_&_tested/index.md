@@ -29,3 +29,10 @@ Rhiot project tests and supports several configurations.
 | | |
 
 
+## Device
+
+|Device 	|Tested| URL | Demo |
+|--|--|--|--|
+|RaspberryPi A 	            | | | |
+
+
