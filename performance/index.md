@@ -22,8 +22,8 @@ definition can be executed on the particular hardware profiles.
 ### Raspberry PI 2 B+ (aka RPI2)
 
 The `RPI2` hardware profile is just the Raspberry Pi 2 B+ model equipped with the network connector (WiFi adapter or
-the ethernet cable). Currently we assume that the device is running [Raspbian](https://www.raspbian.org/) operating
-system (version 2015-05-05).
+the ethernet cable). Currently we assume that the device is running [Raspbian](https://www.raspbian.org/) Jessie operating
+system.
 
 <img src="rpi2_open.jpg" align="center" height="600" hspace="30">
 <img src="rpi2_closed.jpg" align="center" height="600" hspace="30">
