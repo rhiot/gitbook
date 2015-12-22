@@ -49,6 +49,15 @@ The easiest way to enable boot delegation on your remote device is to execute th
  
     rhiot kura-config-bootdelegation
 
+If you down have Rhiot CMD installed, read [this](../tooling/cmd.md) documentation section. If the 
+`kura-config-bootdelegation` command can't detect your device you can use `--address` option to indicate the IP address
+of your device (see [kura-config-bootdelegation command documentation](tooling/cmd.md#kuraconfigbootdelegation) for more 
+details.
+
+If you still have problems with using Rhiot CMD, add the following line to the `/opt/eclipse/kura/kura/config.ini`:
+
+    org.osgi.framework.bootdelegation=sun.*,com.sun.*
+
 ## Deployment
 
 In order to deploy Camel application to a Kura server, you have to copy necessary Camel jars and a bundle containing your application. Your bundle can be deployed into the target device by executing an `scp` command. For example:
