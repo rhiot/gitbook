@@ -52,7 +52,7 @@ development laptop:
 
 If you don't have Rhiot CMD installed, read [this](../tooling/cmd.md) documentation section. If the 
 `kura-config-bootdelegation` command can't detect your device you can use `--address` option to indicate the IP address
-of your device (see [kura-config-bootdelegation](tooling/cmd.md#kuraconfigbootdelegation) command documentation for more 
+of your device (see [kura-config-bootdelegation](../tooling/cmd.md#kuraconfigbootdelegation) command documentation for more 
 details).
 
 If you still have problems with using Rhiot CMD, add the following line to the `/opt/eclipse/kura/kura/config.ini`:
