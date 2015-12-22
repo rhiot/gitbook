@@ -33,6 +33,6 @@ Rhiot project tests and supports several configurations.
 
 |Device 	|Tested| URL | Demo |
 |--|--|--|--|
-|Pi Sense-Hat	            | X| <https://www.raspberrypi.org/products/sense-hat/>| |
+|Pi Sense-Hat	            | X| <https://www.raspberrypi.org/products/sense-hat/>| <http://gautric.github.io/blog/2015/11/24/rhiot-framebuffer-raspberrypi-sense-hat.html>|
 
 
