@@ -45,11 +45,12 @@ Keep in mind that `/opt/eclipse/kura/kura/config.ini` file on your target device
 enabled for packages `sun`. A boot delegation of `sun` packages is required to make Camel work smoothly in 
 [Eclipse Equinox](http://www.eclipse.org/equinox/).
 
-The easiest way to enable boot delegation on your remote device is to execute the following command:
+The easiest way to enable boot delegation on your remote device is to execute the following shell command on your
+development laptop:
  
-    rhiot kura-config-bootdelegation
+    $ rhiot kura-config-bootdelegation
 
-If you down have Rhiot CMD installed, read [this](../tooling/cmd.md) documentation section. If the 
+If you don't have Rhiot CMD installed, read [this](../tooling/cmd.md) documentation section. If the 
 `kura-config-bootdelegation` command can't detect your device you can use `--address` option to indicate the IP address
 of your device (see [kura-config-bootdelegation command documentation](tooling/cmd.md#kuraconfigbootdelegation) for more 
 details.
