@@ -124,7 +124,8 @@ Enables OSGi boot delegation for Sun packages i.e. adds `org.osgi.framework.boot
 the `/opt/eclipse/kura/kura/config.ini` file on a remote device. This settings is required to use libraries relying
 on `com.sun` and `sun` packages deployed into Kura.
 
-All the [device-config](#deviceconfig) command options are also available for this command.
+All the [device-config](#deviceconfig) command options (like `--address` or `--port` for specifying device address and 
+SSH port) are also available for this command.
 
 ## kura-config-ini
 
