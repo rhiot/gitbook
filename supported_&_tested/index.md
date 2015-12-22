@@ -11,7 +11,6 @@ Rhiot project tests and supports several configurations.
 |Pidora             	|     TBD|
 | | ||
 
-
 ## Hardware 
 
 |Hardware 	|Tested|
