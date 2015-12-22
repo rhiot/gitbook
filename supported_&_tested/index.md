@@ -26,4 +26,6 @@ Rhiot project tests and supports several configurations.
 |RaspberryPi Zero 	        |Soon |
 |Intel Edison 	            | |
 |Beaglebone                 | |
+| | |
+
 
