@@ -30,6 +30,8 @@ not set):
 
     sudo passwd root
 
+For Raspbian, we recommend to use the default password - `raspberry`.
+
 ## shell-start
 
 Starts background shell process (if one is not started already). You can connect to a [shell](shell.md) process using SSH and
