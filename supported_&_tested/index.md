@@ -33,6 +33,6 @@ Rhiot project tests and supports several configurations.
 
 |Device 	|Tested| URL | Demo |
 |--|--|--|--|
-|RaspberryPi A 	            | | | |
+|Pi Sense-Hat	            | X| <https://www.raspberrypi.org/products/sense-hat/>| |
 
 
