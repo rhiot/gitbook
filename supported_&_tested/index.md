@@ -28,7 +28,6 @@ Rhiot project tests and supports several configurations.
 |Beaglebone                 | |
 | | ||
 
-
 ## Device
 
 |Device 	|Tested| Product URL | Demo URL |
