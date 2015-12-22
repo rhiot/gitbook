@@ -15,11 +15,15 @@ Rhiot command line assumes that there is Docker server running on your local mac
 If you are using Raspbian, please be sure that the SSH account you are using to manage your device has root privileges.
 In particular keep in mind that the default `pi` user provided by Raspbian doesn't have root privileges.
 
-The easiest way to use root-enabled SSH user is to enable root login at your device. In order to do it, add the following
-option anywhere in the `/etc/ssh/sshd_config` file:
+The easiest way to use root-enabled SSH user is to enable root login at your device. In order to do it, add `PermitRootLogin yes`
+option to the `/etc/ssh/sshd_config` file:
 
     $ sudo nano /etc/ssh/sshd_config 
+    # Authentication:
+    LoginGraceTime 120
+    #PermitRootLogin without-password
     PermitRootLogin yes
+    StrictModes yes
     
 Then restart your SSHD server:
 
