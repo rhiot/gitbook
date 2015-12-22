@@ -22,8 +22,8 @@ RaspberryPi B Rev1
 RaspberryPi B Rev2 	
 RaspberryPi B 512 Mo 	
 RaspberryPi B+ 	
-RaspberryPi Pi 2 	
-RaspberryPi Zero 	
+|RaspberryPi Pi 2 	
+|RaspberryPi Zero 	
 |Intel Edison 	
 |Beaglebone
 
