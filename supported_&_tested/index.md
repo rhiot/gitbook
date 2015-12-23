@@ -20,7 +20,7 @@ Rhiot project tests and supports several configurations.
 |RaspberryPi B Rev2         | |	
 |RaspberryPi B 512 Mo       | |	
 |RaspberryPi B+ 	        | X |
-|RaspberryPi Pi 2 	        | |
+|RaspberryPi Pi 2 	        | X |
 |RaspberryPi Zero 	        |Soon |
 |Intel Edison 	            | |
 |Beaglebone                 | |
