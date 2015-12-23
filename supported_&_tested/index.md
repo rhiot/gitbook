@@ -26,4 +26,4 @@ Rhiot project tests and supports several configurations.
 |--|--|--|
 |[Pi Sense-Hat](https://www.raspberrypi.org/products/sense-hat/)	            | X| <http://gautric.github.io/blog/2015/11/24/rhiot-framebuffer-raspberrypi-sense-hat.html>|
 |[GPS BU-353](http://usglobalsat.com/p-688-bu-353-s4.aspx#images/product/large/688_2.jpg)| X |<https://rhiot.gitbooks.io/rhiotdocumentation/content/performance/index.html#raspberry-pi-2-b-with-bu353-aka-rpi2bu353>|
-|[Macbook Pro (mid '14) iFacetime Webcam](www.apple.com)| X | <http://gautric.github.io/blog/2015/10/22/rhiot-0.1.2-camel-webcam-macos-x.html>  <http://gautric.github.io/blog/2015/10/23/rhiot-camel-webcam-websocket-macbookpro.html>|
+|[Macbook Pro (mid '14) iFacetime Webcam](www.apple.com)| X | (1) <http://gautric.github.io/blog/2015/10/22/rhiot-0.1.2-camel-webcam-macos-x.html> (2) <http://gautric.github.io/blog/2015/10/23/rhiot-camel-webcam-websocket-macbookpro.html>|
