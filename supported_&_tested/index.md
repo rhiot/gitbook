@@ -31,6 +31,7 @@ Rhiot project tests and supports several configurations.
 |Device 	|Tested| Product URL | Demo URL |
 |--|--|--|--|
 |Pi Sense-Hat	            | X| <https://www.raspberrypi.org/products/sense-hat/>| <http://gautric.github.io/blog/2015/11/24/rhiot-framebuffer-raspberrypi-sense-hat.html>|
+|PI 2| ||||
 ||||||
 
 
