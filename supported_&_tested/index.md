@@ -14,10 +14,10 @@ Rhiot project tests and supports several configurations.
 
 |Hardware 	|Tested | Demo URL |
 |--|--|--|
-|RaspberryPi B 512 Mo       | |	
-|RaspberryPi B+ 	        | X |
-|RaspberryPi Pi 2 	        | X |
-|RaspberryPi Zero 	        |Soon |
+|RaspberryPi B 512 Mo       | |	|
+|RaspberryPi B+ 	        | X | |
+|RaspberryPi Pi 2 	        | X | <https://rhiot.gitbooks.io/rhiotdocumentation/content/performance/index.html#Hardware-profiles>|
+|RaspberryPi Zero 	        |Soon | |
 | | |||
 
 ## Device
