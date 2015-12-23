@@ -25,7 +25,7 @@ Rhiot project tests and supports several configurations.
 |Device 	|Tested| Product URL | Demo URL |
 |--|--|--|--|
 |Pi Sense-Hat	            | X| <https://www.raspberrypi.org/products/sense-hat/>| <http://gautric.github.io/blog/2015/11/24/rhiot-framebuffer-raspberrypi-sense-hat.html>|
-|GPS | ||||
+|GPS | X |<http://usglobalsat.com/p-688-bu-353-s4.aspx#images/product/large/688_2.jpg>|||
 ||||||
 
 
