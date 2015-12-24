@@ -7,7 +7,6 @@ Rhiot project tests and supports several configurations.
 |OS 	|Tested|
 |--|--|
 |Raspbian Jessie        |	    X|
-|Pidora             	|     TBD|
 | | ||
 
 ## Hardware 
