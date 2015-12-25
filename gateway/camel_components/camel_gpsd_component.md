@@ -89,6 +89,16 @@ useful to enrich the payload or do content based routing, eg
 | `restartGpsd`         | true                                                                          | Indicates if the endpoint should try (re)start the local GPSD daemon on start.  |
 | `gpsd4javaEndpoint`         | `new GPSdEndpoint(host, port, new ResultParser())`                        | Registry reference to the `de.taimos.gpsd4java.backend.GPSdEndpoint` instance to be used by the endpoint.  |
 
+## Starting the GPSD process
+
+By default, the GPSD component attempts to start the GPSD process every 5 seconds, it does this indefinitely until successfully started and configured.
+
+You can configure limits on the component, eg a maximum of 3 attempts, once per minute:
+
+    GpsdComponent gpsd = new GpsdComponent();
+    gpsd.setGpsdMaxRestartAttempts(3); 
+    gpsd.setGpsdRestartInterval(60000);
+    camelContext.addComponent("gpsd", gpsd);
 
 ## Process manager
 
