@@ -4,5 +4,6 @@
 downloaded using the following shell command:
 
     git clone git@github.com:rhiot/quickstarts.git
+    mvn clean package 
     
     
