@@ -20,7 +20,7 @@ Maven users should add the following dependency to their POM file:
 
 The simplest way to read sensor data is to use following route:
 
-  from("gp2y1010au0f://device1").to("mock:data");
+    from("gp2y1010au0f://device1").to("mock:data");
 
 ## Options
 
@@ -36,9 +36,9 @@ The simplest way to read sensor data is to use following route:
 
 To be able to use gp2y1010au0f component it is required to enable spi on your device. For Raspberry Pi following command can be used:
 
-  raspbian-config-boot tparam=spi on
+    raspbian-config-boot tparam=spi on
 
-## A/D Converted
+## A/D Converter
 
 Because Raspberry Pi does not support analog inputs out of the box it is required to use some kind of converted (for instance https://www.adafruit.com/product/856)
 
