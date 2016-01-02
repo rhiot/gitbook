@@ -1,6 +1,6 @@
 # Camel GP2Y1010AU0F component
 
-Camel GP2Y1010AU0F component can read data from Compact Optical Dust Sensor. It is designed to work with GP2Y1010AU0F sensor type (https://www.sparkfun.com/datasheets/Sensors/gp2y1010au_e.pdf)
+Camel GP2Y1010AU0F component can read data from Compact Optical Dust Sensor. It is designed to work with [GP2Y1010AU0F sensor type](https://www.sparkfun.com/datasheets/Sensors/gp2y1010au_e.pdf).
 
 ## Maven dependency
 
