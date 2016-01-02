@@ -16,7 +16,7 @@ Rhiot project tests and supports several configurations.
 |RaspberryPi B 512 Mo       | |	|
 |RaspberryPi B+ 	        | X | |
 |RaspberryPi Pi 2 	        | X | <https://rhiot.gitbooks.io/rhiotdocumentation/content/performance/index.html#Hardware-profiles>|
-|RaspberryPi Zero 	        |Soon | |
+|RaspberryPi Zero 	        |X | |
 | | |||
 
 ## Device
