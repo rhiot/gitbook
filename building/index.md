@@ -48,3 +48,4 @@ Execute the following command in the project main directory:
 * Update release guide [Releases Notes](../releases_notes/index.md) using GitHub tickets marked as done in the given version
 * Upgrade version in Rhiot command line (`tooling/bash/rhiot.sh`). Look up for a line similar to `RHIOT_VERSION=x.y.z`.
 * Upgrade Rhiot version in quickstarts (use the latest stable version).
+* Upgrade Rhiot version of Rhiot cloud (use the latest stable version) - modify `RHIOT_VERSION=` line in a `cloudlets/deployment/rhiot-cloud.sh` file.
