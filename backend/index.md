@@ -217,35 +217,6 @@ device is still connected to the Rhiot Cloud.
     $ curl http://rhiot.net:15000/device/myDeviceID/heartbeat
     {"status": "success"}
 
-##### Intercepting REST API requests
-
-If you would like to intercept the HTTP communication between the HTTP client and the REST API (for example in order to add the
-security checks), just add your custom implementation of the
-[`HttpExchangeInterceptor`](https://github.com/rhiot/rhiot/blob/master/vertx/src/main/groovy/io/rhiot/vertx/web/HttpExchangeInterceptor.groovy)
-interface to your classpath...
-
-    package com.example
-
-    import io.rhiot.vertx.web.HttpExchangeInterceptor
-    import io.vertx.groovy.ext.web.RoutingContext
-
-    public class MockHttpExchangeInterceptor implements HttpExchangeInterceptor {
-
-        @Override
-        public void intercept(RoutingContext routingContext) {
-            String token = routingContext.request().getHeader('security_token');
-            if(...) { // token is not valid
-                routingContext.response().end("Invalid security token!");
-            }
-        }
-
-    }
-
-...and set the `application_package` property to the base package of your application. For example for the snippet
-above the base package could be set as follows:
-
-    docker run -d -e application_package=com.example com.example/rhiot-cloudlet-device-customized
-
 #### Device management web UI
 
 Rhiot Cloudlet Console is the web user interface on the top of the device management REST API. The web UI makes it easier
