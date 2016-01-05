@@ -34,8 +34,8 @@ following command:
 
 The script above installs the proper version of Docker server. Keep in mind that the minimal Docker version required by
 Rhiot Cloud is 1.8.2 - if the older version of the Docker is installed, our script will upgrade your Docker server. After
-Docker server is properly installed, our script downloads and starts the Cloudlet Console, device management cloudlet,
-geofencing cloudlet and MongoDB server containers.
+Docker server is properly installed, Rhiot Cloud script downloads and starts monolith data stream node (which includes
+both data stream sources and consumers) and standalone Apache Spark cluster (consisting of a single master and a single worker nodes).
 
 Rhiot Cloud relies on the MongoDB to store some of the data processed by it. For example MongoDB backend is the default
 store used by the device management cloudlet's Leshan server. By default the MongoDB data is stored in the `mongodb_data`
@@ -55,19 +55,6 @@ for the IoT devices management so we decided to make it a heart of the Rhiot dev
 The diagram below presents the high-level overview of the device cloudlet architecture.
 
 <img src="../images/cloudlet-device-arch.png" align="center" height="600">
-
-#### Running the device management cloudlet
-
-The device management cloudlet is distributed as a fat jar. Its Maven coordinates are
-`io.rhiot/rhiot-cloudlet-device/0.1.1`. The dockerized artifact is available in Docker Hub as
-[rhiot/cloudlet-device:0.1.1](https://hub.docker.com/r/rhiot/cloudlet-device). In order to start the device management
-microservice, just run it as a fat jar...
-
-    java -jar rhiot-cloudlet-device:0.1.1.jar
-
-...or as the Docker container...
-
-    docker run -d io.rhiot/cloudlet-device/0.1.1
 
 #### Device management REST API
 
