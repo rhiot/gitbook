@@ -29,3 +29,4 @@ Rhiot project tests and supports several configurations.
 |[Compact Optical Dust Sensor GP2Y1010AU0F](https://www.sparkfun.com/datasheets/Sensors/gp2y1010au_e.pdf)|X|[See documentation](https://rhiot.gitbooks.io/rhiotdocumentation/content/gateway/camel_components/camel_gp2y1010au0f_component.html)|
 |[Triple-axis Accelerometer+Magnetometer (Compass) Board - LSM303](https://www.adafruit.com/products/1120)|X|<http://gautric.github.io/blog/2015/05/20/camel-iot-labs-i2c-gpio-mqtt-lcd.html>|
 |||||
+|||||
