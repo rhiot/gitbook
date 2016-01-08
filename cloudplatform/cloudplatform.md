@@ -1,32 +1,21 @@
-# Rhiot cloud platform
+# Rhiot Cloud Platform
 
-## Rhiot Cloud
-
-The Internet of Things is all about the communication and messaging. The devices connected to the IoT system have to
-connect to the kind of centralized hub that allows them to exchange their data with the other devices and backend
-services. The device that can't be properly connected to the rest of the application ecosystem, is useless from the IoT point
- of view.
+The Internet of Things is all about the communication and messaging. Devices connected to the IoT system have to
+connect to a kind of centralized hub that allows them to exchange their data with the other devices and backend
+services. The device that can't be properly connected to the rest of the application ecosystem, is useless from the IoT
+point of view.
 
 If you are looking for such centralized event hub, Rhiot project provides such central bus in the form of the
-*Rhiot Cloud*. Rhiot Cloud is the set of the backend (micro)services and UI application used to managed these.
+*Rhiot Cloud Platform*. Rhiot Cloud Platform is a set of backend *services* providing common IoT-related functionalities.
+In order to connect to those services using a protocol of your choice, you can use *protocol adapters*. Messages
+are exchanged between protocol adapters and backend services using *IoT Connector*. The IoT Connector is an AMQP-based
+cloud-ready messaging infrastructure.
 
-### Architecture
+The high-level architecture diagram of the Rhiot Cloud Platform is presented on the image below:
 
-The high-level architecture diagram of the Rhiot Cloud is presented on the image below:
+ <img src="images/rhiot_cloud_platform_arch.png" align="center" height="600">
 
- <img src="../images/rhiot-cloud-arch.png" align="center" height="600">
-
-*Cloudlets* are server-side microservices that come with some common functionalities required by the IoT systems. *Cloudlets
-UI plugins* are [Hawt.io](http://hawt.io)-based plugins which provides spiffy web UI for the cloudlets back-end services. *Cloudlet
-Console* is the web application assembling all the Cloudlets UI plugins. The *Rhiot Cloud* then is the
-complete cloud-based installation setup including Cloudlet Console, Cloudlets backend services and all the other necessary
-services (like database servers) deployed to the server of your choice.
-
-Notice that we assume that cloudlets are dockerized and deployed as the Docker containers. Also the HTTP REST API has been listed
-at the top of the diagram not without the reason - we think of the REST API as the first-class citizen considering the
-access to the Rhiot Cloud.
-
-### Dockerized Rhiot Cloud
+## Dockerized Rhiot Cloud
 
 We recommend to run the Rhiot Cloud using the Docker container. We love Docker and believe that containers are the
 future of the applications deployment. To install the Rhiot Cloud on the Linux server of your choice, just execute the
@@ -43,7 +32,7 @@ Rhiot Cloud relies on the MongoDB to store some of the data processed by it. For
 store used by the device management cloudlet's Leshan server. By default the MongoDB data is stored in the `mongodb_data`
 volume container. If such volume doesn't exist, Rhiot Cloud script will create it for you.
 
-### Device management cloudlet
+## Device management cloudlet
 
 The foundation of the every IoT solution is the device management system. Without the centralized coordination of your
 *things*, you can't properly orchestrate how your devices communicate with each other. Also the effective monitoring of
