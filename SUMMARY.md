@@ -22,7 +22,7 @@
        * [GPS](gateway/mini/gps.md)
        * [Monitoring](gateway/mini/monitoring.md)
        * [Customization](gateway/mini/customization.md)
-* [Backend](backend/index.md)
+* [Cloud Platform](cloudplatform/cloudplatform.md)
    * [Camel Components](backend/camel_components/index.md)
        * [Camel OpenIMAJ component](backend/camel_components/camel_openimaj_component.md)
        * [Camel PubNub component](backend/camel_components/camel_pubnub_component.md)

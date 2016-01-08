@@ -1,3 +1,5 @@
+# Rhiot cloud platform
+
 ## Rhiot Cloud
 
 The Internet of Things is all about the communication and messaging. The devices connected to the IoT system have to
