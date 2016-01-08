@@ -13,7 +13,7 @@ cloud-ready messaging infrastructure.
 
 The high-level architecture diagram of the Rhiot Cloud Platform is presented on the image below:
 
- <img src="rhiot_cloud_platform_arch.png" align="center" height="600">
+ <img src="rhiot_cloud_platform_arch.png" align="center" height="500">
 
 ## Dockerized Rhiot Cloud
 
