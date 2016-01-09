@@ -4,6 +4,8 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 
 ### 2016
 
+
+
 ### 2015
 
 - [Rhiot Kura Gateway Sample (Emulator & RaspberryPi) ](http://gautric.github.io/blog/2015/12/03/rhiot-kura-OSGi-full-sample.html) - Greg's blog post (video included) (dec 2015)
