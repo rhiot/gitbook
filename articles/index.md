@@ -11,7 +11,10 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 - [Connecting Apache Camel and Apache Spark](https://dzone.com/articles/connecting-apache-camel-and-apache-spark) - DZone article by Henryk Konsek (2015)
 - [Rhiot over Kura over Docker over RaspberryPi ;-)](http://gautric.github.io/blog/2015/12/28/rhiot-kura-docker-raspberrypi.html) - Greg's blog post (video included) (dec 2015)
 - [Rhiot RaspberryPi Sense-Hat display](http://gautric.github.io/blog/2015/11/24/rhiot-framebuffer-raspberrypi-sense-hat.html) - Greg's blog post (video included) (nov 2015)
-
+- [Howto use your MacOS webcam w/ Rhiot project and groovy](http://gautric.github.io/blog/2015/10/22/rhiot-0.1.2-camel-webcam-macos-x.html) - Greg's blog post (image included) (oct 2015)
+- [Creating Camel routes for Eclipse Kura](https://dzone.com/articles/creating-camel-routes-for-eclipse-kura) - Henryk Konsek DZone article (2015)
+- [Rhiot 0.1.2 Webcam component on MacOS X in Groovy](http://gautric.github.io/blog/2015/10/22/rhiot-0.1.2-camel-webcam-macos-x.html) - Greg's blog post (video included) (oct 2015)
+- [Rhiot Webcam and websocket components on MacbookPro in Groovy](http://gautric.github.io/blog/2015/10/23/rhiot-camel-webcam-websocket-macbookpro.html) - Greg's blog post (video included) (oct 2015)
 
 - [Make Your IoT Gateway WiFi-Aware Using Camel and Kura](http://java.dzone.com/articles/make-your-iot-gateway-wifi) - DZone article by Henryk Konsek (2015)
 - [IoT gateway dream team - Eclipse Kura and Apache Camel](http://www.slideshare.net/hekonsek/io-t-gateway-dream-team-eclipse-kura-and-apache-camel) - slides from the Henryk Konsek talk for Eclipse IoT Virtual Meetup (2015)
@@ -22,10 +25,7 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 - [Over-the-Air Runtime Updates of the IoT Gateways](http://java.dzone.com/articles/over-air-runtime-updates-iot) - DZone article by Henryk Konsek (2015)
 - [Where Am I? Collecting GPS Data With Apache Camel](https://dzone.com/articles/where-am-i-collecting-gps-data-with-apache-camel) - DZone article by Henryk Konsek (2015)
 - [Let's start the Rhiot](http://henryk-konsek.blogspot.com/2015/07/lets-start-rhiot.html) - blog post by Henryk Konsek (2015)
-- [Howto use your MacOS webcam w/ Rhiot project and groovy](http://gautric.github.io/blog/2015/10/22/rhiot-0.1.2-camel-webcam-macos-x.html) - Greg's blog post (image included) (oct 2015)
-- [Creating Camel routes for Eclipse Kura](https://dzone.com/articles/creating-camel-routes-for-eclipse-kura) - Henryk Konsek DZone article (2015)
-- [Rhiot 0.1.2 Webcam component on MacOS X in Groovy](http://gautric.github.io/blog/2015/10/22/rhiot-0.1.2-camel-webcam-macos-x.html) - Greg's blog post (video included) (oct 2015)
-- [Rhiot Webcam and websocket components on MacbookPro in Groovy](http://gautric.github.io/blog/2015/10/23/rhiot-camel-webcam-websocket-macbookpro.html) - Greg's blog post (video included) (oct 2015)
+
 
 
 
