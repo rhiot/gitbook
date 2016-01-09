@@ -4,8 +4,6 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 
 ### 2016
 
-
-
 ### 2015
 
 - [Make Your IoT Gateway WiFi-Aware Using Camel and Kura](http://java.dzone.com/articles/make-your-iot-gateway-wifi) - DZone article by Henryk Konsek (2015)
