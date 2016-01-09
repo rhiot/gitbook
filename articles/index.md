@@ -2,6 +2,9 @@
 
 Here is the bunch of useful resources regarding Rhiot IoT project (chronological order):
 
+### 2016
+
+
 ### 2014 
 - [Using Camel & Tinkerforge in Jboss Fuse](https://www.youtube.com/watch?v=J1hN9NLLbro) - Interview with Geert, includes live demo of Camel loadbalancer via RGB Led Strip (Oct 2014)
 
