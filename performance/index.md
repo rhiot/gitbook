@@ -1,6 +1,5 @@
 # Performance Testing Framework
 
-
 The key part of the process of tailoring the perfect IoT solution is choosing the proper hardware for the gateway device.
 In general the more expensive gateway hardware is, the more messages per second you can process. However the more expensive the gateway device is, the less affordable your IoT solution becomes for the end client. That is the main reason why would you like to have a proper tool for measuring the given IoT messages flow scenario in the unified way, on many devices.
 
