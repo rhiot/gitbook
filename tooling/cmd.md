@@ -64,7 +64,7 @@ SSH options:
 * `--username` (`-u`)      SSH username of the device. Defaults to 'root'.
 * `--password` (`-pa`)     SSH password of the device. Defaults to 'raspberry'.
 
-Other options :
+Other options:
 
 *  `--append` (`-a`)       Appends to the given property instead of overriding it.
 
