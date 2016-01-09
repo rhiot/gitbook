@@ -26,4 +26,5 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 - [Rhiot over Kura over Docker over RaspberryPi ;-)](http://gautric.github.io/blog/2015/12/28/rhiot-kura-docker-raspberrypi.html) - Greg's blog post (video included) (dec 2015)
 
 
-### 2015
+### 2014 
+- [Using Camel & Tinkerforge in Jboss Fuse](https://www.youtube.com/watch?v=J1hN9NLLbro) - Interview with Geert, includes live demo of Camel loadbalancer via RGB Led Strip (Oct 2014)
