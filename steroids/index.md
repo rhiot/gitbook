@@ -3,8 +3,7 @@
 ## Steroids bootstrap
 
 Steroids Bootstrap is a small engine that can be used to scan the classpath and automatically load steroids modules.
-Bootstrap provides opinionated *convention over configuration* runtime simplifying the wiring between common components
-used in Rhiot-based applications.
+Bootstrap provides opinionated *convention over configuration* runtime simplifying the wiring between common components used in Rhiot-based applications.
 
 In order to start using bootstrap, add the following Maven dependency to your project:
 
