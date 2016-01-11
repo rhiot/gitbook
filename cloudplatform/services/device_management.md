@@ -1,4 +1,4 @@
-# Device management
+# Device management service
 
 The foundation of the every IoT solution is the device management system. Without the centralized coordination of your
 *things*, you can't properly orchestrate how your devices communicate with each other. Also the effective monitoring of
@@ -7,7 +7,7 @@ backend Management Cloudlet Service for registering and tracking devices connect
 
 The diagram below presents the high-level overview of the device cloudlet architecture.
 
-<img src="rhiot_cloud_platform_devices" align="center" height="600">
+<img src="rhiot_cloud_platform_devices.png" align="center" height="600">
 
 ## Leshan LWM2M protocol adapter
 
