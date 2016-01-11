@@ -105,7 +105,7 @@ Sometimes you would like to explicitly remove the particular registered device f
 `DELETE` request against the `/device/DEVICE_ID` URI. For example to remove the device with the ID equal to `foo`, execute
 the following command:
 
-    $ curl -XDELETE http://rhiot.net:15000/device/foo
+    $ curl -X DELETE http://rhiot.net:15000/device/foo
     {"status":"success"}
 
 ##### Reading device's details
