@@ -2,18 +2,20 @@
 
 The foundation of the every IoT solution is the device management system. Without the centralized coordination of your
 *things*, you can't properly orchestrate how your devices communicate with each other. Also the effective monitoring of
-the IoT system, without the devices registered in the centralized cloud, becomes almost impossible.
+the IoT system, without the devices registered in the centralized cloud, becomes almost impossible. Rhiot provides
+backend Management Cloudlet Service for registering and tracking devices connected to the Cloud Platform.
 
-Rhiot provides backend Management Cloudlet Service for registering and tracking devices connected to the Cloud Platform.
+The diagram below presents the high-level overview of the device cloudlet architecture.
+
+<img src="rhiot_cloud_platform_devices" align="center" height="600">
+
+## Leshan LWM2M protocol adapter
+
 Under the hood Device Management Cloudlet uses [Eclipse Leshan](https://projects.eclipse.org/projects/iot.leshan), the
 open source implementation of the [LWM2M](https://en.wikipedia.org/wiki/OMA_LWM2M) protocol. LWM2M becomes the standard
 for the IoT devices management so we decided to make it a heart of the Rhiot device service.
 
-The diagram below presents the high-level overview of the device cloudlet architecture.
-
-<img src="../images/cloudlet-device-arch.png" align="center" height="600">
-
-#### Device management REST API
+## Device management REST API
 
 The device management cloudlet exposes REST API that can be used to work with the devices. By default the device
 management REST API is exposed using the following base URI - `http:0.0.0.0:15000`. You can change the port of the
@@ -184,12 +186,6 @@ In order to send heartbeat message to the given device and make it visible as co
 ##### Deregistering devices
 
 If you would like deregister the device from the cloud, click the `Deregister` button near the device icon.
-
-##### Listing device details
-
-If you click on the device name, the web UI will fetch and display the device details metrics:
-
-<img src="../images/console-device-details.png" align="center" height="400" hspace="30" >
 
 ##### Creating virtual devices
 
