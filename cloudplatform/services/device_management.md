@@ -9,6 +9,38 @@ The diagram below presents the high-level overview of the device cloudlet archit
 
 <img src="rhiot_cloud_platform_devices.png" align="center" height="600">
 
+## Device management API
+
+### Device management schema
+
+Devices are represented using the following schema:
+
+    Device {
+        String deviceId;
+        String registrationId;
+        Date registrationDate;
+        Date lastUpdate;
+    }
+
+### Listing devices
+
+To list the devices registered to the cloud (together with their basic metadata) send empty message to the following
+IoT Connector channel:
+
+    device.list
+
+As a response you will receive a list of the devices following the `Device` schema described above.
+
+### Reading particular device's metadata
+
+In order to read the metadata of the particular device identified with the given ID, send a message to following
+IoT connector channel:
+
+    ID -> device.get
+
+Where ID is a String representing the unique ID of a device. As a response you will receive a device following the
+`Device` schema described above.
+
 ## Leshan LWM2M protocol adapter
 
 Under the hood Device Management Cloudlet uses [Eclipse Leshan](https://projects.eclipse.org/projects/iot.leshan), the
@@ -24,41 +56,8 @@ REST API using the `api_rest_port` environment variable. For example the snippet
 
     docker run -d -e api_rest_port=16000 -p 16000:16000 io.rhiot/cloudlet-device/0.1.1
 
-##### Listing devices
 
-To list the devices registered to the cloud (together with their metadata) send the `GET` request to the
-`/device` URI. For example executing the following command returns the list of the devices in the form of the list
-serialized to the JSON format:
 
-    $ curl http://rhiot.net:15000/device
-    {"devices":
-      [{"registrationDate":1439822565254,
-      "address":"127.0.0.1",
-      "port":1103,
-      "registrationEndpointAddress":"0.0.0.0:5683",
-      "lifeTimeInSec":86400,
-      "lwM2mVersion":"1.0",
-      "bindingMode":"U",
-      "endpoint":"myFancyDevice",
-      "registrationId":"7OjdvHCVUb",
-      "objectLinks":[{"url":"/",
-        "attributes":{"rt":"oma.lwm2m"},
-        "path":"/"},
-        ...],
-      "alive":true}]}
-
-##### Reading particular device's metadata
-
-In order to read the metadata of the particular device identified with the given ID, send the `GET` request to the `/device/ID`
-URI. For example to read the metadata of the device with the ID equal to `myDevice001`, execute the following command:
-
-    $ curl http://rhiot.net:15000/device/myDevice001
-    {"device":
-      {"registrationDate":1441959646566,"address":"127.0.0.1","port":1111,
-      "registrationEndpointAddress":"0.0.0.0:5683", "lifeTimeInSec":31536000,
-      "lwM2mVersion":"1.0","bindingMode":"U","endpoint":"myDevice001",
-      "registrationId":"2OMPXtg6lX", "objectLinks": ... ,"alive":true}
-    }
 
 ##### Disconnected devices
 
