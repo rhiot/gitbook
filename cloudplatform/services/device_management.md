@@ -96,7 +96,7 @@ the heartbeat update via the REST API.
 
 In order to deregister all the devices from the cloud, send the `DELETE` request to the `/device` URI. For example:
 
-    $ curl -XDELETE http://rhiot.net:15000/device
+    $ curl -X DELETE http://rhiot.net:15000/device
     {"status":"success"}
 
 ##### Deregistering single device
