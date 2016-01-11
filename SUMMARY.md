@@ -24,6 +24,7 @@
        * [Customization](gateway/mini/customization.md)
 * [Cloud Platform](cloudplatform/cloudplatform.md)
    * [Starting Cloud Platform](cloudplatform/starting.md)
+   * [Device management](cloudplatform/devices.md)
    * [Camel Components](cloudplatform/camel_components/index.md)
        * [Camel OpenIMAJ component](cloudplatform/camel_components/camel_openimaj_component.md)
        * [Camel PubNub component](cloudplatform/camel_components/camel_pubnub_component.md)
