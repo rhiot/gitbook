@@ -39,7 +39,7 @@ As a response you will receive a list of the devices following the `Device` sche
 In order to read the metadata of the particular device identified with the given ID, send a message to following
 IoT connector channel:
 
-    ID -> device.get
+    String id -> device.get
 
 Where ID is a String representing the unique ID of a device. As a response you will receive a device following the
 `Device` schema described above.
