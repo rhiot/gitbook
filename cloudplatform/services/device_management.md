@@ -3,13 +3,16 @@
 The foundation of the every IoT solution is the device management system. Without the centralized coordination of your
 *things*, you can't properly orchestrate how your devices communicate with each other. Also the effective monitoring of
 the IoT system, without the devices registered in the centralized cloud, becomes almost impossible. Rhiot provides
-backend Management Cloudlet Service for registering and tracking devices connected to the Cloud Platform.
+backend management service for registering and tracking devices connected to the Cloud Platform.
 
 The diagram below presents the high-level overview of the device cloudlet architecture.
 
 <img src="rhiot_cloud_platform_devices.png" align="center" height="600">
 
 ## Device management API
+
+Device service can be accessed using the IoT connector API described below. Keep in mind that Protocol Adapters can
+be used to access device management service via other protocols (including REST and LWM2M).
 
 ### Device management schema
 
