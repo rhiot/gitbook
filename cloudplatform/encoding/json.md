@@ -5,10 +5,13 @@ JSON payload encoding serializes message object into JSON with root element name
     import io.rhiot.cloudplatform.encoding.json.JsonPayloadEncoding;
     ...
     new JsonPayloadEncoding().encode("foo");    =>  {"payload": "foo"}
+
     new JsonPayloadEncoding().encode(100);    =>  {"payload": 100}
+
     Map<String, Object> map = new HashMap<>();
     map.put("foo", "bar");
     new JsonPayloadEncoding().encode(map);    =>  {"payload": {"foo": "bar"}}
+
     new JsonPayloadEncoding().encode(new Person().name("Henry"));    =>  {"payload": {"name": "Henry"}}
 
 The `payload` wrapper is dropped when decoding the payload:
