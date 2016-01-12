@@ -3,7 +3,9 @@
 JSON payload encoding serializes message object into JSON with root element named `payload`:
 
     import io.rhiot.cloudplatform.encoding.json.JsonPayloadEncoding;
+
     ...
+
     new JsonPayloadEncoding().encode("foo");    =>  {"payload": "foo"}
 
     new JsonPayloadEncoding().encode(100);    =>  {"payload": 100}
