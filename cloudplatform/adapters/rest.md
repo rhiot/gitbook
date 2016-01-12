@@ -38,5 +38,5 @@ Spring Boot runtime automatically detects and starts REST protocol adapter as so
 
 By default REST connector listens on HTTP port 8080. You can change this port by setting `rest.port` property.
 
-If you would like to specify the conten ttype returned by the REST protocol adapter, set the value of the `rest.contentType`
+If you would like to specify the content type returned by the REST protocol adapter, set the value of the `rest.contentType`
 property. By default `application/json` is returned.
