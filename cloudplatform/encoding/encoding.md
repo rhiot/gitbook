@@ -15,10 +15,11 @@ In order to make encoding and decoding of the message easier Rhiot provides plug
     byte[] message = encoding.encode(payload);
     send(message); // Sending serialized message to protocol adapter or IoT connector
 
-
+Snippet below demonstrates how to use payload encoding SPI to decode a message read from IoT Connector or protocol
+adapter:
 
     PayloadEncoding encoding = ...;
-    byte[] serializedPayload = ...; // Received serialized message from IoT connector or protocol adapter
+    byte[] serializedPayload = ...; // Received serialized message from IoT Connector or protocol adapter
     Map<String, Object> payload = (Map<String, Object>) encoding.encode(serializedPayload);
     // Sending serialized message to protocol adapter or IoT connector
 
