@@ -18,3 +18,8 @@ The high-level architecture diagram of the Rhiot Cloud Platform is presented on 
 Rhiot comes with a predefined set of Protocol Adapters and backend services that can be used out of the box with your
 IoT solution. Rhiot also provides AMQP IoT Connector implementation based on
 [ActiveMQ message broker](http://activemq.apache.org).
+
+It is important to stress that only client sending a payload to the Cloud Platform and service consuming message from
+the IoT connector are aware of messages semantics. It basically means that it is client responsibility to properly
+encode the message, while it is service responsibility to decode the message. Protocol adapters and IoT connector
+are not aware of the message semantics.
