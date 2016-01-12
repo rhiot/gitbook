@@ -3,6 +3,15 @@
 REST protocol adapter bridges HTTP requests with the IoT Connector (i.e. AMQP destinations). It therefore allows you to
 expose your services via REST API.
 
+## Protocol binding rules
+
+REST protocol adapter matches HTTP URI to the AMQP queue destination:
+
+    http://example.com:8080/foo/bar => amqp:queue:foo.bar
+
+Content posted with POST request are converted to the body of the message sent to the AMQP destination. JMS correlation ID
+can be used to match AMQP response with HTTP response.
+
 ## Starting REST protocol adapter
 
 This section describes how to start REST protocol adapter.
