@@ -24,3 +24,23 @@ The `payload` wrapper is dropped when decoding the payload:
     new JsonPayloadEncoding().decode(payload);    =>  "foo"
 
 Under the hood JSON encoding uses [Jackson](http://wiki.fasterxml.com/JacksonHome) library.
+
+## Using JSON payload encoding in PaaS environment
+
+JON payload is a default payload used in a Cload Platform PaaS environment.  If you would like to send a message to the
+PaaS protocol adapters or IoT connector encode those using [JSON encoding](json.md).
+
+## Using JSON payload programatically in a Spring Boot runtime
+
+In order to enable JSON encoing in your Cloud Platform application, just add the following jar into your POM file.
+
+    <dependency>
+    	<groupId>io.rhiot</groupId>
+    	<artifactId>rhiot-cloudplatform-encoding-json</artifactId>
+    	<version>${rhiot.version}</version>
+    </dependency>
+
+Spring Boot runtime automatically detects and starts REST protocol adapter as soon `CloudPlatform` instance is started:
+
+    new CloudPlatform().start();
+

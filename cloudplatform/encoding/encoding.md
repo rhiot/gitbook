@@ -6,10 +6,17 @@ encode the message, while it is service responsibility to decode the message. Pr
 are not aware of the message semantics. Please refer to the [Cloud Platform Architecture](../cloudplatform.md) for more
 architectural details.
 
+## Payload encoding in a PaaS environment
+
+The default payload encoding used in Cload Platform PaaS environment is [JSON encoding](json.md). If you would like to
+send a message to the PaaS protocol adapters or IoT connector encode those using [JSON encoding](json.md).
+
 ## Payload encoding SPI
 
 In order to make encoding and decoding of the message easier Rhiot provides pluggable *Payload Encoding SPI*.
 
+    import io.rhiot.cloudplatform.encoding.spi.PayloadEncoding;
+    ...
     PayloadEncoding encoding = ...;
     Map<String, Object> payload = ...;
     byte[] message = encoding.encode(payload);
@@ -18,11 +25,33 @@ In order to make encoding and decoding of the message easier Rhiot provides plug
 Snippet below demonstrates how to use payload encoding SPI to decode a message read from IoT Connector or protocol
 adapter:
 
+    import io.rhiot.cloudplatform.encoding.spi.PayloadEncoding;
+    ...
     PayloadEncoding encoding = ...;
     byte[] serializedPayload = ...; // Received serialized message from IoT Connector or protocol adapter
     Map<String, Object> payload = (Map<String, Object>) encoding.encode(serializedPayload);
     // Sending serialized message to protocol adapter or IoT connector
 
-## Payload encoding in PaaS environment
+### Using payload encoding programatically in a Spring Boot runtime
 
-The default payload encoding used in Cload Platform PaaS environment is [JSON encoding](json.md).
+In order to use `PayloadEncoding` instance programatically in a Spring Boot runtime, inject it into your component:
+
+    import io.rhiot.cloudplatform.encoding.spi.PayloadEncoding;
+    ...
+    public class MyComponent {
+
+
+        PayloadEncoding payloadEncoding;
+
+        public MyComponent(PayloadEncoding payloadEncoding) {
+            this.payloadEncoding = payloadEncoding;
+        }
+
+        public void operation() {
+            byte[] encodedPayload = payloadEncoding.encode("mymessage");
+           sendMessage(encodedPayload);
+        }
+
+        ...
+
+    }
