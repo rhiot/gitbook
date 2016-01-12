@@ -24,6 +24,8 @@
        * [Customization](gateway/mini/customization.md)
 * [Cloud Platform](cloudplatform/cloudplatform.md)
    * [Starting Cloud Platform](cloudplatform/starting.md)
+   * [Cloud Platform Protocol Adapters](cloudplatform/adapters/adapters.md)
+      * [REST protocol adapter](cloudplatform/adapters/rest.md)
    * [Cloud Platform Services](cloudplatform/services/services.md)
        * [Device management](cloudplatform/services/device_management.md)
    * [Camel Components](cloudplatform/camel_components/index.md)
