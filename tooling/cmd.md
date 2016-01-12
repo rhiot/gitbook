@@ -94,7 +94,7 @@ All the device-config command SSH options are also available for this command.
 
 **Available since Rhiot 0.1.4.**
 
-Using URL as a file source is accepted as well. For example to read file from HTTP and send it to a remot device:
+Using URL as a file source is accepted as well. For example to read file from HTTP and send it to a remote device:
 
     device-send http://example.com/file /etc/remotefile
 
