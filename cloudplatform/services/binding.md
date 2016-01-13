@@ -55,23 +55,23 @@ Service binding relies on a convention-over-configuration to match IoT Connector
 example above all messages matching the destination pattern `test.OPERATION.ARG1.ARG2.ARG3...` are bound the the
 appropriate method invocation. For example:
 
-    test.count.10
+    QUEUE: test.count.10
         =>
     TestInterfaceImpl.count(10)
 
 The last argument of operation can be also sent as a message body. For example:
 
-    test.count
+    QUEUE: test.count
     BODY: 10
         =>
     TestInterfaceImpl.count(10)
 
-    test.sizeOf
+    QUEUE: test.sizeOf
     BODY: {"payload: {"foo": "bar"}"} // Assuming that default JSON payload encoding is used
         =>
     TestInterfaceImpl.sizeOf([foo: "bar"])
 
-    test.numberPlusSizeOf.10
+    QUEUE: test.numberPlusSizeOf.10
     BODY: {"payload: {"foo": "bar"}"}
         =>
     TestInterfaceImpl.numberPlusSizeOf(10, [foo: "bar"])
