@@ -66,9 +66,8 @@ The last argument of operation can be also sent as a message body. For example:
         =>
     TestInterfaceImpl.count(10)
 
-    // Assuming that default JSON payload encoding is used
     test.sizeOf
-    BODY: {"payload: {"foo": "bar"}"}
+    BODY: {"payload: {"foo": "bar"}"} // Assuming that default JSON payload encoding is used
         =>
     TestInterfaceImpl.sizeOf([foo: "bar"])
 
