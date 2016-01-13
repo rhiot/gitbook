@@ -29,6 +29,7 @@
    * [Protocol Adapters](cloudplatform/adapters/adapters.md)
       * [REST protocol adapter](cloudplatform/adapters/rest.md)
    * [Cloud Platform Services](cloudplatform/services/services.md)
+       * [Service binding](cloudplatform/services/binding.md)
        * [Device management](cloudplatform/services/device_management.md)
    * [Camel Components](cloudplatform/camel_components/index.md)
        * [Camel OpenIMAJ component](cloudplatform/camel_components/camel_openimaj_component.md)
