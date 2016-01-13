@@ -55,16 +55,24 @@ Service binding relies on a convention-over-configuration to match IoT Connector
 example above all messages matching the destination pattern `test.OPERATION.ARG1.ARG2.ARG3...` are bound the the
 appropriate method invocation. For example:
 
-    destination(test.count.10)   => TestInterfaceImpl.count(10)
+    destination(test.count.10)
+        =>
+    TestInterfaceImpl.count(10)
 
 The last argument of operation can be also sent as a message body. For example:
 
-    destination(test.count) body(10)   => TestInterfaceImpl.count(10)
+    destination(test.count) body(10)
+        =>
+    TestInterfaceImpl.count(10)
 
     // Assuming that default JSON payload encoding is used
-    destination(test.sizeOf) body({"payload: {"foo": "bar"}"})   => TestInterfaceImpl.sizeOf([foo: "bar"])
+    destination(test.sizeOf) body({"payload: {"foo": "bar"}"})
+        =>
+    TestInterfaceImpl.sizeOf([foo: "bar"])
 
-    destination(test.numberPlusSizeOf.10) body({"payload: {"foo": "bar"}"})   => TestInterfaceImpl.numberPlusSizeOf(10, [foo: "bar"])
+    destination(test.numberPlusSizeOf.10) body({"payload: {"foo": "bar"}"})
+        =>
+    TestInterfaceImpl.numberPlusSizeOf(10, [foo: "bar"])
 
 ## Using service binding programatically in Spring Boot runtime
 
