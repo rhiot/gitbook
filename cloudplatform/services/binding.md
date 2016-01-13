@@ -61,7 +61,7 @@ The last argument of operation can be also sent as a message body. For example:
 
     destination(test.count) body(10)   => TestInterfaceImpl.count(10)
 
-    // Assuming that default [JSON payload encoding](../encoding/json.md) is used
+    // Assuming that default JSON payload encoding is used
     destination(test.sizeOf) body({"payload: {"foo": "bar"}"})   => TestInterfaceImpl.sizeOf([foo: "bar"])
 
     destination(test.numberPlusSizeOf.10) body({"payload: {"foo": "bar"}"})   => TestInterfaceImpl.numberPlusSizeOf(10, [foo: "bar"])
