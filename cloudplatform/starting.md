@@ -19,7 +19,7 @@ script will upgrade your Docker server. After Docker server is properly installe
 - default protocol adapters
 - default Rhiot backend services
 - standalone Apache Spark cluster (a single master node and a single worker node)
-- MongoDB database
+- [MongoDB](https://www.mongodb.org/) database
 
 PaaS Cloud Platform relies on the MongoDB to store some of the data processed by it. For example MongoDB backend is a default
 store used by the device service. By default the MongoDB data is stored in the `mongodb_data`
