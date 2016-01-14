@@ -5,7 +5,7 @@ using Spring Boot.
 
 ## PaaS
 
-PaaS version of Cloud Platform is based on Docker containers. We love Docker and believe that containers are the
+PaaS version of Cloud Platform is based on [Docker](https://www.docker.com/) containers. We love Docker and believe that containers are the
 future of the applications deployment. To install the Cloud Platform on the Linux server of your choice, just execute the
 following command:
 
