@@ -27,7 +27,7 @@ volume container. If such volume doesn't exist, Cloud Platform script will creat
 
 This script has been developped and works with OS above :
 
-- `Fedora`
+- `Ubuntu`
 - `MacOS X (ElCaptian)`
 
 
