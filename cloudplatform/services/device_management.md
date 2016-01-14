@@ -19,10 +19,29 @@ be used to access device management service via other protocols (including REST 
 Devices are represented using the following schema:
 
     Device {
-        String deviceId;
-        String registrationId;
-        Date registrationDate;
-        Date lastUpdate;
+
+    String deviceId;
+
+    String registrationId;
+
+    Date registrationDate;
+
+    Date lastUpdate;
+
+    InetAddress address;
+
+    int port;
+
+    InetSocketAddress registrationEndpointAddress;
+
+    long lifeTimeInSec;
+
+    String smsNumber;
+
+    String lwM2mVersion;
+
+    BindingMode bindingMode;
+
     }
 
 ### Listing devices
@@ -44,60 +63,45 @@ IoT connector channel:
 Where ID is a String representing the unique ID of a device. As a response you will receive a device following the
 `Device` schema described above.
 
+### Disconnected devices
+
+Registered devices can be in the *connected* or *disconnected* status. Connected devices can exchange
+messages with the cloud, while disconnected can't. Disconnection usually occurs when device temporarily lost the network
+connectivity.
+
+To return the list of identifiers of the disconnected devices send an empty message to the following IoT connector channel:
+
+    device.disconnected
+
+In the response you will receive the list of the identifiers of the devices
+that have not send the heartbeat signal to the device management service for the given *disconnection period* (one minute by
+default).
+
+### Sending heartbeat
+
+The device which is running and operational should periodically send the hearbeat signal to the device service in order to avoid
+being marked as disconnected. You can do it be sending a message to the following IoT connector channel:
+
+    String id -> device.heartbeat
+
+Where ID is a String representing the unique ID of a device.
+
+Keep also in mind that sending the regular LWM2M update by the client device to the LWM2M Leshan protocol adapter sends
+heartbeat update as well.
+
+## Running device service in Spring Boot runtime
+
+The disconnection period can be changed globally using the `disconnectionPeriod` environment variable indicating the
+disconnection period value in miliseconds. For example the snippet below sets the disconnection period to 20 seconds:
+
+    disconnectionPeriod=20000
+
+
 ## Leshan LWM2M protocol adapter
 
 Under the hood Device Management Cloudlet uses [Eclipse Leshan](https://projects.eclipse.org/projects/iot.leshan), the
 open source implementation of the [LWM2M](https://en.wikipedia.org/wiki/OMA_LWM2M) protocol. LWM2M becomes the standard
 for the IoT devices management so we decided to make it a heart of the Rhiot device service.
-
-## Device management REST API
-
-The device management cloudlet exposes REST API that can be used to work with the devices. By default the device
-management REST API is exposed using the following base URI - `http:0.0.0.0:15000`. You can change the port of the
-REST API using the `api_rest_port` environment variable. For example the snippet below exposes the REST API on the port
-16000:
-
-    docker run -d -e api_rest_port=16000 -p 16000:16000 io.rhiot/cloudlet-device/0.1.1
-
-
-
-
-##### Disconnected devices
-
-Devices registered in the Rhiot cloud can be in the *connected* or *disconnected* status. Connected devices can exchange
-messages with the cloud, while disconnected can't. Disconnection usually occurs when device temporarily lost the network
-connectivity.
-
-To return the list of identifiers of the disconnected devices send the `GET` request to the following URL -
-`/device/disconnected`. In the response you will receive the list of the identifiers of the devices
-that have not send the heartbeat signal to the device management cloudlet for the given *disconnection period* (one minute by
-default). The list will be formatted as the JSON document similar to the following one:
-
-    $ curl http://rhiot.net:15000/device/disconnected
-    {"disconnectedDevices": ["device1", "device2", ...]}
-
-The disconnection period can be changed globally using the `disconnectionPeriod` environment variable indicating the
-disconnection period value in miliseconds. For example the snippet below sets the disconnection period to 20 seconds:
-
-    docker run -d -e disconnectionPeriod=20000 io.rhiot/cloudlet-device/0.1.1
-
-The device which is running and operational should periodically send the hearbeat signal to the device cloudlet in order to avoid
-being marked as disconnected. You can do it be sending the `GET` request to the
-`/device/DEVICE_ID/heartbeat` URI. If the heartbeat has been successfully send to the cloud,
-you will receive the HTTP response similar to the following one:
-
-    $ curl http://rhiot.net:15000/device/myDeviceID/heartbeat
-    {"status": "success"}
-
-Keep also in mind that sending the regular LWM2M update by the client device to the LWM2M server works the same as sending
-the heartbeat update via the REST API.
-
-##### Deregistering all the devices
-
-In order to deregister all the devices from the cloud, send the `DELETE` request to the `/device` URI. For example:
-
-    $ curl -X DELETE http://rhiot.net:15000/device
-    {"status":"success"}
 
 ##### Deregistering single device
 
@@ -169,21 +173,6 @@ device is still connected to the Rhiot Cloud.
 
 Rhiot Cloudlet Console is the web user interface on the top of the device management REST API. The web UI makes it easier
 to monitor and manage your devices using the web brower, the mobile phone or the tablet.
-
-##### Listing devices
-
-To list the devices
-using the cloudlet console navigate to the `Devices` tab. You will see the list of the devices registered to the
-device management cloudlet. Devices with the icon representing white (empty) heart are the disconnected ones.
-
-<img src="../images/console-device-list.png" align="center" height="400" hspace="30" >
-
-##### Sending heartbeat to the device
-
-In order to send heartbeat message to the given device and make it visible as connected again, you can use the
-`Send heartbeat` button near the device's icon.
-
-<img src="../images/console-device-heartbeat.png" align="center" height="400" hspace="30" >
 
 ##### Deregistering devices
 
