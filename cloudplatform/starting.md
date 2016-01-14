@@ -12,7 +12,7 @@ following command:
     bash <(curl -L -s https://goo.gl/RQd9tJ)
 
 The script above installs the proper version of Docker server if the latter is not already installed. Keep in mind that
-the minimal Docker version required by Cloud Platform is ` > 1.8.2` - if the older version of the Docker is installed, our
+the minimal Docker version required by Cloud Platform is ` >= 1.8.2` - if the older version of the Docker is installed, our
 script will upgrade your Docker server. After Docker server is properly installed, Cloud Platform script downloads and starts:
 
 - IoT Connector (ActiveMQ broker)
