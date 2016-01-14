@@ -25,10 +25,12 @@ PaaS Cloud Platform relies on the MongoDB to store some of the data processed by
 store used by the device service. By default the MongoDB data is stored in the `mongodb_data`
 volume container. If such volume doesn't exist, Cloud Platform script will create it for you.
 
-This script works with OS above :
+This script has been developped and works with OS above :
 
 - MacOSX (ElCaptian)
 - Fedora 
+
+This script should work with other Unix like OS
 
 ## Using Spring Boot runtime programatically
 
