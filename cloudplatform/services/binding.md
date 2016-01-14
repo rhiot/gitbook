@@ -11,6 +11,8 @@ connector to the POJO service bean. Let's take the following service interface a
 
         int numberPlusSizeOf(int number, Map map);
 
+        int numberPlusNumberPlusSizeOf(int number1, int number2, Map map);
+
     }
 
 And some implementation of it:
@@ -31,6 +33,11 @@ And some implementation of it:
         @Override
         public int numberPlusSizeOf(int number, Map map) {
             return number + map.size();
+        }
+
+        @Override
+        public int numberPlusNumberPlusSizeOf(int number1, int number2, Map map) {
+            return number1 + number2 + map.size();
         }
 
     }
@@ -75,6 +82,27 @@ The last argument of operation can be also sent as a message body. For example:
     BODY: {"payload: {"foo": "bar"}"}
         =>
     TestInterfaceImpl.numberPlusSizeOf(10, [foo: "bar"])
+
+### Binding headers to operation arguments
+
+Also binding algorithm looks for message headers following this convention:
+
+    RHIOT_ARG0, RHIOT_ARG1, RHIOT_ARG2, ...
+
+The values of those headers are bound to the service invocation as arguments:
+
+    QUEUE: test.count
+    HEADERS: RHIOT_ARG0=10
+        =>
+    TestInterfaceImpl.count(10)
+
+Keep in mind that channel arguments take precedence over header arguments:
+
+    QUEUE: test.numberPlusNumberPlusSizeOf.10
+    HEADERS: RHIOT_ARG0=20
+    BODY: {"payload: {"foo": "bar"}"}
+        =>
+    TestInterfaceImpl.numberPlusNumberPlusSizeOf(10, 20, [foo: "bar"])
 
 ## Using service binding programatically in Spring Boot runtime
 
