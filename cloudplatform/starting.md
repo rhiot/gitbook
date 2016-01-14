@@ -9,7 +9,7 @@ PaaS version of Cloud Platform is based on Docker containers. We love Docker and
 future of the applications deployment. To install the Cloud Platform on the Linux server of your choice, just execute the
 following command:
 
-    bash <(curl -L -s https://goo.gl/nVsrg6)
+    bash <(curl -L -s https://goo.gl/RQd9tJ)
 
 The script above installs the proper version of Docker server if the latter is not already installed. Keep in mind that
 the minimal Docker version required by Cloud Platform is `1.8.2` - if the older version of the Docker is installed, our
