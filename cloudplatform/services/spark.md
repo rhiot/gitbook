@@ -4,7 +4,7 @@ Apache Spark service allows you to bridge a long running clustered [Apache Spark
 IoT Connector. Spark service embedded in a driver application listens to requests coming to the IoT Connector and binds those with submitted RDD definition
 and job definition. A payload sent to the Apache Spark service is passed as an input to the requested job.
 
-<img src="rhiot_cloud_platform_service_spark.png" align="center" height="600">
+<img src="rhiot_cloud_platform_service_spark.png" align="center" height="400">
 
 Under the hood, Spark Service uses [Apache Camel Spark component](http://camel.apache.org/apache-spark) to bind jobs
 invocations requests with RDD definitions.
