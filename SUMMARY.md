@@ -32,6 +32,7 @@
    * [Cloud Platform Services](cloudplatform/services/services.md)
        * [Service binding](cloudplatform/services/binding.md)
        * [Device management](cloudplatform/services/device_management.md)
+       * [Apache Spark service](cloudplatform/services/spark.md)
    * [Camel Components](cloudplatform/camel_components/index.md)
        * [Camel OpenIMAJ component](cloudplatform/camel_components/camel_openimaj_component.md)
        * [Camel PubNub component](cloudplatform/camel_components/camel_pubnub_component.md)
