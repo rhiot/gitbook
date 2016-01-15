@@ -30,7 +30,7 @@ This script has been developed and works with OS above :
 
 This script should work with other Unix like OS, except these one 
 
-- `Mac OS X`: Mongodb doesn't work easily
+- `Mac OS X`: Mongodb doesn't work easily / 
 
 ## Using Spring Boot runtime programatically
 
