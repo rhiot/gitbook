@@ -44,6 +44,23 @@ Devices are represented using the following schema:
 
     }
 
+### Registering device
+
+In order to register a device in a device service, send a definition of a former to the `device.register` channel:
+
+    device -> device.register
+
+Where `device` is an encoded object following the `Device` schema.
+
+### Updating device metadata
+
+In order to updated already registered device, send a definition of it to the `device.update` channel:
+
+    device -> device.update
+
+Where `device` is an encoded object following the `Device` schema. Keep in mind that `deviceId` and `registrationId`
+fields of the encoded payload must match the corresponding values of the device registered in a device service.
+
 ### Listing devices
 
 To list the devices registered to the cloud (together with their basic metadata) send empty message to the following
@@ -62,6 +79,11 @@ IoT connector channel:
 
 Where ID is a String representing the unique ID of a device. As a response you will receive a device following the
 `Device` schema described above.
+
+If you would like to find device using its unique registration identified, assigned to it when device is connected to
+the device service, the `device.getByRegistrationId` channel instead:
+
+    String registrationID -> device.getByRegistrationId
 
 ### Disconnected devices
 
@@ -89,6 +111,15 @@ Where ID is a String representing the unique ID of a device.
 Keep also in mind that sending the regular LWM2M update by the client device to the LWM2M Leshan protocol adapter sends
 heartbeat update as well.
 
+### Deregistering device
+
+Sometimes you would like to explicitly remove the particular registered device from a device database. In such case
+you can send a message to the following IoT connector channel:
+
+    String id -> device.deregister
+
+Where ID is a String representing the unique ID of a device.
+
 ## Running device service in Spring Boot runtime
 
 The disconnection period can be changed globally using the `disconnectionPeriod` environment variable indicating the
@@ -98,15 +129,6 @@ disconnection period value in miliseconds. For example the snippet below sets th
 
 
 ---
-
-##### Deregistering single device
-
-Sometimes you would like to explicitly remove the particular registered device from the cloudlet database. In such case execute the
-`DELETE` request against the `/device/DEVICE_ID` URI. For example to remove the device with the ID equal to `foo`, execute
-the following command:
-
-    $ curl -X DELETE http://rhiot.net:15000/device/foo
-    {"status":"success"}
 
 ##### Reading device's details
 
@@ -164,35 +186,6 @@ device is still connected to the Rhiot Cloud.
 
     $ curl http://rhiot.net:15000/device/myDeviceID/heartbeat
     {"status": "success"}
-
-#### Device management web UI
-
-Rhiot Cloudlet Console is the web user interface on the top of the device management REST API. The web UI makes it easier
-to monitor and manage your devices using the web brower, the mobile phone or the tablet.
-
-#### Accessing LWM2M server directly
-
-While we suggest to use the universal REST API whenever possible, you can definitely use the LWM2M server directly.
-By default the LWM2M server API is exposed using the default IANA port i.e. 5683. The embedded LWM2M server is started
-together with the cloudlet.
-
-In order to use custom LWM2M server port, set the `lwm2m_port` environment variable when starting the device
-management cloudlet (or Rhiot Cloud). For example:
-
-    docker run -d -e lwm2m_port=16000 -p 16000:16000 io.rhiot/cloudlet-device/0.1.1
-
-#### Device registry
-
-Device registry is used by Leshan to store the information about the managed devices. By default the device cloudlet uses
-the MongoDB registry.
-
-##### Registry cache
-
-As the access to the device information is crucial for all the IoT systems, it should have been implemented as efficiently
-as possible. As devices information doesn't change very often, it should be cached in the memory whenever possible. Device
-Management Cloudlet uses the [Infinispan](http://infinispan.org) cache cluster under the hood, to provide the faster access
-to the device information. The Infinispan cache used is clustered using JGroups, so the cached information
-remains up-to-date even when many Device Manager Cloudlet instances are executed in the cluster.
 
 #### Clustering Device Management Cloudlet
 
