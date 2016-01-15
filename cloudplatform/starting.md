@@ -48,5 +48,4 @@ Then connect to the Cloud Platform:
     ...
     new CloudPlatform().start();
 
-`CloudPlatform` instance starts its own Spring Boot application context and loads all the extensions (like protocols adapters,
- encodings and services) available in the classpath.
+`CloudPlatform` instance starts its own Spring Boot application context and loads all the extensions (like protocols adapters, encodings and services) available in the classpath.
