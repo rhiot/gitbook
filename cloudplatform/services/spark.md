@@ -18,7 +18,7 @@ A message returned back as a response from a channel contains a result of a Spar
 
 ## Registering jobs in a Spring Boot runtime environment
 
-In order to register an RDD in a Spring Boot application register it, as a bean:
+In order to register an RDD in a Spring Boot application register it as a bean:
 
     @Bean
     JavaRDD myRDD(JavaSparkContext sparkContext) {
