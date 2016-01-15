@@ -187,18 +187,6 @@ device is still connected to the Rhiot Cloud.
     $ curl http://rhiot.net:15000/device/myDeviceID/heartbeat
     {"status": "success"}
 
-#### Clustering Device Management Cloudlet
-
-Device Management Cloudlet has been designed with the scalability in mind. Default configuration of the cloudlet allows
-you to run it in the cluster, behind the load balancer of your choice. The default MongoDB device registry will be
-shared by all the cloudlet instances in the cluster. Also the device registry cache used internally by Device Management Cloudlet
-will be automatically synchronized between the deployed cloudlet instances. All you need to do, is to be sure that you have
-the [IP multicast](https://en.wikipedia.org/wiki/IP_multicast) enabled for your local network, so the JGroups cluster can
-be established between the cloudlet instances.
-
-Keep in mind that each clustered instance of the Device Management Cloudlet exposes both REST and LWM2M API, so you can
-take advantage of load balancing over all the APIs available.
-
 #### Devices data analytics
 
 LWM2M protocol provides you the way to read the metrics' values from the devices. However in order to perform the search
