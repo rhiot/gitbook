@@ -97,11 +97,7 @@ disconnection period value in miliseconds. For example the snippet below sets th
     disconnectionPeriod=20000
 
 
-## Leshan LWM2M protocol adapter
-
-Under the hood Device Management Cloudlet uses [Eclipse Leshan](https://projects.eclipse.org/projects/iot.leshan), the
-open source implementation of the [LWM2M](https://en.wikipedia.org/wiki/OMA_LWM2M) protocol. LWM2M becomes the standard
-for the IoT devices management so we decided to make it a heart of the Rhiot device service.
+---
 
 ##### Deregistering single device
 
@@ -173,25 +169,6 @@ device is still connected to the Rhiot Cloud.
 
 Rhiot Cloudlet Console is the web user interface on the top of the device management REST API. The web UI makes it easier
 to monitor and manage your devices using the web brower, the mobile phone or the tablet.
-
-##### Deregistering devices
-
-If you would like deregister the device from the cloud, click the `Deregister` button near the device icon.
-
-##### Creating virtual devices
-
-If you don't have any devices nearby at the moment and still want to play with the Device management Cloudlet, don't
-worry - you can still create the new virtual device using the web UI.
-
-<img src="../images/console-device-prompt.png" align="center" height="400" hspace="30" >
-
-All you need to do is to enter the unique identifier of the device:
-
-<img src="../images/console-device-create.png" align="center" height="400" hspace="30" >
-
-The device will be registered in the Rhiot Cloud and visible as soon as you click the `Create virtual device` button.
-
-<img src="../images/console-device-created.png" align="center" height="400" hspace="30" >
 
 #### Accessing LWM2M server directly
 
