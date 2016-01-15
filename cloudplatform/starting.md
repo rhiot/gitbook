@@ -29,7 +29,9 @@ This script has been developed and works with OS above :
 
 - `Ubuntu`
 
-This script should work with other Unix like OS
+This script should work with other Unix like OS, except these one 
+
+- `Mac OS X` 
 
 ## Using Spring Boot runtime programatically
 
