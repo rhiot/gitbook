@@ -1,7 +1,6 @@
 # Starting Cloud Platform
 
-Rhiot Cloud Platform comes in two supported flavors - running it as a dockerized PaaS or running it programatically
-using [Spring Boot](http://projects.spring.io/spring-boot/).
+Rhiot Cloud Platform comes in two supported flavors - running it as a dockerized PaaS or running it programatically using [Spring Boot](http://projects.spring.io/spring-boot/).
 
 ## PaaS
 
