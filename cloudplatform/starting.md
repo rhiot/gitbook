@@ -27,10 +27,9 @@ volume container. If such volume doesn't exist, Cloud Platform script will creat
 This script has been developed and works with OS above :
 
 - `Ubuntu`
+- `Mac OS X`
 
-This script should work with other Unix like OS, except these one 
-
-- `Mac OS X`: Mongodb doesn't work easily / 
+This script should work with other Unix like OS
 
 ## Using Spring Boot runtime programatically
 
