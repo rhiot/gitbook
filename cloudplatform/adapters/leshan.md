@@ -31,6 +31,8 @@ In order to start Leshan protocol adapter in your Cloud Platform application, ju
 
 Spring Boot runtime automatically detects and starts Leshan protocol adapter as soon `CloudPlatform` instance is started:
 
+    import io.rhiot.cloudplatform.runtime.spring.CloudPlatform;
+    ...
     new CloudPlatform().start();
 
 ## Spring runtime Configuration
