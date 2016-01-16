@@ -1,7 +1,6 @@
 # Camel Bluetooth component
 
-Camel Bluetooth component can retrieve information about the bluetooth devices available within the device
-range. Under the hood Bluetooth component uses bluecove library (http://www.bluecove.org/). Bluetooth component supports both the consumer and producer endpoints.
+Camel Bluetooth component can retrieve information about the bluetooth devices available within the device range. Under the hood Bluetooth component uses bluecove library (http://www.bluecove.org/). Bluetooth component supports both the consumer and producer endpoints.
 
 ## Maven dependency
 
