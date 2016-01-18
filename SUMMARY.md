@@ -24,6 +24,7 @@
        * [Customization](gateway/mini/customization.md)
 * [Cloud Platform](cloudplatform/cloudplatform.md)
    * [Starting Cloud Platform](cloudplatform/starting.md)
+   * [Schema](cloudplatform/schema.md)
    * [Payload encoding](cloudplatform/encoding/encoding.md)
       * [JSON payload encoding](cloudplatform/encoding/json.md)
    * [Protocol Adapters](cloudplatform/adapters/adapters.md)

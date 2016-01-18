@@ -12,37 +12,8 @@ The diagram below presents the high-level overview of the device cloudlet archit
 ## Device management API
 
 Device service can be accessed using the IoT connector API described below. Keep in mind that Protocol Adapters can
-be used to access device management service via other protocols (including REST and LWM2M).
-
-### Device management schema
-
-Devices are represented using the following schema:
-
-    Device {
-
-    String deviceId;
-
-    String registrationId;
-
-    Date registrationDate;
-
-    Date lastUpdate;
-
-    InetAddress address;
-
-    int port;
-
-    InetSocketAddress registrationEndpointAddress;
-
-    long lifeTimeInSec;
-
-    String smsNumber;
-
-    String lwM2mVersion;
-
-    BindingMode bindingMode;
-
-    }
+be used to access device management service via other protocols (including REST and LWM2M). Device management schema
+is described in the [schema section](../schema.md).
 
 ### Registering device
 
