@@ -11,4 +11,6 @@ starts Spark master and worker instances for you. Spark web UI is available unde
 
 To submit a Spark task to the PaaS cluster, execute the following command on your server:
 
-    bash <(curl -sL https://goo.gl/sQxjnE) --class com.example.MyJob  myjob.jar
+    bash <(curl -sL https://goo.gl/sQxjnE) --class com.example.MyJob  /tmp/jobs/myjob.jar
+
+Keep in mind that a jar with your job must be located in the `/tmp/jobs` directory.
