@@ -90,3 +90,40 @@ The message returned back as a response to the channel will contain the result o
 
 In order to change default driver application name (`Spring Boot Spark Application`), set the value of `spark.applicationName`
 property. To set Spark home on your Spark context, set the `spark.sparkHome` property.
+
+### Configuring Spark service channel
+
+If you would like to configure the Spark service channel (which is `spark` by default), you can do it by changing
+`spark.serviceChannel` property. Keep in mind that Cloud Platform adds `.>` wildcard at the end of the configured channel,
+so `spark` becomes `spark.>` and `spark.*.myrdd` becomes `spark.*.myrdd.>`.
+
+If you would like to submit many Rhiot driver applications to your Spark cluster, you have to change `spark.serviceChannel`
+for each submitted application, to be sure that requests sent to the given job via IoT Connector queue is picked by the
+right driver application. For example if you would like to submit two Rhiot applications to the cluster, configure the
+first application as follows:
+
+    spark.serviceChannel = sparkApp1
+
+    ...
+
+    @Bean
+    SparkService sparkApp1(SparkService sparkService) {
+        return sparkService;
+    }
+
+And the second one as follows:
+
+    spark.serviceChannel = sparkApp2
+
+    ...
+
+    @Bean
+    SparkService sparkApp2(SparkService sparkService) {
+        return sparkService;
+    }
+
+Now you can send requests to each application in the cluster using customized service name in the IoT Connector channel:
+
+    String input    ->  sparkApp1.execute.rdd1.callback1    // Submit request to application #1
+
+    String input    ->  sparkApp2.execute.rdd2.callback2    // Submit request to application #2
