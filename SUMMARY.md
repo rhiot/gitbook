@@ -30,7 +30,7 @@
    * [Protocol Adapters](cloudplatform/adapters/adapters.md)
        * [REST protocol adapter](cloudplatform/adapters/rest.md)
        * [Leshan (LWM2M) protocol adapter](cloudplatform/adapters/leshan.md)
-       * Websocket protocol adapter
+       * [Websocket protocol adapter](cloudplatform/adapters/websocket.md)
    * [Cloud Platform Services](cloudplatform/services/services.md)
        * [Service binding](cloudplatform/services/binding.md)
        * [Device management](cloudplatform/services/device_management.md)
