@@ -6,7 +6,7 @@ driver wrapped into a long running [Camel Spark](http://camel.apache.org/apache-
 samples of data sources and jobs definitions. Such job definitions can be invoked using
 [Cloud Platform](https://rhiot.gitbooks.io/rhiotdocumentation/content/cloudplatform/cloudplatform.html) IoT Connector.
 
-<img src="../services/rhiot_cloud_platform_service_spark.png" align="center" height="300">
+<img src="../cloudplatform/services/rhiot_cloud_platform_service_spark.png" align="center" height="300">
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ After you execute the command above, you should see your task deployed into Spar
 
 ## Invoking the deployed job
 
-In order to invoke the deployed job using IoT Connector, you can use [REST protocol adapter](../adapters/rest.md) which
+In order to invoke the deployed job using IoT Connector, you can use [REST protocol adapter](../cloudplatform/adapters/rest.md) which
 is included in the PaaS distribution. If you issue the following REST request, you should see results of
 a job computation:
 
