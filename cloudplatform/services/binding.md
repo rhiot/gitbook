@@ -49,8 +49,8 @@ Now let's register the `ServiceBinding` route in your backend service:
     ...
 
     @Bean
-    ServiceBinding testServiceBinding(PayloadEncoding payloadEncoding) {
-        return new ServiceBinding(payloadEncoding, "test");
+    ServiceBinding testServiceBinding(DestinationBinding destinationBinding, PayloadEncoding payloadEncoding) {
+        return new ServiceBinding(destinationBinding, payloadEncoding, "test");
     }
 
 The service binding above allows us to bind all messages sent to the `test.>` IoT Connector AMQP channel to the service
@@ -103,6 +103,19 @@ Keep in mind that channel arguments take precedence over header arguments:
     BODY: {"payload: {"foo": "bar"}"}
         =>
     TestInterfaceImpl.numberPlusNumberPlusSizeOf(10, 20, [foo: "bar"])
+
+## Channel wildcards
+
+Channel binding `foo` defined in `ServiceBinding` constructor is mapped to `amqp:foo.>` AMQP destination.
+
+If you would
+like to limit the binding to subchannels defined using properties, use the `${}` placeholders in the channel definition.
+For example:
+
+    new ServiceBinding(destinationBinding, payloadEncoding, "service.operation.*.${bar}");
+
+    new ServiceBinding(destinationBinding, payloadEncoding, "service.operation.${foo}.${bar}");
+
 
 ## Using service binding programatically in Spring Boot runtime
 
