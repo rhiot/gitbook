@@ -26,10 +26,11 @@
    * [Starting Cloud Platform](cloudplatform/starting.md)
    * [Schema](cloudplatform/schema.md)
    * [Payload encoding](cloudplatform/encoding/encoding.md)
-      * [JSON payload encoding](cloudplatform/encoding/json.md)
+       * [JSON payload encoding](cloudplatform/encoding/json.md)
    * [Protocol Adapters](cloudplatform/adapters/adapters.md)
-      * [REST protocol adapter](cloudplatform/adapters/rest.md)
-      * [Leshan (LWM2M) protocol adapter](cloudplatform/adapters/leshan.md)
+       * [REST protocol adapter](cloudplatform/adapters/rest.md)
+       * [Leshan (LWM2M) protocol adapter](cloudplatform/adapters/leshan.md)
+       * Websocket protocol adapter
    * [Cloud Platform Services](cloudplatform/services/services.md)
        * [Service binding](cloudplatform/services/binding.md)
        * [Device management](cloudplatform/services/device_management.md)
@@ -52,3 +53,4 @@
 * [Articles, presentations & videos](articles/index.md)
 * [Contributing](contributing/index.md)
 * [Releases notes](releases_notes/index.md)
+
