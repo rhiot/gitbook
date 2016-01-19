@@ -104,18 +104,18 @@ Keep in mind that channel arguments take precedence over header arguments:
         =>
     TestInterfaceImpl.numberPlusNumberPlusSizeOf(10, 20, [foo: "bar"])
 
-## Channel wildcards
+## Channel configuration
 
 Channel binding `foo` defined in `ServiceBinding` constructor is mapped to `amqp:foo.>` AMQP destination.
 
-If you would
-like to limit the binding to subchannels defined using properties, use the `${}` placeholders in the channel definition.
-For example:
+Keep in mind
+that you can use all regular channel wildcards available for your IoT Connector. For default ActiveMQ based connector
+supports `*` wildcards, so you can define your channel as:
 
-    new ServiceBinding(destinationBinding, payloadEncoding, "service.operation.*.${bar}");
+    myService.operationFoo.*.bar    ->  amqp:myService.operationFoo.*.bar.>
 
-    new ServiceBinding(destinationBinding, payloadEncoding, "service.operation.${foo}.${bar}");
-
+The configuration above will narrow the service binding, not only to service name (`myServices`), but will also limit it to operation
+`operationFoo` with second parameter equal to `bar`.
 
 ## Using service binding programatically in Spring Boot runtime
 
