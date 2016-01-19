@@ -12,8 +12,11 @@ samples of data sources and jobs definitions. Such job definitions can be invoke
 
 This quickstart is dedicated to be executed against the
 [Cloud Platform PaaS](https://rhiot.gitbooks.io/rhiotdocumentation/content/cloudplatform/starting.html#paas).
-Cloud platform PaaS comes with the preconfigured Apache Spark cluster, so make sure that PaaS has been proeprly started
-before before proceeding with a deployment of this example.
+Cloud platform PaaS comes with a pre-configured Apache Spark cluster, so make sure that PaaS has been properly started
+before before proceeding with a deployment of this example. The PaaS platform can be started by executing the following
+script:
+
+    bash <(curl -L -s https://goo.gl/RQd9tJ)
 
 ## Installing quickstart
 
