@@ -16,8 +16,8 @@ minimal Docker version required by Cloud Platform is ` >= 1.8.2` - if the older 
 script will upgrade your Docker server. After Docker server is properly installed, Cloud Platform script downloads and starts:
 
 - IoT Connector ([ActiveMQ](http://activemq.apache.org/) broker)
-- default protocol adapters
-- default Rhiot backend services
+- default protocol adapters server
+- default Rhiot backend services server
 - standalone Apache Spark cluster (a single master node and a single worker node)
 - [MongoDB](https://www.mongodb.org/) database
 
