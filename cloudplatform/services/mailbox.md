@@ -3,6 +3,8 @@
 Mailbox service can be used to send messages to the devices. Each device has a server-side mailbox associated with it.
 If a message is put into into a device outbox, the former will be sent to a inbox of a destination device.
 
+<img src="rhiot_cloud_service_mailbox.png" align="center" height="300">
+
 ## Mailbox API
 
 If you would like to send a message to a device identified using ID `targetDevice`, send that message to the following
