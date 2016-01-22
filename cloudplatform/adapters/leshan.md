@@ -37,4 +37,4 @@ Spring Boot runtime automatically detects and starts Leshan protocol adapter as 
 
 ## Spring runtime Configuration
 
-By default Leshan protocol adapter listens on HTTP port 5683. You can change this port by setting `leshan.port` property.
+By default Leshan protocol adapter listens on HTTP port `5683`. You can change this port by setting `leshan.port` property.
