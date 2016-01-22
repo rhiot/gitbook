@@ -19,7 +19,7 @@ will map
 
       amqp:queue:document.save.stompDoc
 
-[More information about STOMP over Websocket](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/websocket.html#websocket-stomp
+More information about [STOMP over Websocket](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/websocket.html#websocket-stomp
 ). 
 [You can use your browser](https://github.com/jmesnil/stomp-websocket) to pub/sub some message to CloudPlatform enviroment 
 
