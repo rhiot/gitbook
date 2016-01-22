@@ -7,13 +7,14 @@ Websocket protocol adapter bridges Websocket requests with the ActiveMQ Transpor
 
 Websocket protocol adapter uses STOMP protocol to interact with AMQP queue destination:
 
+Here is a STOMP frame over Websocket 
       SEND
       destination:document.save.stompDoc
       content-type:application/json
 
       {"foo":"bar"}^@
 
-  will map
+will map
 
       amqp:queue:document.save.stompDoc
 
