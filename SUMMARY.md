@@ -17,7 +17,7 @@
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
        * [Camel Device I/O component](gateway/camel_components/camel_device_io_component.md)
        * [Camel LWM2M component](gateway/camel_components/camel_lwm2m_component.md)
-       * Camel Kura DataTransport component
+       * [Camel Kura DataTransport component](gateway/camel_components/camel_kura_datatransport_component.md/Camel Kura Datatransport component)
    * [Mini gateway](gateway/mini/index.md)
        * [Installing](gateway/mini/installing.md)
        * [GPS](gateway/mini/gps.md)
