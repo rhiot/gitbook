@@ -17,7 +17,7 @@ This section describes how to start Leshan protocol adapter.
 
 ### Starting Leshan protocol adapter in a PaaS environment
 
-PaaS distribution of Cloud Platform has Leshan protocol adapter included by default (listening on port 5683).
+PaaS distribution of Cloud Platform has Leshan protocol adapter included by default (listening on port `5683`).
 
 ### Starting REST protocol adapter programatically in Spring runtime
 
