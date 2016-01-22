@@ -52,4 +52,4 @@ Then connect to the Cloud Platform:
 
 ## Spring runtime Configuration
 
-By default Websocket connector listens on HTTP port 9090. You can change this port by setting `spring.activemq.broker.websocketPort` property.
+By default Websocket connector listens on HTTP port `9090`. You can change this port by setting `spring.activemq.broker.websocketPort` property.
