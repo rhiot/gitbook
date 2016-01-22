@@ -12,6 +12,7 @@ Here is a STOMP frame over Websocket
       SEND
       destination:document.save.stompDoc
       content-type:application/json
+
       {"foo":"bar"}^@
 
 will map
