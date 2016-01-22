@@ -5,7 +5,7 @@ Websocket protocol adapter bridges Websocket requests with the ActiveMQ Transpor
 
 ### Starting REST protocol adapter programatically in Spring runtime
 
-In the opposite way of the other protocol adapters, Websocket protocol adapter comes from ActiveMQ broker, just need the following jar into your POM file and set several system wide parameters
+In the opposite way of the protocol adapters, Websocket protocol adapter comes from ActiveMQ broker, just need the following jar into your POM file and set several system wide parameters
 
     	<dependency>
     		<groupId>io.rhiot</groupId>
