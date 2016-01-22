@@ -29,7 +29,7 @@ This section describes how to start Websocket protocol adapter.
 
 ### Starting Websocket protocol adapter in a PaaS environment
 
-PaaS distribution of Cloud Platform has Websocket protocol adapter included by default (listening on port 9090).
+PaaS distribution of Cloud Platform has Websocket protocol adapter included by default (listening on port `9090`).
 
 ### Starting Websocket protocol adapter programatically in Spring runtime
 
