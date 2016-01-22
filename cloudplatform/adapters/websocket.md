@@ -3,7 +3,6 @@
 Websocket protocol adapter bridges Websocket requests with the ActiveMQ Transport. It therefore allows you to expose your services via Websocket API.
 
 
-
 ## Protocol binding rules
 
 Websocket protocol adapter uses STOMP protocol to interact to AMQP queue destination:
