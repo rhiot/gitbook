@@ -1,3 +1,8 @@
+# REST protocol adapter
+
+REST protocol adapter bridges HTTP requests with the IoT Connector (i.e. AMQP destinations). It therefore allows you to
+expose your services via REST API.
+
 ## Protocol binding rules
 
 Websocket protocol adapter uses STOMP protocol to interact to AMQP queue destination:
