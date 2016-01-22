@@ -15,7 +15,7 @@ Here is a STOMP frame over Websocket
 
       {"foo":"bar"}^@
 
-will map
+this frame will map
 
       amqp:queue:document.save.stompDoc
 
