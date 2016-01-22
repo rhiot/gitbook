@@ -41,7 +41,7 @@ In the opposite way of the other protocol adapters, Websocket protocol adapter c
     		<version>${rhiot.version}</version>
     	</dependency>
 
-Then connect to the Cloud Platform:
+Then activate STOMP / Websocket to the Cloud Platform:
 
         import io.rhiot.cloudplatform.runtime.spring.CloudPlatform
         ...
