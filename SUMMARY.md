@@ -34,6 +34,7 @@
    * [Cloud Platform Services](cloudplatform/services/services.md)
        * [Service binding](cloudplatform/services/binding.md)
        * [Device management](cloudplatform/services/device_management.md)
+       * [Mailbox](cloudplatform/services/mailbox.md)
        * [Apache Spark service](cloudplatform/services/spark.md)
    * [PaaS Cloud Platform](cloudplatform/paas.md)
    * [Camel Components](cloudplatform/camel_components/index.md)
