@@ -18,7 +18,7 @@ This section describes how to start REST protocol adapter.
 
 ### Starting REST protocol adapter in a PaaS environment
 
-PaaS distribution of Cloud Platform has REST protocol adapter included by default (listening on port 8080).
+PaaS distribution of Cloud Platform has REST protocol adapter included by default (listening on port `8080`).
 
 ### Starting REST protocol adapter programatically in Spring runtime
 
