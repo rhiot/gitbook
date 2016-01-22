@@ -30,7 +30,7 @@ To learn more about Cloud Platform PaaS read [this](paas.md) section of the docu
 
 ## Using Spring Boot runtime programatically
 
-In order to programatically start Cloud Platform using Spring Boot, add the following dependnecy to your POM file:
+In order to programatically start Cloud Platform using Spring Boot, add the following dependency to your POM file:
 
 	<dependency>
 		<groupId>io.rhiot</groupId>
