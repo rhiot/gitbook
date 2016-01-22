@@ -18,7 +18,7 @@ Maven users should add the following dependency to their POM file:
 **Avaliable for `rhiot.version` >= 0.1.3**
 
 
-## URI format for GPIO
+## URI format for Cloud
 
     kura-cloud:applicationId/topicId[?options]
 
