@@ -5,48 +5,38 @@ expose your services via REST API.
 
 ## Protocol binding rules
 
-Websocket protocol adapter uses STOMP protocol to interact to AMQP queue destination:
+REST protocol adapter matches HTTP URI to the AMQP queue destination:
 
-      SEND
-      destination:document.save.stompDoc
-      content-type:application/json
+    http://example.com:8080/foo/bar => amqp:queue:foo.bar
 
-      {"foo":"bar"}^@
+Content posted with POST request are converted to the body of the message sent to the AMQP destination. JMS correlation ID
+can be used to match AMQP response with HTTP response.
 
-  will map
+## Starting REST protocol adapter
 
-      amqp:queue:document.save.stompDoc
+This section describes how to start REST protocol adapter.
 
-[More information about STOMP over Websocket](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/websocket.html#websocket-stomp
-)
+### Starting REST protocol adapter in a PaaS environment
 
-## Starting Websocket protocol adapter
+PaaS distribution of Cloud Platform has REST protocol adapter included by default (listening on port 8080).
 
-This section describes how to start Websocket protocol adapter.
+### Starting REST protocol adapter programatically in Spring runtime
 
-### Starting Websocket protocol adapter in a PaaS environment
+In order to start REST protocol adapter in your Cloud Platform application, just add the following jar into your POM file.
 
-PaaS distribution of Cloud Platform has Websocket protocol adapter included by default (listening on port 9090).
+    <dependency>
+        <groupId>io.rhiot</groupId>
+    	<artifactId>rhiot-cloudplatform-adapter-rest</artifactId>
+    	<version>${rhiot.version}</version>
+    </dependency>
 
-### Starting Websocket protocol adapter programatically in Spring runtime
+Spring Boot runtime automatically detects and starts REST protocol adapter as soon `CloudPlatform` instance is started:
 
-In the opposite way of the other protocol adapters, Websocket protocol adapter comes from ActiveMQ broker, just need the following jar into your POM file and set several system wide parameters
-
-    	<dependency>
-    		<groupId>io.rhiot</groupId>
-    		<artifactId>rhiot-cloudplatform-runtime-spring</artifactId>
-    		<version>${rhiot.version}</version>
-    	</dependency>
-
-Then connect to the Cloud Platform:
-
-        import io.rhiot.cloudplatform.runtime.spring.CloudPlatform
-        ...
-        System.setProperty("spring.activemq.broker.websocketEnabled", "true");
-        System.setProperty("spring.activemq.broker.websocketPort", "9090" );
-        new CloudPlatform().start();
-
+    new CloudPlatform().start();
 
 ## Spring runtime Configuration
 
-By default Websocket connector listens on HTTP port 9090. You can change this port by setting `spring.activemq.broker.websocketPort` property.
+By default REST connector listens on HTTP port 8080. You can change this port by setting `rest.port` property.
+
+If you would like to specify the content type returned by the REST protocol adapter, set the value of the `rest.contentType`
+property. By default `application/json` is returned.
