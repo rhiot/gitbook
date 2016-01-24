@@ -47,6 +47,7 @@ Then activate STOMP / Websocket to the Cloud Platform:
         ...
         System.setProperty("spring.activemq.broker.websocketEnabled", "true");
         System.setProperty("spring.activemq.broker.websocketPort", "9090" );
+        ...
         new CloudPlatform().start();
 
 
