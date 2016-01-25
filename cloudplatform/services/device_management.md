@@ -12,8 +12,63 @@ The diagram below presents the high-level overview of the device cloudlet archit
 ## Device management API
 
 Device service can be accessed using the IoT connector API described below. Keep in mind that Protocol Adapters can
-be used to access device management service via other protocols (including REST and LWM2M). Device management schema
-is described in the [schema section](../schema.md).
+be used to access device management service via other protocols (including REST and LWM2M). Device schema describes
+structure of the data consumed by device service. A device is represented using the following
+schema:
+
+    class Device {
+
+        String deviceId;
+
+        String registrationId;
+
+        Date registrationDate;
+
+        Date lastUpdate;
+
+        String address;
+
+        int port;
+
+        InetSocketAddress registrationEndpointAddress;
+
+        long lifeTimeInSec;
+
+        String lwM2mVersion;
+
+        BindingMode bindingMode;
+
+        List<LinkObject> objectLinks;
+
+        String rootPath;
+
+        Map<String, Object> properties;
+
+    }
+
+    class LinkObject {
+
+        String url;
+
+        Map<String, Object> attributes;
+
+        Integer objectId;
+
+        Integer objectInstanceId;
+
+        Integer resourceId;
+
+    }
+
+Device service API jar provides DTO objects
+representing schema. In order to use schema jar in your project include the following dependency in your POM
+XML file:
+
+    <dependency>
+    	<groupId>io.rhiot</groupId>
+    	<artifactId>hono-service-device-api</artifactId>
+    	<version>${rhiot.version}</version>
+    </dependency>
 
 ### Registering device
 
