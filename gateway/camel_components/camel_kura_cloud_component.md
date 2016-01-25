@@ -22,7 +22,7 @@ Maven users should add the following dependency to their POM file:
 
     kura-cloud:applicationId/topicId[?options]
 
-both *topicId* *applicationId* must match MQTT topic  pattern.
+Both *topicId* *applicationId* must match MQTT topic  pattern.
 
 
 ### Optional URI Parameters
