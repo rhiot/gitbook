@@ -18,6 +18,6 @@ Maven users should add the following dependency to their POM file:
 
 ## URI format for Cloud
 
-    kura-cloud:applicationId/topicId[?options]
+    kura-datatransport:topic[?options]
 
-Both *topicId* *applicationId* must match MQTT topic  pattern.
+Both *topic* must match MQTT topic  pattern.
