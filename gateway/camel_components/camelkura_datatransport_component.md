@@ -29,5 +29,5 @@ Both *topic* must match MQTT topic  pattern.
 |------------------|---------------------------|-----------------------------|
 | `topic`        |                           | MQTT topicId                |
 | `qos`            |0                          | MQTT semantic               |
-| `retain`         |false                      |                             ||
-||||
+| `retain`         |false                      |                             |
+|||
