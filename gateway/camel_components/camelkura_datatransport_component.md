@@ -27,7 +27,6 @@ Both *topic* must match MQTT topic  pattern.
 
 | Parameter        | Default value             | Description                 |
 |------------------|---------------------------|-----------------------------|
-| `applicationId`          |                           | Kura AppId                  |
 | `topic`        |                           | MQTT topicId                |
 | `qos`            |0                          | MQTT semantic               |
 | `retain`         |false                      |                             |
