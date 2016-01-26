@@ -31,3 +31,7 @@ Both *topic* must match MQTT topic  pattern.
 | `qos`            |0                          | MQTT semantic               |
 | `retain`         |false                      |                             |
 ||||
+
+### NB 
+
+Currently, Datatransport component supports only producer feature.
