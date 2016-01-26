@@ -27,7 +27,7 @@ Both *topic* must match MQTT topic  pattern.
 
 | Parameter        | Default value             | Description                 |
 |------------------|---------------------------|-----------------------------|
-| `topic`        |                           | MQTT topicId                |
+| `topic`          |                           | MQTT topicId                |
 | `qos`            |0                          | MQTT semantic               |
 | `retain`         |false                      |                             |
 ||||
