@@ -29,5 +29,4 @@ Both *topic* must match MQTT topic  pattern.
 |------------------|---------------------------|-----------------------------|
 | `topic`        |                           | MQTT topicId                |
 | `qos`            |0                          | MQTT semantic               |
-| `retain`         |false                      |                             |
-| `control`        | false                          |  if true, push a control message, else common message                  |
+| `retain`         |false                      |                             ||
