@@ -14,3 +14,11 @@ To submit a Spark task to the PaaS cluster, execute the following command on you
     bash <(curl -sL https://goo.gl/sQxjnE) --class com.example.MyJob  /tmp/jobs/myjob.jar
 
 Keep in mind that a jar with your job must be located in the `/tmp/jobs` directory.
+
+### Disabling Spark cluster
+
+In order to disable Spark cluster when starting the PaaS, set `SPARK_ENABLED` environment variable to `false` before
+executing the PaaS script:
+
+    export SPARK_ENABLED=false
+
