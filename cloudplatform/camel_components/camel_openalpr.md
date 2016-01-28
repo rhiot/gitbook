@@ -60,8 +60,8 @@ the endpoint and referencing custom `io.rhiot.cloudplatform.camel.openalpr.Opena
 
 | Option                    | Default value                                                                 | Description   |
 |:------------------------- |:-----------------------------------------------------------------------       |:------------- |
-| `country`            | eu                                                   | Country class of the plates. Can be `eu` or `us`. |
-| `workDir`              | openalpr-workdir      | Working directory used by OpenALPR to temporarily store files for the analysis.      |
-| `processManager`  | new io.rhiot.utils.process. DefaultProcessManager | `io.rhiot.utils.process.ProcessManager instance used to execute OpenALPR command. |
-| `commandStrategy` |   new io.rhiot.cloudplatform. camel.openalpr. DockerizedOpenalprCommandStrategy   | io.rhiot.cloudplatform. camel.openalpr. OpenalprCommandStrategy instance used to generate OpenALPR system command. |
+| `country`            | *eu*                                                   | Country class of the plates. Can be `eu` or `us`. |
+| `workDir`              | *openalpr-workdir*      | Working directory used by OpenALPR to temporarily store files for the analysis.      |
+| `processManager`  | *new io.rhiot.utils.process. DefaultProcessManager* | io.rhiot.utils.process.ProcessManager instance used to execute OpenALPR command. |
+| `commandStrategy` |   *new io.rhiot.cloudplatform. camel.openalpr. DockerizedOpenalprCommandStrategy*   | *io.rhiot.cloudplatform. camel.openalpr. OpenalprCommandStrategy* instance used to generate OpenALPR system command. |
 
