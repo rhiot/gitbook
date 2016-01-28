@@ -1,6 +1,6 @@
 # Camel OpenALPR component
 
-Camel OpenALPR component relies on the [OpenALPR](openalpr.com) library to perform image recognition of the incoming
+Camel OpenALPR component relies on the [OpenALPR](http://openalpr.com) library to perform image recognition of the incoming
 binary data in order to find and read license plates.
 
 ## Maven dependency
