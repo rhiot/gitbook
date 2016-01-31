@@ -4,7 +4,7 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 
 ### 2016
 
-TDB
+Coming soon ...
 
 ### 2015
 
