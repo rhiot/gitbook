@@ -8,7 +8,7 @@ TDB
 
 ### 2015
 
-- [Rhiot over Kura over Docker over RaspberryPi](http://gautric.github.io/blog/2015/12/23/kura-OSGi-docker-debian.html) - Greg's blog post  (dec 2015)
+- [Rhiot over Kura over Docker over RaspberryPi](http://gautric.github.io/blog/2015/12/28/rhiot-kura-docker-raspberrypi.html) - Greg's blog post  (dec 2015)
 - [Kura over Docker](http://gautric.github.io/blog/2015/12/23/kura-OSGi-docker-debian.html) - Greg's blog post  (dec 2015)
 - [Rhiot Kura Gateway Sample (Emulator & RaspberryPi) ](http://gautric.github.io/blog/2015/12/03/rhiot-kura-OSGi-full-sample.html) - Greg's blog post (video included) (dec 2015)
 - [Managing Camel Routes With Kura Web UI](https://dzone.com/articles/managing-camel-routes-with-kura-web-ui) - DZone article by Henryk Konsek (2015)
