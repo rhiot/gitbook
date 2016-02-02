@@ -50,6 +50,7 @@
 * [Quickstarts](quickstarts/index.md)
    * [Kura Camel quickstart](quickstarts/kura_camel_quickstart.md)
    * [Apache Spark quickstart](quickstarts/spark.md)
+   * [Cloud Platform quickstart](quickstarts/cloudplatform.md)
 * [Building](building/index.md)
    * [Manage Kura Maven dependencies](building/manage_kura_maven_dependencies.md)
 * [Supported & tested configuration](supported_&_tested/index.md)
