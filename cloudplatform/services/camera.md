@@ -37,9 +37,8 @@ image binaries as a message to the following channel:
 Where `RHIOT_ARG_0` is a String identifier of a device sending the image data. `RHIOT_ARG_1` is a country code of a
 registration plate you want to recognize (camera service accepts `eu` and `us` country codes).
 
-After subiting the image for processing, camera service will save the image to the store location (default is
-`/tmp/rhiot/camera` for programmatic runtime, and `/var/rhiot/pass/camera` for PaaS environment). Also a metadata of
-the processed image will be stored in a `CameraImage` document collection, using the following schema:
+After subiting the image for processing, camera service will save the image using [Binary Service](binary.md). Also a
+metadata of a processed image will be stored in a `CameraImage` document collection, using the following schema:
 
     class CameraImage {
         String id;

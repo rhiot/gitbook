@@ -35,6 +35,7 @@
        * [Service binding](cloudplatform/services/binding.md)
        * [Device management](cloudplatform/services/device_management.md)
        * [Mailbox](cloudplatform/services/mailbox.md)
+       * [Binary](cloudplatform/services/binary.md)
        * [Camera](cloudplatform/services/camera.md)
        * [Apache Spark](cloudplatform/services/spark.md)
    * [PaaS Cloud Platform](cloudplatform/paas.md)
