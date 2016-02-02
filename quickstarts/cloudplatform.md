@@ -172,7 +172,7 @@ public void httpRestStoreTemperatureBody() {
 
 In order to get the temperature threshold from the service, the good way is to put the only deviceId parameter inside the HTTP request as an header prefixed by RHIOT_ARG.
 
-```
+```java
 @Test
 public void httpRestTemperatureThreshold() {
 	
@@ -205,7 +205,7 @@ Another way to connect to the cloud platform is to use the IoT Connector compone
 with all related parameters passed along as fields inside an header structure. With the IoT Connector component, it's possible to send/
 receive to/from the communication bus in a fire and forget manner or request/reply way.
 
-```
+```java
 @Test
 public void iotConnectorStoreTemperature() {
 	
