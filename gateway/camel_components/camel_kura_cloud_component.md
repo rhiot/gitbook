@@ -55,7 +55,7 @@ Several URI parameters can me overwrite by the "in Message" headers.
 | `qos`            |`CamelKuraCloud.qos`            |
 | `retain`         |`CamelKuraCloud.retain`         |
 | `priority`       |`CamelKuraCloud.priority`       |
-| `includeDeviceId`|`CamelKuraCloud.includeDeviceId`|
+| `deviceId`|`CamelKuraCloud.includeDeviceId`|
 | `control`        |`CamelKuraCloud.control`        |
 
 ## Consuming:
