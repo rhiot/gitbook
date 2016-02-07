@@ -4,6 +4,14 @@ PaaS Cloud Platform is opinionated, Docker container based, installation of Clou
 [execute the installation script](starting.md) and can immediately take advantage if preconfigured installation of
 Cloud Platform.
 
+## Loading custom startup script
+
+PaaS script looks for the `~/.rhiot/paas.config` script file when starting PaaS platform. If the file exists, it will
+be interpreted as a Bash script and executed. So for example to start a csutom Docker container when starting PaaS, add
+the following line to the `~/.rhiot/paas.config` file:
+
+    docker run -d example/myCustomImage:1.0
+
 ## Apache Spark cluster
 
 We treat Apache Spark as a first class citizen of Cloud Platform. This is why when you start the PaaS script, the latter
