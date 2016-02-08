@@ -18,7 +18,6 @@
        * [Camel Pi4j component](gateway/camel_components/camel_pi4j_component.md)
        * [Camel Webcam component](gateway/camel_components/camel_webcam_component.md)
        * [Camel Device I/O component](gateway/camel_components/camel_device_io_component.md)
-       * [Camel LWM2M component](gateway/camel_components/camel_lwm2m_component.md)
    * [Mini gateway](gateway/mini/index.md)
        * [Installing](gateway/mini/installing.md)
        * [GPS](gateway/mini/gps.md)
