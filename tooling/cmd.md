@@ -166,8 +166,9 @@ Syntax: kura-install-felix-fileinstall
 
 Example: kura-install-felix-fileinstall
 
-Deploys Felix File Install into your Kura server. After Felix File Install is installed into your server, you can drop 
-bundle jars into `/opt/eclipse/kura/deploy` in order to deploy those.
+Deploys [Felix File Install](http://felix.apache.org/documentation/subprojects/apache-felix-file-install.html) into your
+Kura server. After Felix File Install is installed into your server, you can drop
+bundle jars into `/opt/eclipse/kura/deploy` in order to automatically deploy those.
 
 All the `device-config` command options are also available for this command.
 

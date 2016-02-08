@@ -11,6 +11,7 @@
        * [Camel Framebuffer component](gateway/camel_components/camel_framebuffer_component.md)
        * [Camel Kura Cloud component](gateway/camel_components/camel_kura_cloud_component.md)
        * [Camel Kura DataTransport component](gateway/camel_components/camelkura_datatransport_component.md)
+       * [Camel Kura deploy manager component](gateway/camel_components/camel_kura_deploy_manager_component.md)
        * [Camel Kura GPIO component](gateway/camel_components/camel_kura_gpio_component.md)
        * [Camel Kura Wifi component](gateway/camel_components/camel_kura_wifi_component.md)
        * [Camel TinkerForge component](gateway/camel_components/camel_tinkerforge_component.md)
