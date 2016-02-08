@@ -5,7 +5,7 @@ useful for gateway devices behind firewalls or NAT which cannot be managed direc
 
 ## Installing bundles
 
-In order to install bundles to the gateway device via MQTT topic, deploy the following route to your gateway device:
+In order to install bundles to the gateway device via MQTT topic, deploy the following route into your gateway device:
 
     import io.rhiot.component.kura.deploymanager.InstallProcessor;
 
@@ -17,7 +17,7 @@ In order to install bundles to the gateway device via MQTT topic, deploy the fol
 
 The consumer part of the route can be any Camel component, as long as `DeployManager.topic` header required by `InstallProcessor`
 is properly set. `InstallProcessor` reads the last segment of the `DeployManager.topic` header and uses it as a name of
-the bundle to be installed. The binary data of the bundle is expected to be found in a body of the message.
+the bundle to be installed. The binary data of the bundle is expected to be found in a body of a message.
 
 By default bundles are installed into `/opt/eclipse/kura/deploy` directory, which is scanned by the Felix File Install
 support installed by the
