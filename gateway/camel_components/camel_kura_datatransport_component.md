@@ -20,7 +20,7 @@ Maven users should add the following dependency to their POM file:
 
     kura-datatransport:topic[?options]
 
-Both *topic* must match MQTT topic  pattern.
+Both `topic` must match MQTT topic  pattern.
 
 
 ### Optional URI Parameters
