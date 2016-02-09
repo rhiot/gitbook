@@ -34,13 +34,7 @@ schema:
 
         long lifeTimeInSec;
 
-        String lwM2mVersion;
-
-        BindingMode bindingMode;
-
         List<LinkObject> objectLinks;
-
-        String rootPath;
 
         Map<String, Object> properties;
 
@@ -139,12 +133,29 @@ heartbeat update as well.
 
 ### Deregistering device
 
-Sometimes you would like to explicitly remove the particular registered device from a device database. In such case
+Sometimes you would like to explicitly remove a particular registered device from a device database. In such case
 you can send a message to the following IoT connector channel:
 
-    String id -> device.deregister
+    ADDRESS: device.deregister
+    BODY: String id
 
-Where ID is a String representing the unique ID of a device.
+Where `id`` is a String representing the unique ID of a device.
+
+## Device registries
+
+The information about devices is stored in a *device registry*. You can think of the registry as of central devices
+database.
+
+Device registries implements `org.eclipse.cloudplatform.service.device.api.DeviceRegistry` interface which is
+located in the device API jar:
+
+    <dependency>
+    	<groupId>io.rhiot</groupId>
+    	<artifactId>hono-service-device-api</artifactId>
+    	<version>${rhiot.version}</version>
+    </dependency>
+
+PaaS environment uses MongoDB store by default.
 
 ## Running device service in Spring Boot runtime
 
