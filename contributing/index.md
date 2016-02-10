@@ -1,6 +1,6 @@
 # Contributing
 
-Rhiot is an Open Source project released licensed by Apache 
+Rhiot is an Open Source project licensed by Apache  
 
 ## Getting in touch
 
@@ -28,6 +28,10 @@ You can [list issues here](https://github.com/rhiot/rhiot/issues) already create
 You can [read documentation here](https://rhiot.gitbooks.io/rhiotdocumentation/content/)
 
 You can [create issue about documentation ](https://github.com/rhiot/rhiot/issues/new)
+
+
+## Code
+
 
 ## Code style
 
