@@ -1,4 +1,4 @@
-# Camel Kura Cloud Service bridge
+# Camel Kura CloudService bridge
 
 Camel Cloud Service bridge is a Camel-based implementation of the `org.eclipse.kura.cloud.CloudService` interface
 (`io.rhiot.component.kura.camelcloud.DefaultCamelCloudService`) providing Camel-based implementation of the
