@@ -32,6 +32,11 @@ You can [create issue about documentation ](https://github.com/rhiot/rhiot/issue
 
 ## Code
 
+Main code line is available :
+
+    git clone git@github.com:rhiot/rhiot.git
+    cd rhiot
+
 
 ## Code style
 
