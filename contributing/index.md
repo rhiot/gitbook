@@ -1,6 +1,6 @@
 # Contributing
 
-Rhiot is an Open Source project licensed by Apache  
+Rhiot is an Open Source project licensed via [Apache Software Foundation 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Getting in touch
 
