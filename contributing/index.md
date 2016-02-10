@@ -1,6 +1,6 @@
 # Contributing
 
-** Section TBD**
+Rhiot is an Open Source project released licensed by Apache 
 
 ## Getting in touch
 
