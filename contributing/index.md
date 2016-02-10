@@ -37,7 +37,6 @@ Main code line is available :
     git clone git@github.com:rhiot/rhiot.git
     cd rhiot
 
-
 ## Code style
 
 We use same code style than ASF and Camel projects.
