@@ -37,6 +37,12 @@ Main code line is available :
     git clone git@github.com:rhiot/rhiot.git
     cd rhiot
 
+Quickstart code line is available :
+
+    git clone git@github.com:rhiot/quickstarts.git
+    cd quickstarts
+
+
 ## Code style
 
 We use same code style than ASF and Camel projects.
