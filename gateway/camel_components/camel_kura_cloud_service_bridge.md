@@ -3,7 +3,7 @@
 Camel Cloud Service bridge is a Camel-based implementation of the `org.eclipse.kura.cloud.CloudService` interface
 (`io.rhiot.component.kura.camelcloud.DefaultCamelCloudService`) providing Camel-based implementation of the
  `org.eclipse.kura.cloud.CloudClient` interface (`io.rhiot.component.kura.camelcloud.CamelCloudClient`). Camel-based
-cloud service allows you to sent `KuraPayload` instances to any endpoint supported by Camel.
+cloud service allows you to sent `KuraPayload` instances to any endpoint supported by Camel, not only to MQTT brokers.
 
 ## Maven dependency
 
