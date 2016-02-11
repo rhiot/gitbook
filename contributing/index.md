@@ -49,6 +49,6 @@ Quickstart code line is available :
 
 ## Code style
 
-We use same code style than ASF and Camel projects.
+Rhiot project uses same code style than ASF and Camel projects.
 You can find correct checkstyle file into `$RHIOT/contribution`
 
