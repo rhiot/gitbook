@@ -74,6 +74,10 @@ configuring the image format and resolution. If for some reason you would like t
 the default implementation of the process manager used by Camel (i.e. `io.rhiot.utils.process.DefaultProcessManager`),
 you can set it on the component level:
 
+    import io.rhiot.gateway.camel.webcam.WebcamComponent;
+
+    ...
+
     WebcamComponent webcam = new WebcamComponent();
     webcam.setProcessManager(new CustomProcessManager());
     camelContext.addComponent("webcam", webcam);
