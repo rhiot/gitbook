@@ -11,12 +11,18 @@ To save binary array via the service, send those binaries to the following chann
     HEADERS:    RHIOT_ARG_0 = String id
     CHANNEL:    binary.store
 
-Where `RHIOT_ARG_0` is am unique identifier of the given binary resource. To read a binary from a store, send a request
-to the following channel:
+Where `RHIOT_ARG_0` is am unique identifier of the given binary resource.
+
+To read a binary from a store, send a request to the following channel:
 
     BODY:       String id
     CHANNEL:    binary.read
     RESPONSE:   byte[] binary
+
+To delete a binary from a store, send a request to the following channel:
+
+    BODY:       String id
+    CHANNEL:    binary.delete
 
 ## Binary storage
 
