@@ -46,6 +46,14 @@ metadata of a processed image will be stored in a `CameraImage` document collect
         PlateMatch[] plateMatches;
     }
 
+## Rotation of the image data
+
+Every minute camera service executes internal rotation task which deletes the oldest camera image binary data together
+with its metadata (an appropriate `CameraImage` document). Each run of the rotation task removes 1000 items.
+
+The task will be executed only when estimated total size of the images is greater than a storage quota. Images are
+assumed to have `10 KB` size. The default quota size is `5 GB`.
+
 ## Running camera service in Spring Boot runtime
 
 In order to use camera service in your Spring Boot application add the following jar to your classpath:
@@ -63,3 +71,9 @@ Then start your platform:
     new CloudPlatform().start();
 
 As soon as platform is started mailbox service will be detected an initialized.
+
+### Configuration of the image rotation task
+
+To change default `5 GB` storage quota set `camera.storageQuota` property. The quota is defined in megabytes.
+
+    camera.storageQuota: 1024 # 1 GB
