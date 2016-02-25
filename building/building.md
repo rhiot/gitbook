@@ -8,19 +8,12 @@ All you need to build the project is Maven 3 and Java 8 JDK
 
 ## Building project using Docker
 
-If you don't want to install Java and Maven on your machine, you can use our Docker building image.
-
-### 1st step (once)
+If you don't want to install Java and Maven on your machine, you can use our Docker building image containing all the
+tools you need.
 
     git clone https://github.com/rhiot/rhiot.git
-    cd rhiot/dockerfiles
-    docker build -t rhiot build
-
-
-### 2nd step
-
     cd rhiot
-    docker run -v `pwd`:/rhiot --privileged -i -t rhiot
+    docker run -v `pwd`:/rhiot --privileged -it rhiot/build
 
 ## Releasing the project
 
