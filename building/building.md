@@ -38,7 +38,7 @@ Execute the following command in the project main directory:
 ### After the release
 
 * upgrade the version on the main page of the project ([readme.md](https://github.com/rhiot/rhiot/blob/master/readme.md))
-* update release guide [Releases Notes](../releases_notes.md) using GitHub tickets marked as done in the given version
+* update release guide [Releases Notes](../releases_notes/releases_notes.md) using GitHub tickets marked as done in the given version
 * upgrade version in Rhiot command line (`tooling/bash/rhiot.sh`). Look up for a line similar to `RHIOT_VERSION=x.y.z`.
 * upgrade Rhiot version in quickstarts (use the latest stable version).
 * upgrade Rhiot version of Rhiot cloud (use the latest stable version) - modify `RHIOT_VERSION=` line in a `cloudlets/deployment/rhiot-cloud.sh` file.

@@ -58,5 +58,5 @@
 * [Supported & tested configuration](supported_&_tested/index.md)
 * [Articles, presentations & videos](articles/index.md)
 * [Contributing](contributing/index.md)
-* [Releases notes](releases_notes.md)
+* [Releases notes](releases_notes/releases_notes.md)
 
