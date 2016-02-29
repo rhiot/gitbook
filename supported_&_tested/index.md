@@ -17,6 +17,7 @@ Rhiot project tests and supports several configurations.
 |RaspberryPi B+ 	        | X | |
 |RaspberryPi Pi 2 	        | X | <https://rhiot.gitbooks.io/rhiotdocumentation/content/performance/index.html#Hardware-profiles>|
 |RaspberryPi Zero 	        |X | |
+|RaspberryPi Pi 3 	        | In progress| |
 | | |||
 
 ## Device
