@@ -10,7 +10,8 @@ Some part of Rhiot is based on [Kura Platform](http://www.eclipse.org/kura/) for
 |Kura version 	|Rhiot Version|
 |--|--|
 |1.3.0        |	up to 0.1.4|
-| | ||
+| 1.4.0 | in progress||
+|||
 
 ## OS
 
