@@ -7,9 +7,9 @@ Rhiot project tests and supports several configurations.
 
 Some part of Rhiot is based on [Kura Platform](http://www.eclipse.org/kura/) form [Eclipse Foundation](http://www.eclipse.org)
 
-|OS 	|Tested|
+|Kura version 	|Rhiot Version|
 |--|--|
-|Raspbian Jessie        |	    X|
+|1.3.0        |	up to 0.1.4|
 | | ||
 
 ## OS
