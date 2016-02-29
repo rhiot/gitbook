@@ -5,7 +5,7 @@ Rhiot project tests and supports several configurations.
 
 ## Kura Version
 
-Some part of Rhiot is based on Kura Platform form Eclipse Fondation
+Some part of Rhiot is based on [Kura Platform](http://www.eclipse.org/kura/) form [Eclipse Foundation](http://www.eclipse.org)
 
 |OS 	|Tested|
 |--|--|
