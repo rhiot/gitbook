@@ -2,6 +2,16 @@
 
 Rhiot project tests and supports several configurations.
 
+
+## Kura Version
+
+Some part of Rhiot is based on Kura Platform form Eclipse Fondation
+
+|OS 	|Tested|
+|--|--|
+|Raspbian Jessie        |	    X|
+| | ||
+
 ## OS
 
 |OS 	|Tested|
