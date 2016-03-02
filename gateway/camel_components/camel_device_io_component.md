@@ -62,4 +62,10 @@ Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route lik
     from("deviceio-gpio://1").id("switch-led")
       .to("deviceio-gpio://2");
 
+## URI format for i2c
 
+    deviceio-gpio://<gpioId>[?options]
+
+Where *gpioId* is the Id of the pin. For example to work with the PIN number 9, use the following URI:
+
+    deviceio-gpio://9
