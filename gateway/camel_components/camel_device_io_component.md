@@ -39,12 +39,12 @@ Where *gpioId* is the Id of the pin. For example to work with the PIN number 9, 
 | `duration`     | `50`                      | To configure BLINK duration        |
 
 
-## Consuming
+### Consuming
 
     from("deviceio-gpio://13")
     .to("log:default?showHeaders=true");
 
-## Producing
+### Producing
 
     from("timer:default?period=2000")
     .to("deviceio-gpio://4");
@@ -55,9 +55,11 @@ When using producer you can also set or override action using message header wit
       .setHeader(DeviceIOConstants.CAMEL_DEVICE_IO_ACTION).constant("LOW")
       .to("deviceio-gpio://4?action=TOGGLE");
 
-## Example: Simple button with LED mode
+### Example: Simple button with LED mode
 
 Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route like this
 
     from("deviceio-gpio://1").id("switch-led")
       .to("deviceio-gpio://2");
+
+
