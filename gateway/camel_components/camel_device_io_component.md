@@ -64,8 +64,12 @@ Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route lik
 
 ## URI format for i2c
 
-    deviceio-gpio://<gpioId>[?options]
+    deviceio-i2c://<busId>/<deviceId>[?options]
 
-Where *gpioId* is the Id of the pin. For example to work with the PIN number 9, use the following URI:
+Where *busId* is the Id of the i2c Bus. For example to work with RaspberryPi Bus id use the `1`. Device Id is to locate i2c device on the bus, it depends of driver and/or component address :
 
-    deviceio-gpio://9
+    deviceio-i2c://1/0x77
+    
+   #### Tips
+   
+   For r
