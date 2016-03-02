@@ -64,9 +64,12 @@ Plug an button on GPIO 1, and LED on GPIO 2 (with Resistor) and code a route lik
 
 ## URI format for i2c
 
+**Available since `rhiot.version` >= 0.1.5**
+
+
     deviceio-i2c://<busId>/<deviceId>[?options]
 
-Where *busId* is the Id of the i2c Bus. For example to work with RaspberryPi Bus id use the `1`. Device Id is to locate i2c device on the bus, it depends of driver and/or component address :
+Where *busId* is the Id of the i2c Bus. Device Id is to locate i2c device on the bus, it depends of driver and/or component address :
 
     deviceio-i2c://1/0x77
     
