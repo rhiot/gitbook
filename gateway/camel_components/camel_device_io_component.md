@@ -73,7 +73,7 @@ Where *busId* is the Id of the i2c Bus. Device Id is to locate i2c device on the
 
     deviceio-i2c://1/0x77
     
-   #### Tips
+#### Tips
    
 For RaspberryPi, the bus id should be `1`. To find device address and device plugged on your Raspberry Pi you can use following command :
    
