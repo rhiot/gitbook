@@ -84,5 +84,5 @@ For RaspberryPi, the bus id should be `1`. To find device address and device plu
 
 | Parameter      | Default value      | Description          |
 |----------------|--------------------|----------------------|
-| `driver`       |                    |                      |
+| `driver`       |                    | Driver class to load via  |
 
