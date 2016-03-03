@@ -78,3 +78,11 @@ Where *busId* is the Id of the i2c Bus. Device Id is to locate i2c device on the
 For RaspberryPi, the bus id should be `1`. To find device address and device plugged on your Raspberry Pi you can use following command :
    
      sudo i2cdetect -y 1
+
+
+### Optional URI Parameters
+
+| Parameter      | Default value      | Description          |
+|----------------|--------------------|----------------------|
+| `driver`       |                    |                      |
+
