@@ -89,3 +89,9 @@ For RaspberryPi, the bus id should be `1`. To find device address and device plu
 
 `driver` parameter must match `META-INF/services/io/rhiot/component/deviceio/i2c/<driver>` file name
 The `driver` provides correct driver class name to instanciate. A driver must extend `io.rhiot.component.deviceio.i2c.driver.I2CDriverAbstract` class and implements `io.rhiot.component.deviceio.i2c.driver.I2CDriver` interface.
+
+#### i2c driver
+
+| Driver            | Feature                                                            |
+|-------------------|--------------------------------------------------------------------|
+| bmp180            | Temperature and Pressure sensor   (http://www.adafruit.com/products/1603) |
