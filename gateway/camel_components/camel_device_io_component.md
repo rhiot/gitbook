@@ -99,5 +99,7 @@ The `driver` provides correct driver class name to instanciate. A driver must ex
 
 ##### bmp180 driver
 
+
 ##### hts221 driver
+
 
