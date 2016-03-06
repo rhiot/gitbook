@@ -87,8 +87,7 @@ For RaspberryPi, the bus id should be `1`. To find device address and device plu
 | `driver`       |                    | Driver class to load via `META-INF/services/io/rhiot/component/deviceio/i2c/<driver>` file |
 
 
-The `driver` parameter must match `META-INF/services/io/rhiot/component/deviceio/i2c/<driver>` file name
-The `driver` provides correct driver class name to instanciate. A driver must extend `io.rhiot.component.deviceio.i2c.driver.I2CDriverAbstract` class and implements `io.rhiot.component.deviceio.i2c.driver.I2CDriver` interface.
+The `driver` parameter must match `META-INF/services/io/rhiot/component/deviceio/i2c/<driver>` file name. The `driver` provides correct driver class name to instanciate. A driver must extend `io.rhiot.component.deviceio.i2c.driver.I2CDriverAbstract` class and implements `io.rhiot.component.deviceio.i2c.driver.I2CDriver` interface.
 
 #### i2c driver
 
