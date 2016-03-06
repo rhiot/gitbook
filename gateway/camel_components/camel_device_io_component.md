@@ -98,3 +98,6 @@ The `driver` provides correct driver class name to instanciate. A driver must ex
 | hts221    | Humidity and Temperature sensor used by the [Official RaspberryPi Sense-Hat](https://www.raspberrypi.org/products/sense-hat/) [ST device doc](http://www.st.com/web/en/resource/technical/document/datasheet/DM00116291.pdf)    |
 
 ##### bmp180 driver
+
+##### hts221 driver
+
