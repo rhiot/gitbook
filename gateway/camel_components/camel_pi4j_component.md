@@ -91,8 +91,8 @@ For smarter devices, you must implement a driver.
 
 | Driver            | Feature                                                            |
 |-------------------|--------------------------------------------------------------------|
-| bmp180            | Temperature and Pressure sensor   (http://www.adafruit.com/products/1603) |
-| tsl2561           | Light sensor            (http://www.adafruit.com/products/439)     |
+| `bmp180`            | Temperature and Pressure sensor   (http://www.adafruit.com/products/1603) |
+| `tsl2561`           | Light sensor            (http://www.adafruit.com/products/439)     |
 | lsm303-accel      | Accelerometer sensor    (http://www.adafruit.com/products/1120)    |
 | lsm303-magne      | Magnetometer sensor     (http://www.adafruit.com/products/1120)    |
 | mcp23017-lcd      | LCD 2x16 char           (http://www.adafruit.com/products/1109)    |
