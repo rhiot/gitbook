@@ -101,3 +101,8 @@ For smarter devices, you must implement a driver.
 
 
 ##### bmp180
+
+##### tsl2561
+
+
+
