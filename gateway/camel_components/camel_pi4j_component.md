@@ -100,3 +100,4 @@ For smarter devices, you must implement a driver.
 | lps25h      |  Pressure and Temperature sensor used by the [Official RaspberryPi Sense-Hat](https://www.raspberrypi.org/products/sense-hat/) [ST device doc](http://www.st.com/web/en/resource/technical/document/datasheet/DM00066332.pdf)    |
 
 
+##### bmp180
