@@ -98,7 +98,9 @@ The `driver` parameter must match `META-INF/services/io/rhiot/component/deviceio
 
 ##### bmp180 driver
 
+Driver Parameter
 
 ##### hts221 driver
 
+Driver Parameter
 
