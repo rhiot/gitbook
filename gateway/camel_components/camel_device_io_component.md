@@ -91,10 +91,10 @@ The `driver` parameter must match `META-INF/services/io/rhiot/component/deviceio
 
 #### i2c driver
 
-| Driver    | Feature                                                            |
-|-----------|--------------------------------------------------------------------|
-| bmp180    | Temperature and Pressure sensor   (http://www.adafruit.com/products/1603) |
-| hts221    | Humidity and Temperature sensor used by the [Official RaspberryPi Sense-Hat](https://www.raspberrypi.org/products/sense-hat/) [ST device doc](http://www.st.com/web/en/resource/technical/document/datasheet/DM00116291.pdf)    |
+| Driver | Feature |
+|--------|---------|
+| `bmp180`    | Temperature and Pressure sensor   (http://www.adafruit.com/products/1603) |
+| `hts221`    | Humidity and Temperature sensor used by the [Official RaspberryPi Sense-Hat](https://www.raspberrypi.org/products/sense-hat/) [ST device doc](http://www.st.com/web/en/resource/technical/document/datasheet/DM00116291.pdf)    |
 
 ##### bmp180 driver
 
