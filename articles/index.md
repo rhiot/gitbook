@@ -5,7 +5,7 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 ### 2016
 
 - 
-[Rhiot Kura Device IO GPIO and I2C](http://gautric.github.io/blog/2016/02/29/rhiot-kura-OSGi-Device-IO-API.html) - Greg's blog post (video included) (dec 2015)
+[Rhiot Kura Device IO GPIO and I2C](http://gautric.github.io/blog/2016/02/29/rhiot-kura-OSGi-Device-IO-API.html) - Greg's blog post (video included) (fev 2016)
 
 ### 2015
 
