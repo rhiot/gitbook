@@ -7,7 +7,6 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 - 
 [Rhiot Kura Device IO GPIO and I2C](http://gautric.github.io/blog/2016/02/29/rhiot-kura-OSGi-Device-IO-API.html) - Greg's blog post (video included) (dec 2015)
 
-
 ### 2015
 
 - [Rhiot over Kura over Docker over RaspberryPi](http://gautric.github.io/blog/2015/12/28/rhiot-kura-docker-raspberrypi.html) - Greg's blog post (video included) (dec 2015)
