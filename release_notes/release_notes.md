@@ -38,7 +38,7 @@
 - added support for self-documenting commands
 - created kura-install command
 
-CMD/shell:
+#### CMD/shell:
 - Rhiot CMD should reuse host local Maven repository
 - SimplePortScanningDeviceDetector use of Inet4Address.isReachable was not reliable
 - Rhiot CMD should inform user that server is being downloaded and started
