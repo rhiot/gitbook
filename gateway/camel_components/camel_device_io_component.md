@@ -100,6 +100,8 @@ The `driver` parameter must match `META-INF/services/io/rhiot/component/deviceio
 
 Driver Parameter
 
+`mode` =
+
 ##### hts221 driver
 
 Driver Parameter
