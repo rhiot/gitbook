@@ -6,7 +6,7 @@
 
 ## 0.1.4 (2015-02-29)
 
-Backend:
+#### Backend:
 - created PaaS platform script
 - created IoT Connector API module
 - created device management service
@@ -20,7 +20,7 @@ Backend:
 - created Leshan protocol adapter
 - created Cloud Platform encoder module
 
-Gateway:
+#### Gateway:
 - created Kura deploy manager uninstall processor
 - created DeployManager#install processor
 - improved KuraCloudProducer DeviceId management
