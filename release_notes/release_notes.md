@@ -55,7 +55,7 @@
 
 ## 0.1.3 (2015-12-18)
 
-New features:
+#### New features:
 - Migrated documentation to GitBook (https://rhiot.gitbooks.io/rhiotdocumentation/content/)
 - Created #rhiot IRC channel for discussions :)
 - Added support for Kura gateways
@@ -75,7 +75,7 @@ New features:
 - Created Kura Camel quickstart
 - Add support for reading configuration from a thread local
 
-Improvements:
+#### Improvements:
 - Don’t install docker if MacOSX for rhiot command
 - Rhiot CMD should be using “DevAgent” background process
 - Camel-kura shouldn’t depend of “org.eclipse.kura.linux.net”
@@ -84,7 +84,7 @@ Improvements:
 - WebcamComponent should analyze modprobe result to ensure v4l2 module can be loaded
 - GPSD component should make sure that GPSD is installed
 
-Bug fixes:
+#### Bug fixes:
 - Provided state and shutdownState for kura-gpio Endpoint
 - GPIOProducer shouldn’t overwrite the “action” on each message
 - WebcamComponent#installer setter and getters are missing
