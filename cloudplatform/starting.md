@@ -24,7 +24,7 @@ script will upgrade your Docker server. After Docker server is properly installe
 PaaS Cloud Platform relies on the MongoDB to store some of the data processed by it. For example MongoDB backend is a default store used by the device service. By default the MongoDB data is stored in the `mongodb_data` volume container. If such volume doesn't exist, Cloud Platform script will create it for you.
 
 
-To learn more about Cloud Platform PaaS read [this](paas.md) section of the documentation.
+To learn more about Cloud Platform PaaS read [this](paas/cloud-paas.md) section of the documentation.
 
 ## Using Spring Boot runtime programatically
 

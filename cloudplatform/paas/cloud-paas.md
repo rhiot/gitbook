@@ -1,4 +1,4 @@
-# Cloud Platform PaaS
+# Cloud PaaS
 
 PaaS Cloud Platform is opinionated, Docker container based, installation of Cloud Platform. You just
 [execute the installation script](starting.md) and can immediately take advantage if preconfigured installation of

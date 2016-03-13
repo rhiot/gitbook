@@ -38,7 +38,7 @@
        * [Binary](cloudplatform/services/binary.md)
        * [Camera](cloudplatform/services/camera.md)
        * [Apache Spark](cloudplatform/services/spark.md)
-   * [PaaS Cloud Platform](cloudplatform/paas/paas.md)
+   * [Cloud PaaS](cloudplatform/paas/cloud-paas.md)
        * [Gateway PaaS](cloudplatform/paas/gateway-paas.md)
    * [Camel Components](cloudplatform/camel_components/index.md)
        * [Camel OpenALPR component](cloudplatform/camel_components/camel_openalpr.md)
