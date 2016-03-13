@@ -27,15 +27,6 @@ system.
 <img src="rpi2_open.jpg" align="center" height="600" hspace="30">
 <img src="rpi2_closed.jpg" align="center" height="600" hspace="30">
 
-### Raspberry PI 2 B+ with BU353 (aka RPI2_BU353)
-
-The `RPI2_BU353` hardware profile is the same as `RPI2` profile, but additionally equipped with the
-[BU353 GPS receiver](http://usglobalsat.com/p-688-bu-353-s4.aspx#images/product/large/688_2.jpg)
-plugged into the USB port.
-
-<img src="rpi2_bu353_open.jpg" align="center" height="500" hspace="30">
-<img src="rpi2_bu353_closed.jpg" align="center" height="500" hspace="30">
-
 ## Running the performance tester
 
 The easiest way to run the performance benchmark is to connect the target device (for example Rapsberry Pi) into your
@@ -44,7 +35,7 @@ following command:
 
     docker run -v=/tmp/gateway-performance:/tmp/gateway-performance --net=host rhiot/performance-of RPI2
 
-Keep in mind that `RPI2` can be replaced with the other supported hardware profile (like `RPI2_BU353`). The performance tester detects the tests that can be executed for the given hardware profile, deploy the gateway software to the target
+Keep in mind that `RPI2` can be replaced with the other supported hardware profile. The performance tester detects the tests that can be executed for the given hardware profile, deploy the gateway software to the target
 device, executes the tests and collects the results.
 
 When the execution of the benchmark ends, the result diagrams will be located in the `/tmp/gateway-performance` directory (or any other directory you specified when executing the command above). The sample diagram may look as follows:

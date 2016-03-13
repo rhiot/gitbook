@@ -6,7 +6,6 @@
    * [Camel components](gateway/camel_components/index.md)
        * [Camel Bluetooth component](gateway/camel_components/camel_bluetooth_component.md)
        * [Camel GP2Y1010AU0F component](gateway/camel_components/camel_gp2y1010au0f_component.md)
-       * [Camel GPS BU353 component](gateway/camel_components/camel_gps_bu353_component.md)
        * [Camel GPSD component](gateway/camel_components/camel_gpsd_component.md)
        * [Camel Framebuffer component](gateway/camel_components/camel_framebuffer_component.md)
        * [Camel Kura Cloud component](gateway/camel_components/camel_kura_cloud_component.md)
