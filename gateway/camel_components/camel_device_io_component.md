@@ -106,7 +106,7 @@ Driver Parameter, just add these parameters at the end of the URI
 
 Driver Parameter, just add these parameters at the end of the URI
   
-`bdu` = `BDU_UPDATE_AFTER_READING`, `BDU_CONTINUOUS`
+`bdu` = **`BDU_UPDATE_AFTER_READING`**, `BDU_CONTINUOUS`
 
 `odr` = `ODR_ONE_SHOT`,`ODR_1_HZ`,`ODR_7_HZ`,`ODR_12DOT5_HZ`
 
