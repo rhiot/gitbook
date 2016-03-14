@@ -107,6 +107,6 @@ Just add these parameters at the end of the URI
 
 Driver Parameter
 Just add these parameters at the end of the URI
-
-``
+  
+`bdu` = `BDU_UPDATE_AFTER_READING`, `BDU_CONTINUOUS`
 
