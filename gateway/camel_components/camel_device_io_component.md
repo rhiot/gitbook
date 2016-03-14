@@ -1,6 +1,6 @@
 # Camel Device I/O component
 
-Camel Device I/O component provides a wrapper around a GPIO service feature via [Device I/O](http://openjdk.java.net/projects/dio/) API. Camel Device I/O GPIO component is used to read and write state of the GPIO pins. Camel Device I/O I2C could manage i2c device.
+Camel Device I/O component provides a wrapper around a GPIO service feature via [Device I/O](http://openjdk.java.net/projects/dio/) API. Camel Device I/O GPIO component is used to read and write state of the GPIO pins. Camel Device I/O I2C c manage i2c device.
 
 ## Maven dependency
 
