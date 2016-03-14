@@ -104,8 +104,7 @@ Driver Parameter, just add these parameters at the end of the URI
 
 ##### hts221 driver
 
-Driver Parameter
-Just add these parameters at the end of the URI
+Driver Parameter, just add these parameters at the end of the URI
   
 `bdu` = `BDU_UPDATE_AFTER_READING`, `BDU_CONTINUOUS`
 
