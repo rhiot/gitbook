@@ -1,6 +1,6 @@
 # Camera sensor
 
-*Available starting from Rhiot 0.1.5.*
+**Available starting from Rhiot 0.1.5.**
 
 Camera sensor reads data from a camera device and routes that data to the IoT Connector.
 
