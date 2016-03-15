@@ -8,7 +8,7 @@ By default camera sensor streams image data only when motion is detected. Defaul
 up to the 4 images per second will be stream to the IoT Connector. The default image format is JPG.
 
 Under the hood camera sensor uses [Camel webcam component](../camel_components/camel_webcam_component.md). The backend
-service responsible for receiving the camera data is [Camera Service](../../cloudplatform/services/camera.md).
+service responsible for receiving the data from a camera is [Camera Service](../../cloudplatform/services/camera.md).
 
 ## Enabling camera sensor in Spring Boot runtime
 
