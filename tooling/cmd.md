@@ -36,14 +36,6 @@ not set):
 
 For Raspbian, we recommend to use the default password - `raspberry`.
 
-## shell-start
-
-Starts background shell process (if one is not started already). You can connect to a [shell](shell.md) process using SSH and
-default credentials:
-
-    ssh rhiot@localhost -p 2000
-    password: rhiot
-
 ## device-config
 
 This command allows to edit a configuration file on a remote device. The syntax of a command looks as follows:

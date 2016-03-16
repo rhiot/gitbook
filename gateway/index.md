@@ -9,8 +9,7 @@ solution in many production installations. Rhiot supports [Kura 1.3.0](https://p
 The Rhiot's support for Kura is main focused on providing base [Camel Kura router](camel_kura_router.md) which can be 
 extended to make development of Camel Kura modules easier. Rhiot comes with a set of additional IoT-focused 
 [components](camel_components/index.md) for
-Apache Camel. We also support a bunch of pretty useful tools, like [Rhiot command line tool](../tooling/cmd.md) or 
-[interactive shell](../tooling/shell.md).
+Apache Camel. We also support a bunch of pretty useful tools, like [Rhiot command line tool](../tooling/cmd.md).
 
 <img src="rhiot_docs_gateway_arch_kura.png" height="400" hspace="30">
 

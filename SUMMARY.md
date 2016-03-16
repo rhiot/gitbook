@@ -48,7 +48,6 @@
       * [Camera sensor](gateway/sensors/camera.md)
 * [Tooling](tooling/index.md)
    * [CMD](tooling/cmd.md)
-   * [Shell](tooling/shell.md)
 * [Performance](performance/index.md)
 * [Steroids](steroids/index.md)
 * [Quickstarts](quickstarts/index.md)
