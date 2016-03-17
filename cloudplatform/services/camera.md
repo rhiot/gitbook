@@ -4,6 +4,22 @@ Camber service can be used to work with the video images collected by camera dev
 cameras). Camera service can store and process collected images (for example for image recognition and classification
 purposes).
 
+In order to use camera service in your Spring Boot application add the following jar to your classpath:
+
+	<dependency>
+		<groupId>io.rhiot</groupId>
+		<artifactId>rhiot-cloudplatform-service-camera</artifactId>
+		<version>${rhiot.version}</version>
+	</dependency>
+
+Then start your platform:
+
+    import io.rhiot.cloudplatform.runtime.spring.CloudPlatform
+    ...
+    new CloudPlatform().start();
+
+As soon as platform is started camera service will be detected an initialized.
+
 ## Camera service API
 
 ### Recognizing car registration plate
@@ -46,7 +62,7 @@ metadata of a processed image will be stored in a `CameraImage` document collect
         PlateMatch[] plateMatches;
     }
 
-## Rotation of the image data
+## Rotation of an image data
 
 Every minute camera service executes internal rotation task which deletes the oldest camera image binary data together
 with its metadata (an appropriate `CameraImage` document). Each run of the rotation task removes 1000 items.
@@ -54,26 +70,22 @@ with its metadata (an appropriate `CameraImage` document). Each run of the rotat
 The task will be executed only when estimated total size of the images is greater than a storage quota. Images are
 assumed to have `10 KB` size. The default quota size is `5 GB`.
 
-## Running camera service in Spring Boot runtime
-
-In order to use camera service in your Spring Boot application add the following jar to your classpath:
-
-	<dependency>
-		<groupId>io.rhiot</groupId>
-		<artifactId>rhiot-cloudplatform-service-camera</artifactId>
-		<version>${rhiot.version}</version>
-	</dependency>
-
-Then start your platform:
-
-    import io.rhiot.cloudplatform.runtime.spring.CloudPlatform
-    ...
-    new CloudPlatform().start();
-
-As soon as platform is started mailbox service will be detected an initialized.
-
-### Configuration of the image rotation task
+### Configuration of an image rotation task
 
 To change default `5 GB` storage quota set `camera.storageQuota` property. The quota is defined in megabytes.
 
     camera.storageQuota: 1024 # 1 GB
+
+## Offline image processing
+
+Image data submitted to the `camera.process` operation are processed asynchronously by multiple processors in order to
+extract additional meta data from an image (for example to tag an image with detected license plate numbers).
+
+### OpenALPR license plate recognition
+
+OpenALRP processor analyzes submitted images against a presence of license plates. Detected license plates are stored
+in a `CameraImage` document collection.
+
+If you would like to disable OpenALPR image processor set `camera.processor.openalpr.enabled` to `false`:
+
+    camera.processor.openalpr.enabled = false
