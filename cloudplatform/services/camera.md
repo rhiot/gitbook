@@ -1,7 +1,7 @@
 # Camera service
 
-Camber service can be used to work with the video images collected by camera devices (such as webcams or surveillance
-cameras). Camera service can store and process collected images (for example for image recognition and classification
+Camber service can be used to work with the video images collected by camera devices (such as webcams, drone cameras or
+surveillance cameras). Camera service can store and process collected images (for example for image recognition and classification
 purposes).
 
 In order to use camera service in your Spring Boot application add the following jar to your classpath:
