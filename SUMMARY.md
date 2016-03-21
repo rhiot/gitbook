@@ -29,7 +29,7 @@
        * [Camel GP2Y1010AU0F component](gateway/camel_components/camel_gp2y1010au0f_component.md)
        * [Camel GPSD component](gateway/camel_components/camel_gpsd_component.md)
        * [Camel Framebuffer component](gateway/camel_components/camel_framebuffer_component.md)
-       * [Camel Kura Cloud component](gateway/camel_components/camel_kura_cloud_component.md)
+       * [Camel Kura Cloud component](gateway/camel_components/kura_cloud.md)
        * [Camel Kura CloudService bridge](gateway/camel_components/camel_kura_cloud_service_bridge.md)
        * [Camel Kura DataTransport component](gateway/camel_components/camel_kura_datatransport_component.md)
        * [Camel Kura deploy manager component](gateway/camel_components/camel_kura_deploy_manager_component.md)
