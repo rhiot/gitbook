@@ -4,7 +4,7 @@ Here is the bunch of useful resources regarding Rhiot IoT project (chronological
 
 ### 2016
 
-- [Device IO and i2cdetect implementation](http://gautric.github.io/blog/2016/03/09/rhiot-Device-IO-API-i2cdetect-impl.html) - (related to Rhiot) - Greg's blog post (march 2016)
+- [Device IO and i2cdetect implementation](http://gautric.github.io/blog/2016/03/09/rhiot-Device-IO-API-i2cdetect-impl.html) - (related to Rhiot project) - Greg's blog post (march 2016)
 - [Rhiot Kura Device IO GPIO and I2C](http://gautric.github.io/blog/2016/02/29/rhiot-kura-OSGi-Device-IO-API.html) - Greg's blog post (fev 2016)
 
 ### 2015
