@@ -45,6 +45,7 @@
        * [Monitoring](gateway/mini/monitoring.md)
        * [Customization](gateway/mini/customization.md)
    * [Sensors](gateway/sensors/sensors.md)
+      * [Device sensor](gateway/sensors/device.md)
       * [Camera sensor](gateway/sensors/camera.md)
 * [Tooling](tooling/index.md)
    * [CMD](tooling/cmd.md)
