@@ -72,9 +72,9 @@ assumed to have `10 KB` size. The default quota size is `5 GB`.
 
 ### Configuration of an image rotation task
 
-To change default `5 GB` storage quota set `camera.storageQuota` property. The quota is defined in megabytes.
+To change default `5 GB` storage quota set `camera.rotation.storageQuota` property. The quota is defined in megabytes.
 
-    camera.storageQuota: 1024 # 1 GB
+    camera.rotation.storageQuota: 1024 # 1 GB
 
 ## Offline image processing
 
