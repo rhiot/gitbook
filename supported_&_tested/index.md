@@ -19,6 +19,8 @@ Some parts of Rhiot is based on [Kura Platform](http://www.eclipse.org/kura/) fr
 |--|--|
 |Raspbian Jessie        |	    X|
 | | ||
+|Yocto Linux            |	In Progress|
+| | ||
 
 ## Hardware 
 
@@ -29,6 +31,8 @@ Some parts of Rhiot is based on [Kura Platform](http://www.eclipse.org/kura/) fr
 |RaspberryPi Pi 2 	        | X | <https://rhiot.gitbooks.io/rhiotdocumentation/content/performance/index.html#Hardware-profiles>|
 |RaspberryPi Zero 	        |X | |
 |RaspberryPi Pi 3 	        | In progress| |
+| | |||
+|Intel Edison      	        | In progress| |
 | | |||
 
 ## Device
