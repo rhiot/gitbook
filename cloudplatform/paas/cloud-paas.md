@@ -1,12 +1,12 @@
 # Cloud PaaS
 
-PaaS Cloud Platform is opinionated, Docker container based, installation of Cloud Platform. You just
-[execute the installation script](starting.md) and can immediately take advantage if preconfigured installation of
-Cloud Platform.
+Cloud PaaS is an opinionated, Docker container based, installation of Rhiot cloud. All you have to to in order
+to start Cloud PaaS is [executing the installation script](../starting.md). As soon as startup script is executed, 
+you can take an advantage of preconfigured installation of Cloud PaaS.
 
 ## Loading custom startup script
 
-PaaS script looks for the `~/.rhiot/paas.config` script file when starting PaaS platform. If the file exists, it will
+PaaS script looks up for the `~/.rhiot/paas.config` script file when starting PaaS platform. If the file exists, it will
 be interpreted as a Bash script and executed. So for example to start a csutom Docker container when starting PaaS, add
 the following line to the `~/.rhiot/paas.config` file:
 
