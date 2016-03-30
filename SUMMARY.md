@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Cloud Platform](cloudplatform/cloud.md)
+* [Cloud](cloudplatform/cloud.md)
    * [Starting Cloud Platform](cloudplatform/starting.md)
    * [Payload encoding](cloudplatform/encoding/encoding.md)
        * [JSON payload encoding](cloudplatform/encoding/json.md)
