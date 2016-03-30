@@ -3,7 +3,7 @@
 It is important to stress that only client sending a payload to the Cloud Platform and service consuming message from
 the IoT connector are aware of messages semantics. It basically means that it is client responsibility to properly
 encode the message, while it is service responsibility to decode the message. Protocol adapters and IoT connector
-are not aware of the message semantics. Please refer to the [Cloud Platform Architecture](../cloudplatform.md) for more
+are not aware of the message semantics. Please refer to the [Cloud Platform Architecture](../cloud.md) for more
 architectural details.
 
 ## Payload encoding in a PaaS environment
