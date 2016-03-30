@@ -1,4 +1,4 @@
-# Rhiot cloud
+# Cloud
 
 The Internet of Things is all about the communication and messaging. Devices connected to the IoT system have to
 connect to a kind of centralized hub that allows them to exchange their data with the other devices and backend
