@@ -1,6 +1,6 @@
-# Cloud PaaS
+# PaaS
 
-Cloud PaaS is an opinionated, Docker container based, installation of Rhiot cloud. All you have to to in order
+Rhiot PaaS is an opinionated, Docker container based, installation of the Rhiot cloud. All you have to to in order
 to start Cloud PaaS is [executing the installation script](../starting.md). As soon as startup script is executed, 
 you can take an advantage of preconfigured installation of Cloud PaaS.
 
@@ -11,6 +11,14 @@ be interpreted as a Bash script and executed. So for example to start a csutom D
 the following line to the `~/.rhiot/paas.config` file:
 
     docker run -d example/myCustomImage:1.0
+
+## Security
+
+PaaS installation comes with an instance of a [KeyCloak](http://keycloak.jboss.org) server. The KeyCloak endpoint is
+used to manage users authorized to connect to cloud event bus.
+
+The KeyCloak web application is exposed on `CLOUDHOST:8082/auth/admin/REALM/console` address. In particular
+`CLOUDHOST:8082/auth/admin/master/console/` address can be used to manage master real.
 
 ## Apache Spark cluster
 
