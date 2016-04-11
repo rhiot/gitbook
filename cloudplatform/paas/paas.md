@@ -20,6 +20,9 @@ used to manage users authorized to connect to cloud event bus.
 The KeyCloak web application is exposed on `CLOUDHOST:8082/auth/admin/REALM/console` address. In particular
 `CLOUDHOST:8082/auth/admin/master/console/` address can be used to manage master realm.
 
+The KeyCloak admin username and password should be specified using `ADMIN_USERNAME` and `ADMIN_PASSWORD` environment
+variables respectively.
+
 ## Apache Spark cluster
 
 We treat Apache Spark as a first class citizen of Cloud Platform. This is why when you start the PaaS script, the latter
