@@ -18,7 +18,7 @@ PaaS installation comes with an instance of a [KeyCloak](http://keycloak.jboss.o
 used to manage users authorized to connect to cloud event bus.
 
 The KeyCloak web application is exposed on `CLOUDHOST:8082/auth/admin/REALM/console` address. In particular
-`CLOUDHOST:8082/auth/admin/master/console/` address can be used to manage master real.
+`CLOUDHOST:8082/auth/admin/master/console/` address can be used to manage master realm.
 
 ## Apache Spark cluster
 
