@@ -12,6 +12,14 @@ REST protocol adapter matches HTTP URI to the AMQP queue destination:
 Content posted with POST request are converted to the body of the message sent to the AMQP destination. JMS correlation ID
 can be used to match AMQP response with HTTP response.
 
+## CORS support
+
+In order to accept HTTP requests from the JavaScript clients, REST protocol adapter has to support CORS. The default
+CORS settings are as follows:
+
+    Access-Control-Allow-Origin: *
+    Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+
 ## Starting REST protocol adapter
 
 This section describes how to start REST protocol adapter.
