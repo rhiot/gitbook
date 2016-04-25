@@ -7,7 +7,8 @@ Camera sensor reads data from a camera device and routes that data to the IoT Co
 By default camera sensor streams image data only when motion is detected. Default motion interval is 250 milisecond i.e.
 up to the 4 images per second will be stream to the IoT Connector. The default image format is JPG.
 
-Under the hood camera sensor uses [Camel webcam component](../camel_components/camel_webcam_component.md). The backend
+Under the hood camera sensor uses wrapper around
+[Raspistill](https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspistill.md) system process. The backend
 service responsible for receiving the data from a camera is [Camera Service](../../cloudplatform/services/camera.md).
 
 ## Running camera sensor in Spring Boot runtime
