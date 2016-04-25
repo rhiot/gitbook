@@ -10,7 +10,7 @@ up to the 4 images per second will be stream to the IoT Connector. The default i
 Under the hood camera sensor uses [Camel webcam component](../camel_components/camel_webcam_component.md). The backend
 service responsible for receiving the data from a camera is [Camera Service](../../cloudplatform/services/camera.md).
 
-## Enabling camera sensor in Spring Boot runtime
+## Running camera sensor in Spring Boot runtime
 
 In order to enable camera sensor in Spring Boot runtime, add the following jar to your classpath:
 
@@ -25,3 +25,8 @@ You also have to set `sensor.camera.enabled` property to `true` and specify the 
 
     sensor.camera.enabled = true
     deviceId = myDevice
+
+### Work directory
+
+You can configure the work directory of the sensor (i.e. directory where current camera snapshot and queue of images to be
+sent to the cloud are stored) using `sensor.camera.workdir` property. Default working directory is `/tmp/camera`.
